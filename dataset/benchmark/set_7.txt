@@ -1,0 +1,10 @@
+Pass
+A certain commercial banking system holds a total of 30 billion dollar in reserve funds, with the public holding 10 billion dollars in currency. The central bank has set a statutory reserve ratio of 15% for demand deposits and 10% for non personal time deposits, respectively. According to calculations, the cash leakage rate (cash/demand deposits) in circulation is 25%, the excess reserve rate of commercial banks is 5%, and the non personal time deposit ratio is 50%. (1) Calculate the deposit multiplier. (2) Calculate the currency multiplier (referring to narrow currency M1). (3) Calculate the narrow money supply M1.
+Pass
+It is known that the quantity of imported and exported goods in Germany in a certain year is 100 units. The export price in domestic currency is 15 EUR, and the import price in foreign currency is 15 USD. The exchange rate is 1 USD=1.5 EUR. What was Germany's initial trade balance in domestic currency?
+Pass
+A company has a perpetual EBIT of 5 million and a return rate of 10% without leverage. It is also known that the company can borrow 5 million dollars of debt to repurchase some stocks and change its capital structure. The company's income tax rate is 25%. (1) Under the tax-free MM theory, what is the owner's equity? (2) Under the taxable MM theory, what is the tax shield effect? What is the owner's equity?
+Pass
+Pass
+Someone's monthly income is 120 dollars, and their utility function is U=XY. The prices of X and Y are 2 dollars and 4 dollars respectively. What are the marginal and total utility of money?
+The total number of unsold goods in a certain country is 100 billion, with an average price of 10 US dollars per item. Assuming an average circulation of 5 times per 1 dollar in that year, what is the amount of currency needed in circulation? If the government had actually issued $400 billion worth of banknotes back then, how much would one dollar be equivalent to?
