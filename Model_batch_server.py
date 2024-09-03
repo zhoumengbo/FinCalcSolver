@@ -1,5 +1,4 @@
 import queue
-
 import requests
 import threading
 
@@ -20,41 +19,25 @@ from utils.intercept_error import convert_full_text
 from utils.logger_config import LoggerConfig
 from utils.sympy_for_paths import paths_to_sympy, sympy_check, list_to_sympy
 
-from transformers import set_seed
-set_seed(42)
-torch.backends.cuda.matmul.allow_tf32 = False
-torch.backends.cudnn.allow_tf32 = False
-torch.manual_seed(42)
-torch.cuda.manual_seed(42)
-torch.cuda.manual_seed_all(42)
-torch.backends.cudnn.deterministic = True
-torch.backends.cudnn.benchmark = False
-import numpy as np
-np.random.seed(42)
-import random
-random.seed(42)
-import os
-os.environ['PYTHONHASHSEED']= str(42)
-
-
 torch.cuda.empty_cache()
 print(get_gpu_memory())
 date = datetime.now().date()
 now_time = datetime.now().time()
 
-model_dir = "/home/ligy/zmb_workspace/model/"
+model_dir = "/mnt/zmb/zmb_workspace/model/"
 auto_dir = "prompts/template/Auto/"
 
 model1_name = "dolphin-2.2.1-mistral-7b"
 model2_name = "dolphin-2.6-mistral-7b-dpo"
-dolphin_2_6_server = "http://192.168.0.109:8080/"
+dolphin_2_6_server = "http://192.168.0.105:8080/"
 
-log_dir = 'outputs/auto/log/{0}'.format(date)
+make_dir = 'outputs/auto_server/dolphin-2.2.1+dolphin-2.6'
+log_dir = make_dir + '/log/{0}'.format(date)
 os.makedirs(log_dir, exist_ok=True)
 logger = LoggerConfig(log_file='{0}/{1}.log'.format(log_dir, now_time)).logger
 
-# result = requests.get(dolphin_2_6_server).json()
-# logger.info("Get from {0}({1}): {2}".format(model2_name, dolphin_2_6_server, result))
+result = requests.get(dolphin_2_6_server).json()
+logger.info("Get from {0}({1}): {2}".format(model2_name, dolphin_2_6_server, result))
 model_device1 = 'auto'
 model_tokenizer_device = 'cuda'
 model1_path = model_dir + model1_name
@@ -63,12 +46,12 @@ logger.info(get_gpu_memory())
 
 doc = Document()
 doc.add_heading('已采纳题目结果', 0)
-dataset_dir = "dataset/benchmark/"
-adopt_json_file = dataset_dir + "test.json"
-save_docx_dir = "outputs/auto/docx/"
+dataset_dir = 'dataset/benchmark/'
+adopt_json_file = dataset_dir + "adopt.json"
+save_docx_dir = make_dir + '/docx/'
 save_docx_file = save_docx_dir + "results.docx"
-save_docx_log_dir = "outputs/auto/docx/log/"
-save_json_dir = "outputs/auto/json/"
+save_docx_log_dir = make_dir + '/docx/log/'
+save_json_dir = make_dir + '/json/'
 os.makedirs(save_docx_dir, exist_ok=True)
 doc.save(save_docx_file)
 
@@ -179,7 +162,8 @@ def main():
 
                             solution_paths_str = print_paths(solution_paths)
                             logger.info("Solution_Paths after remove: \n{0}".format(solution_paths_str))
-                            log_str = ("Target Variable: {0}, Paths Count：{1}, Sympy Num Paths Count：{2}\nResult List: {3}"
+                            log_str = ("Target Variable: {0}, Paths Count：{1}, Sympy Num Paths Count：{2}\nResult "
+                                       "List: {3}"
                                        .format(target_v, paths_count, sympy_num_paths_count, result_list))
                             logger.info(log_str)
                             print_docx += log_str

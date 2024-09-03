@@ -79,7 +79,6 @@ def main():
                     history, CoT_output, _ = dolphin_chat_utils.chat(
                         history, system_m, model1, tokenizer1, model1_name, CoT_input, logger, model_tokenizer_device,
                         False)
-                    add_para(add_doc, "### CoT_input\n{0}\n\n### CoT_output\n{1}\n\n".format(CoT_input, CoT_output))
 
                     # PoT
                     PoT_input = "Let's write a Python program."
@@ -99,8 +98,9 @@ def main():
                     else:
                         add_title(add_doc, "\n\n{0}: 题目{1}, 答案错误".format(dataset_name, q_num))
                         add_para(add_doc, question)
-                    add_para_highlight(add_doc, "answer_list: {0}\npot_result: {1}\n\n".format(answer_list, PoT_answer))
+                    add_para(add_doc, "### CoT_input\n{0}\n\n### CoT_output\n{1}\n\n".format(CoT_input, CoT_output))
                     add_para(add_doc, "### PoT_input\n{0}\n\n### PoT_output\n{1}\n\n".format(input_all, PoT_output))
+                    add_para_highlight(add_doc, "answer_list: {0}\npot_result: {1}\n\n".format(answer_list, PoT_answer))
 
                     add_doc.save(save_docx_file)
                     logger.info("### q_sum: {0}, q_correct: {1}, accuracy：{2}% ###".format(
