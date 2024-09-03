@@ -1,10 +1,10 @@
 from docx import Document
-from prompts.CoT_good_prompts import CoT_en_prompts
 import json
 from datetime import datetime
 import torch
 import os
-from utils import chat_utils, dolphin_chat_utils, neural_chat_utils, openorca_chat_utils, prompts
+from utils.prompts import extract_code
+from utils import dolphin_chat_utils
 
 from utils.chat_utils import get_gpu_memory
 from utils.docx_utils import add_para, add_title, add_dictionary, add_para_highlight
@@ -21,7 +21,7 @@ model_dir = "/mnt/zmb/zmb_workspace/model/"
 auto_dir = "prompts/template/Auto/"
 save_json_dir = "outputs/auto/json/"
 
-log_dir = 'outputs/auto_cot3_pot/log/{0}'.format(date)
+log_dir = 'outputs/auto_cot_pot/log/{0}'.format(date)
 os.makedirs(log_dir, exist_ok=True)
 logger = LoggerConfig(log_file='{0}/{1}.log'.format(log_dir, now_time)).logger
 
@@ -76,16 +76,17 @@ def main():
                             "Please list all variables and required calculation formulas in the question."
                             "Then let's solve the question step by step.")
                     CoT_input = CoT3.format(question=question)
-                    history, _, _ = dolphin_chat_utils.chat(
+                    history, CoT_output, _ = dolphin_chat_utils.chat(
                         history, system_m, model1, tokenizer1, model1_name, CoT_input, logger, model_tokenizer_device,
                         False)
+                    add_para(add_doc, "### CoT_input\n{0}\n\n### CoT_output\n{1}\n\n".format(CoT_input, CoT_output))
 
                     # PoT
                     PoT_input = "Let's write a Python program."
                     history, PoT_output, input_all = dolphin_chat_utils.chat(
                         history, system_m, model1, tokenizer1, model1_name, PoT_input, logger, model_tokenizer_device,
                         False)
-                    output_code = prompts.extract_code(PoT_output)
+                    output_code = extract_code(PoT_output)
                     PoT_answer = check_indent_and_run(output_code)
 
                     logger.info("answer_list: {0}\npot_result: {1}\n\n".format(answer_list, PoT_answer))
