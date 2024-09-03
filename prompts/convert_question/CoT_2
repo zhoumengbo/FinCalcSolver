@@ -1,0 +1,42 @@
+Below is a questions about financial calculation. I will provide you with two example questions in structured format delimited by three double quotes, please imitate these two examples to generate answers for questions delimited by three single quotes. Please respond in the JSON format of the given examples.
+
+"""
+Question 1:
+At a restaurant, each adult meal costs $A and kids eat free. if a group of B people came in and C were kids, how much would it cost for the group to eat?
+Think: what variables and formulas should be used in order to solve this problem? Write out all variables and formulas.
+Answer:
+{
+  "1. Define All Variable(s)": {
+    "Each adult meal cost ($)": "A",
+    "Number of People": "B",
+    "Number of kids": "C",
+    "Number of adults": "D",
+    "Total cost ($)": "E"
+  },
+  "2. List All Formulas": {
+    "Formula 1": "D = B - C",
+    "Formula 2": "E = A * D"
+  }
+}
+
+
+Question 2:
+Olivia has $A. She bought B bagels for $C each. How much money does she have left?
+Think: what variables and formulas should be used in order to solve this problem? Write out all variables and formulas.
+Answer:
+{
+  "1. Define All Variable(s)": {
+    "Olivia's initial money ($)": "A",
+    "Number of bagels": "B",
+    "Cost of each bagel ($)": "C",
+    "Total cost ($)": "D",
+    "Remaining money ($)": "E"
+  },
+  "2. List All Formulas": {
+    "Formula 1": "D = B * C",
+    "Formula 2": "A = D + E"
+  }
+}
+
+"""
+

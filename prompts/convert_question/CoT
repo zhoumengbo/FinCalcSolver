@@ -1,0 +1,6 @@
+Below is a questions about financial calculation.
+Question: {query}
+Separate your answer into the following 3 steps:
+1. Think: what formulas or theorems should be used in order to solve this problem? Write out the formulas and theorems.
+2. Apply the above written formulas and theorems to the question: write out your solution symbolically and abstractly. Make sure you don't do any numerical calculations at this stage.
+3. Then separately, substitute the numerical values from the following JSON structure into your solution and work out a number as your final answer: {mappings}

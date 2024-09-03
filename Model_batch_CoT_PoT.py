@@ -17,7 +17,7 @@ print(get_gpu_memory())
 date = datetime.now().date()
 now_time = datetime.now().time()
 
-model_dir = "/home/ligy/zmb_workspace/model/"
+model_dir = "/mnt/zmb/zmb_workspace/model/"
 auto_dir = "prompts/template/Auto/"
 save_json_dir = "outputs/auto/json/"
 
@@ -36,7 +36,7 @@ doc = Document()
 doc.add_heading('已采纳题目结果', 0)
 dataset_dir = "dataset/benchmark/"
 adopt_json_file = dataset_dir + "adopt.json"
-save_docx_dir = "outputs/auto_cot3_pot/docx/"
+save_docx_dir = "outputs/auto_cot_pot/docx/"
 save_docx_file = save_docx_dir + "results.docx"
 os.makedirs(save_docx_dir, exist_ok=True)
 doc.save(save_docx_file)

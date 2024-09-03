@@ -1,0 +1,35 @@
+Your goal is to write a Python function that return the value to the variable answer. I will provide you with two example questions in python format delimited by three double quotes, please imitate these two examples to generate answers for questions delimited by three single quotes. Please respond in the code format of the given examples.
+
+"""
+Question 1:
+At a restaurant, each adult meal costs A and kids eat free. if a group of B people came in and C were kids, how much would it cost for the group to eat?
+Mapping: A:5, B:15, C:8
+Answer:
+```python
+def solve(A, B, C):
+    D = B - C
+    output = A * D
+    return output
+print(solve(5, 15, 8))
+```
+
+Question 2:
+Olivia has $A. She bought B bagels for $C each. How much money does she have left?
+Mapping: A:23, B:5, C:3
+Answer:
+```python
+def solve(A, B, C):
+    D = B * C
+    output = A - D
+    return out
+print(solve(23, 5, 3)）
+```
+
+"""
+
+'''
+Question: {query}
+Mapping: {mappings}
+'''
+
+Answer:
