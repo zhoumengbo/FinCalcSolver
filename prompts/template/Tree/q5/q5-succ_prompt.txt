@@ -1,0 +1,89 @@
+###1
+Below is a question about financial calculation.
+Question: Jindi Company's 2015 income statement shows sales revenue of 8 million yuan, with net profit being 8% of sales revenue. The balance sheet shows current assets of 2 million yuan, fixed assets of 6 million yuan, net working capital of 1 million yuan, and long-term liabilities of 3 million yuan. Please calculate the Return on Equity (ROE). Please do not use the DuPont formula.
+
+Please only list Target Variable(s) and use abbreviations to represent each variable. Please remember these Target Variable(s), later we will use them. Instruction: Clearly identify the final variable(s) that the calculation seeks to resolve. These target variables represent the end goal of the calculation process and are derived from the combination of input and intermediate variables. Defining the target variables sets a clear objective for what the calculation will ascertain. Do not to engage in any form of calculation. Note that only list target variable(s). There must be no redundant information other than the target variable(s).
+
+###2 (好像更好一些）
+Identify all the numerical values in the question, including implicit numerical values such as "three-month," "three months," "five-inch," "five inches," etc. And convert "1 million" or "one million" into 1,000,000, etc. However, do not include numerical values that require derivation and calculation. In the following, we will assign variable names to these numerical values. Please remember these variables as "Input Variable(s)" as a whole, later we will refer to these "Input Variable(s)".
+For each numerical value identified above, perform the following tasks:
+1. In accordance with the context of the question and following financial industry conventions, for this numerical value, create a new variable and define its variable name in an English abbreviation form that conforms to financial industry standards.
+2. Assign the numerical value(note:only numbers, no formulas or equations or other variables) to this variable.
+3. Based on the context of the question, provide a financial interpretation for this variable.
+4. Extract the unit of the numerical value.
+5. Present the financial interpretation, variable name, unit, and numerical value in a structured format in list form.
+
+###2
+Identify all the numerical values in the question, including implicit numerical values such as "three-month," "three months," "five-inch," "five inches," etc. And convert "1 million" or "one million" into 1,000,000, etc. However, do not include numerical values that require derivation and calculation. In the following, we will assign variable names to these numerical values. Please remember these variables as "Input Variable(s)" as a whole, later we will refer to these "Input Variable(s)".
+For each numerical value identified above, perform the following tasks:
+1. In accordance with the context of the question and following financial industry conventions, for this numerical value, create a new variable and define its variable name in an English acronym form that conforms to financial industry standards and Finance common practice(note: acronym form is MUST, i.e. use "FV" for "Face Value", etc.).
+2. Assign the numerical value(note:only numbers, no formulas or equations or other variables) to this variable.
+3. Based on the context of the question, provide a financial interpretation for this variable.
+4. Extract the unit of the numerical value.
+5. Present the variable name, variable name in full, financial interpretation, unit, and numerical value in a structured format in table form. Example: | FV | Face Value | Principal or face value of the bond in question | Yuan | 5000 |
+
+###3
+You are a finance expert. Do the following tasks:
+For each variable in Input Variable(s) and Target Variable(s), perform the following steps:
+1. List all formulas/equations in Finance involving the-said variable (note: list all formulas/equations involving this variable. If a variable does not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Create necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to the question and Finance common practice.
+
+###3 (好像更加准确一些）
+You are a finance expert. Do the following tasks:
+For each variable in Input Variable(s) and then for each variable in Target Variable(s), perform the following steps:
+1. List all formulas/equations in Finance which involve the-said variable (note: list all formulas/equations involving this variable).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to Finance common practice.
+
+
+###4
+You are a finance expert. Do the following tasks:
+For each variable in the Intermediate Variables, perform the following steps:
+1. List all formulas/equations in Finance which involve the-said variable (note: list all formulas/equations involving this variable).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to Finance common practice.
+
+
+###5  这里可能要重复几遍
+You are a finance expert. Do the following tasks:
+For each variable in all Intermediate Variables, perform the following steps:
+1. List all formulas/equations in Finance which involve the-said variable (note: list all formulas/equations involving this variable).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to Finance common practice.
+
+
+###6
+You are a Finance expert. Combine the Input Variables and the Target Variables and the Intermediate Variables into a new set A. Manually enumerate all possible combinations of two elements from this set. Do not use any programming language or code to generate these combinations. Instead, list each possible pair of elements from set A, ensuring that each combination is unique and no pair is repeated. Provide a complete list of these two-element combinations. For each of these two-element combinations, say (a, b), perform the following steps:
+1. List all formulas/equations in Finance involving the-said variable a and b (note: list all formulas/equations involving the two variables. If the two variables do not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Create necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to the question and Finance common practice.
+
+
+###7 （可能要重复几遍）
+You are a Finance expert. Put all variables into a new set A. Manually enumerate all possible combinations of two elements from this set. Do not use any programming language or code to generate these combinations. Instead, list each possible pair of elements from set A, ensuring that each combination is unique and no pair is repeated. Provide a complete list of these two-element combinations. For each of these two-element combinations, say (a, b), perform the following steps:
+1. List all formulas/equations in Finance involving the-said variable a and b (note: list all formulas/equations involving the two variables. If the two variables do not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Create necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to the question and Finance common practice.
+
+
+###8
+q5-CoT-JSON-2.txt
+
+
+
+## 附录
+Combine the variables in the Input Variable(s) and in the Target Variable(s) into a new set A, where its elements are the variables. Manually enumerate all possible combinations of two elements from this set. Do not use any programming language or code to generate these combinations. Instead, list each possible pair of elements from set A, ensuring that each combination is unique and no pair is repeated. Provide a complete list of these two-element combinations.<|im_end|>
+
+###4
+You are a finance expert. For each pair of variables a and b in Input Variables(s) and Target Variable(s), perform the following steps:
+1. List all formulas/equations in Finance involving the-said variable a and b (note: list all formulas/equations involving the two variables. If the two variables do not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Create necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to the question and Finance common practice.
+
+###6
+You are a Finance expert. Combine the Input Variables and the Target Variables and the Intermediate Variables into a new set A. Manually enumerate all possible combinations of two elements from this set. Do not use any programming language or code to generate these combinations. Instead, list each possible pair of elements from set A, ensuring that each combination is unique and no pair is repeated. Provide a complete list of these two-element combinations. For each of these two-element combinations, say (a, b), perform the following steps:
+1. List all formulas/equations in Finance involving the-said variable a and b (note: list all formulas/equations involving the two variables. If the two variables do not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Create necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to the question and Finance common practice.
+
+###2
+Identify all the numerical values in the question, including implicit numerical values such as "three-month," "three months," "five-inch," "five inches," etc. And convert "1 million" or "one million" into 1,000,000, etc. However, do not include numerical values that require derivation and calculation. In the following, we will assign variable names to these numerical values. Please remember these variables as "Input Variable(s)" as a whole, later we will refer to these "Input Variable(s)".
+For each numerical value identified above, perform the following tasks:
+1. In accordance with the context of the question and following financial industry conventions, for this numerical value, create a new variable and define its variable name in an English acronym form that conforms to financial industry standards and Finance common practice(note: acronym form is MUST, i.e. use "FV" for "Face Value", etc.).
+2. Assign the numerical value(note:only numbers, no formulas or equations or other variables) to this variable.
+3. Based on the context of the question, provide a financial interpretation for this variable.
+4. Extract the unit of the numerical value.
+5. Present the variable name, variable name in full, financial interpretation, unit, and numerical value in a structured format in table form. Example: | FV | Face Value | Principal or face value of the bond in question | Yuan | 5000 |

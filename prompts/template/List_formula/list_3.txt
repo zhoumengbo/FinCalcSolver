@@ -1,0 +1,58 @@
+###1
+Below is a question about financial calculation.
+Question: Jindi Company's 2015 income statement shows sales revenue of 8 million yuan, with net profit being 0.08 of sales revenue. The balance sheet shows current assets of 2 million yuan, fixed assets of 6 million yuan, net working capital of 1 million yuan, and long-term liabilities of 3 million yuan. Please calculate the Return on Equity (ROE). Please do not use the DuPont formula.
+
+Please list target variable(s). Instruction: Clearly identify the final variable(s) that the calculation seeks to resolve. These target variables represent the end goal of the calculation process and are derived from the combination of input and intermediate variables. Defining the target variables sets a clear objective for what the calculation will ascertain.
+
+
+###2
+Please list all the numerical information in the question. Focus exclusively on the numbers given in the question, assigning each a unique variable. Instruction: List each numerical detail explicitly mentioned in the question as a unique variable. Focus exclusively on the numbers given in the question, without including inferred or calculated values. Precisely assign the actual numerical values to the input variables identified in the first step. This involves directly transferring the quantitative data from the question to the respective variables, ensuring accuracy in the values being used as the basis for calculations. This approach is essential for laying the groundwork for the calculation process, ensuring that all relevant numerical data are systematically defined and ready for use. At this stage, only direct value assignments should be made, without performing any form of calculation. Avoid the use of any calculation symbols (such as plus, minus, multiply, divide).
+
+
+###3
+Focus your attention on the aforementioned variables(including the target variable), setting aside the question. You have a vast reserve of financial knowledge and are familiar with all financial formulas and theorems. Please list all formulas related to each of these variables in finance. Consider all possible calculation formulas and theorems in which these variables might be used. Note that for every pair of variables, you must list all the formulas involving their relationship in finance. If multiple formulas exist for two variables, list them all. However, if no formula exists between two variables, do not list any formula randomly! The formula must be correct and relevant. Do not limit yourself to the formulas mentioned in the question, but include all formulas involving these variables. Be careful not to engage in any form of inference.
+
+
+###4
+Focus your attention on the aforementioned variables(including the target variable), setting aside the question. You have a vast reserve of financial knowledge and are familiar with all financial formulas and theorems. For every two aforementioned variables, list all formulas that express the relationship between them. Consider all possible calculation formulas and theorems in which these variables might be used. Note that for every pair of variables, you must list all the formulas involving their relationship in finance. If multiple formulas exist for two variables, list them all. However, if no formula exists between two variables, do not list any formula randomly! The formula must be correct and relevant. Do not limit yourself to the formulas mentioned in the question, but include all formulas involving these variables. Be careful not to engage in any form of inference.
+
+
+###5
+Among the formulas you have listed above, which one is used for the direct calculation of the target variable? Please list only the direct calculation formula for the target variable. Note that you should only list the formula for calculating the target variable and avoid listing other formulas or engaging in any form of inference.
+
+
+###6
+Among the formulas you have listed above, which one is used for the direct calculation of the "Net profit"? Please list only the direct calculation formula for the "Net profit". Note that you should only list the formula for calculating the "Net profit" and avoid listing other formulas or engaging in any form of inference.
+
+
+###7
+Among the formulas you have listed above, which one is used for the direct calculation of the "Shareholders' equity"? Please list only the direct calculation formula for the "Shareholders' equity". Note that you should only list the formula for calculating the "Shareholders' equity" and avoid listing other formulas or engaging in any form of inference.
+
+
+###8
+Among the formulas you have listed above, which one is used for the direct calculation of the "Total assets"? Please list only the direct calculation formula for the "Total assets". Note that you should only list the formula for calculating the "Total assets" and avoid listing other formulas or engaging in any form of inference.
+
+###8-check
+Among the formulas you have listed above, which one is used for the direct calculation of the "Other assets"? Please list only the direct calculation formula for the "Other assets". Note that you should only list the formula for calculating the "Other assets" and avoid listing other formulas or engaging in any form of inference. If you cannot find a formula for calculating "Other assets", please re-read the question and, based on the question, either modify the formula for calculating "Total assets" or use a different formula.
+
+###9
+Among the formulas you have listed above, which one is used for the direct calculation of the "Total liabilities"? Please list only the direct calculation formula for the "Total liabilities". Note that you should only list the formula for calculating the "Total liabilities" and avoid listing other formulas or engaging in any form of inference.
+
+###10
+Among the formulas you have listed above, which one is used for the direct calculation of the "Current liabilities"? Please list only the direct calculation formula for the "Current liabilities". Note that you should only list the formula for calculating the "Current liabilities" and avoid listing other formulas or engaging in any form of inference.
+
+###10-check
+In the formulas you have listed, the variables "Accounts payable", "Short-term debt", and "Accrued expenses" are not defined. Please re-read the question and determine whether you need to revise this formula or replace it with another formula that includes "Current liabilities". Avoid listing other formulas or engaging in any form of inference.
+
+
+###3步法则算不出来：
+Now I am sure that the "Cost of Goods Sold" in your formula cannot be calculated. Could you please check if there is another calculation formula?
+
+###冗余的变量能删还是不能删
+Now you are a strict financial expert teacher, and you believe the correct formula should be 'Total assets = Current assets + Fixed assets + Other assets'. A student's answer is 'total assets = Current assets + Fixed assets', which lacks the 'Other assets' part, because we don't know the value for Other assets ie it is unsolvable. Is the student's formula correct?
+
+###
+Now you are a strict financial expert teacher. A student is facing a formula: 'Accounts payable = Cost of Goods Sold + Other expenses paid on credit + Accrued expenses (e.g., salaries, rent, utilities)'. Due to the fact that we don't know the value for Cost of Goods Sold i.e. it is unsolvable, the student determined to remove the 'Cost of Goods Sold' and then got the following formula: 'Accounts payable = Other expenses paid on credit + Accrued expenses (e.g., salaries, rent, utilities)', where 'Cost of Goods Sold' was removed.  Is the student's formula still correct without the 'Cost of Goods Sold" part?  I think my question is: under reasonable assumption, can we make assumption that one particular coampany's 'Cost of Goods Sold" part equals to 0?
+
+###
+Now you are a strict financial expert teacher. A student is facing a formula: 'Total Assets = Current Assets + Fixed Assets + Other Assets'. Due to the fact that we don't know the value for Other Assets i.e. it is unsolvable, the student made the decision to remove the 'Other Assets' and then got the following formula: 'Total Assets = Current Assets + Fixed Assets', where 'Other Assets' was removed.  Is the student's formula still correct without the 'Other Assets" part? I think my question is: under reasonable assumption, can we make assumption that one particular coampany's 'Other Assets" part equals to 0?

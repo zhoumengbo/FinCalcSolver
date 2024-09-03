@@ -1,0 +1,4 @@
+### INSTRUCTION ###
+Using the established corresponding relationships, replace the variables in '{formula}' with their defined Variable Names to create a new formula utilizing these predetermined Variable Names.
+
+Note: You must ensure one-to-one correspondence when replacing, and avoid making any deductions. Must not use the numerical values for calculation.

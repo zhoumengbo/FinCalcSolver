@@ -1,0 +1,7 @@
+### INSTRUCTION ###
+Please determine whether the variable "New stock price after warrant exercise" appearing in the previous formula is known in the question. If so, output its value; if not, think about what formula or equation I should use to solve it?
+Note: Must not perform calculations.
+
+### INSTRUCTION ###
+Please determine whether the variable "New_stock_price" appearing in the previous formula is known in the question. If so, output its value; if not, think about what formula or equation I should use to solve it?
+Note: Must not perform calculations.

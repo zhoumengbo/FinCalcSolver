@@ -1,0 +1,42 @@
+Two-Element Combinations:
+1. (face_value, annual_coupon_rate)
+2. (face_value, annual_discount_rate)
+3. (face_value, maturity_year)
+4. (face_value, compounding_basis)
+5. (face_value, accrued_interests)
+6. (face_value, lump_sum_payment)
+7. (face_value, present_value)
+8. (annual_coupon_rate, annual_discount_rate)
+9. (annual_coupon_rate, maturity_year)
+10. (annual_coupon_rate, compounding_basis)
+11. (annual_coupon_rate, accrued_interests)
+12. (annual_coupon_rate, lump_sum_payment)
+13. (annual_coupon_rate, present_value)
+14. (annual_discount_rate, maturity_year)
+15. (annual_discount_rate, compounding_basis)
+16. (annual_discount_rate, accrued_interests)
+17. (annual_discount_rate, lump_sum_payment)
+18. (annual_discount_rate, present_value)
+19. (maturity_year, compounding_basis)
+20. (maturity_year, accrued_interests)
+21. (maturity_year, lump_sum_payment)
+22. (maturity_year, present_value)
+23. (compounding_basis, accrued_interests)
+24. (compounding_basis, lump_sum_payment)
+25. (compounding_basis, present_value)
+26. (accrued_interests, lump_sum_payment)
+27. (accrued_interests, present_value)
+28. (lump_sum_payment, present_value)
+
+
+-------------------------------------------
+
+Given the above 'Two-Element Combinations' table, for each of these two-element combinations, represented as (a, b), perform the following steps:
+1. List all formulas/equations in Finance involving the-said two variables a and b (note: list all formulas/equations involving the two variables. If the two variables do not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question in the [Question] section delimited by three backticks, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Create necessary but non-duplicating Intermediate Variables (note: Intermediate Variables should not  with any of those Target Variables or Input Variables) according to the question and Finance common practice.
+
+
+-------------------------------------------
+```[Question]
+Question: There is a 5-year government bond with a face value of 1000 yuan, an annual coupon rate of 0.12. And the interests are compounded(using the annual coupon rate 0.12) annually but not physically paid out to the investor until maturity. Instead, these interests are accrued and recorded and added to the previous compounding basis to form the new basis for compounding(using the annual coupon rate 0.12 to compound) the next year. That's to say, in year 0, the compounding basis is 1000 yuan, then in year 1, the compounding basis becomes 1000*(1+0.12)^1 yuan, in year 2, the compounding basis becomes 1000*(1+0.12)^2 yuan, ... so on and so forth. Then all the accrued interests are paid out at maturity in a lump-sum payment, together with the repayment of the principal. That's to say, both the principal and accrued interests are physically paid out to the investor in a single lump-sum payment at maturity. Assuming an annual discount rate of 0.1, what is its present value?
+```

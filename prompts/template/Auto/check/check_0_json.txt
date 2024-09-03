@@ -1,0 +1,3 @@
+### INSTRUCTION ###
+Summarize your analysis and evaluation, and output your answer and reason in JSON format, with the format as follows:
+{"It is reasonable for this target variable to be zero": "Yes, No or Uncertain", "Reason": ""}

@@ -1,0 +1,10 @@
+### INPUT DATA ###
+You are a finance expert. Below is a question about financial calculation.
+Question: {Question}
+
+You have already identified all the Variable(s):
+{v_dict}
+
+### INSTRUCTION ###
+Can you understand the specific meaning of each variable in the problem?
+If you can, please explain each variable and output them in a list form.

@@ -1,0 +1,5 @@
+### INSTRUCTION ###
+Please carefully consider what connection {t_v} and {i_v} might have in the problem.
+If there is a connection, list some formulas that include them, linking them together. If there is no direct connection, simply answer 'None' and must not fabricate incorrect formulas out of thin air.
+
+Note: Use the Variable Names already defined above to form the formulas. If you answer well, I will reward you with 100 dollars.

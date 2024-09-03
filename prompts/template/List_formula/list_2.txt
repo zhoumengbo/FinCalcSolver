@@ -1,0 +1,30 @@
+### INSTRUCTION ###
+In finance, you need to consider all the possible calculation formulas and theorems that the variables in Variables Set(delimited by three backticks) might be used. I will provide you with an output template(delimited by three double quotes) in JSON format, please output according to this format.
+
+### Template ###
+"""
+Formulas:
+{
+"Simple Interest Formula": "I = P * r * t"
+"Compound Interest Formula": "FV = P * (1 + (r/n))^(n*t)"
+"Present Value Formula": "PV = FV / (1 + r)^n",
+}
+"""
+
+### INPUT DATA ###
+```
+Variables Set:
+[
+  "Sales revenue (yuan)",
+  "Net profit (yuan)",
+  "Current assets (yuan)",
+  "Fixed assets (yuan)",
+  "Net working capital (yuan)",
+  "Long-term liabilities (yuan)",
+  "Total assets (yuan)",
+  "Shareholders' equity (yuan)",
+  "Return on Equity (ROE)"
+]
+```
+
+List all formulas that involve the relationship between these variables in finance: Note that for every two variables, list all the formulas that involve the relationship between these two variables in finance. If there are multiple formulas for two variables, you must List them all. But if there is no formula between the two variables, be sure not to list the formula randomly! The formula must be correct! Please output these formulas using the JSON format as shown in the template.

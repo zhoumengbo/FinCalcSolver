@@ -1,0 +1,8 @@
+### INSTRUCTION 3
+List all formulas/equations you provided above in a list format.
+
+For each formula/equation, perform the following steps:
+1. Apply the formula/equation to our specific question, list the formula/equation that should be used to solve this problem(note: don't substitute numerical values into formula/equation).
+2. Define necessary but non-duplicating Intermediate Variable(s) according to Finance common practice. Intermediate variables are new variables that appear in the formula. Please strictly distinguish them from the provided input variables and target variables. If a variable is neither in Input Variable(s) nor Target Variable(s), we define it as an intermediate variable.
+
+Note: Use underscores to connect words within each variable name. For example, if the financial term is 'Interest Rate', then the variable name should be 'Interest_rate'. The variable names in formulas/equations must also be represented in this manner, such as "Interest_2024 = Deposit_amount * Interest_rate * Term_of_deposit".

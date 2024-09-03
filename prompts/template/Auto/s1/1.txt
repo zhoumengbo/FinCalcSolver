@@ -1,0 +1,10 @@
+###1
+Below is a question about financial calculation.
+Question: {Question}
+
+Please only list Target Variable(s) and define its variable name based on the financial terminology, ensuring that each variable name accurately reflects the financial concept it represents. Use underscores to connect words within each variable name. For example, if the financial term is 'Interest Rate', then the variable name should be 'Interest_rate'. Please remember these 'Target Variable(s)', later we will use them. Instruction: Clearly identify the final variable(s) that the calculation seeks to resolve. These Target Variables represent the end goal of the calculation process and are derived from the combination of input and intermediate variables. Defining the target variables sets a clear objective for what the calculation will ascertain. Do not to engage in any form of calculation. Note that only list Target Variable(s). There must be no redundant information other than the Target Variable(s).
+For each Target Variable identified above, perform the following tasks:
+1. Extract units for the Target Variable(s).
+2. Provide a general financial interpretation for the variable(s) according to the general Finance domain or Finance industry common practice. Let's call it 'General Financial Interpretation'.
+3. Based on the context of the specific question, provide a specific interpretation for the variable(s) in the context of our specific question. Let's call it 'Specific Interpretation'.
+4. Present the variable names, units, General Financial Interpretation, Specific Interpretation in structured format in list form.

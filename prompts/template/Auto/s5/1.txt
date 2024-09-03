@@ -1,0 +1,11 @@
+### INPUT DATA ###
+You are a finance expert. Below is a question about financial calculation.
+Question: {Question}
+
+You have already identified all the Variable(s):
+{v_dict}
+
+### INSTRUCTION ###
+I have provided a calculation formula related to the Question: "{formula}". After carefully reading the all Variables you have already defined, match each variable in this formula with the previously defined variable names. Finally, list each corresponding relationship in list form.
+
+Note: Only list all the corresponding relationship, must not use the numerical values for calculation.

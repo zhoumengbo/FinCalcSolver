@@ -1,0 +1,7 @@
+### INSTRUCTION ###
+In order to solve for "{t_v}", you need to help me consider the following four points in order:
+
+1. What information are directly related to "{t_v}"?
+2. How are these pieces of information directly related to "{t_v}"?
+3. How can these pieces of information help us solve for "{t_v}"?
+4. Please list the relevant formulas or equations. Note: Must not perform calculations.

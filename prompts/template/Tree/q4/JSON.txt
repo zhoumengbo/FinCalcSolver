@@ -1,0 +1,73 @@
+{
+  "Target Variable(s)": [
+    {
+      "Variable Name": "New_cost_of_equity_capital",
+      "Unit": "%",
+      "General Financial Interpretation": "The expected rate of return on the company's equity capital after the issuance of bonds.",
+      "Specific Interpretation": "The expected rate of return on the company's equity capital after the issuance of bonds, considering the change in the company's capital structure and the interest rate on the bonds."
+    },
+    {
+      "Variable Name": "Weighted_average_cost_of_capital",
+      "Unit": "%",
+      "General Financial Interpretation": "The average cost of all sources of capital in the company's capital structure, weighted by their respective proportions.",
+      "Specific Interpretation": "The average cost of all sources of capital in the company's new capital structure, considering the market value of bonds and the corporate tax rate."
+    }
+  ]
+}
+
+{
+  "Input Variable(s)": [
+    {
+      "Variable Name": "Cost_of_Equity_Capital_Company_B",
+      "Numerical Value": 0.12,
+      "Unit": "",
+      "General Financial Interpretation": "The cost of equity capital represents the required return on equity for a company.",
+      "Specific Interpretation": "The cost of equity capital for Company B is 0.12."
+    },
+    {
+      "Variable Name": "Interest_Rate_Bonds",
+      "Numerical Value": 0.08,
+      "Unit": "",
+      "General Financial Interpretation": "The interest rate represents the cost of borrowing for a company.",
+      "Specific Interpretation": "The interest rate for Company B's bonds is 0.08."
+    },
+    {
+      "Variable Name": "Market_Value_of_Bonds",
+      "Numerical Value": 0.45,
+      "Unit": "",
+      "General Financial Interpretation": "The market value of bonds represents the proportion of a company's value represented by its bond issuance.",
+      "Specific Interpretation": "In the new capital structure, the market value of Company B's bonds will represent 0.45 of the company's value."
+    },
+    {
+      "Variable Name": "Corporate_Tax_Rate",
+      "Numerical Value": 0.25,
+      "Unit": "",
+      "General Financial Interpretation": "The corporate tax rate represents the percentage of a company's income that is paid in taxes.",
+      "Specific Interpretation": "The corporate tax rate for Company B is 0.25."
+    }
+  ]
+}
+
+
+{
+  "Intermediate Variable(s)": [
+    {
+      "Variable Name": "Market_Value_of_Equity",
+      "Unit": "$",
+      "General Financial Interpretation": "The market value of equity represents the market value of the company's shares.",
+      "Specific Interpretation": "In the context of our specific question, the market value of equity represents the market value of the company's shares."
+    },
+    {
+      "Variable Name": "Market_Value_of_Company",
+      "Unit": "$",
+      "General Financial Interpretation": "The market value of the company represents the total market value of the company's equity and debt.",
+      "Specific Interpretation": "In the context of our specific question, the market value of the company represents the total market value of the company's equity and debt."
+    },
+    {
+      "Variable Name": "Market_Value_of_Bonds",
+      "Unit": "$",
+      "General Financial Interpretation": "The market value of bonds represents the proportion of the company's value represented by its bond issuance.",
+      "Specific Interpretation": "In the context of our specific question, the market value of bonds represents the proportion of the company's value represented by its bond issuance."
+    }
+  ]
+}

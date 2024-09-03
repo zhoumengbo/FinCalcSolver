@@ -1,0 +1,18 @@
+### INPUT DATA ###
+Below is a question about financial calculation.
+Question: {Question}
+
+I have already defined all the Variable(s) inside the three backticks and provided you with some formula(s)/equation(s) inside @@@.
+
+```
+{variable}
+```
+
+@@@
+{formula_list}
+@@@
+
+### INSTRUCTION ###
+1. Carefully read the Question and already defined Variable(s) inside the three backticks, and consider thoroughly, comprehensively, and patiently how to solve the Question.
+2. Select some formula(s)/equation(s) inside @@@ that you believe are correct and appropriate. You need to consider the meaning of the variables in these formulas within the context of the problem, and identify which of these correspond to Variables already defined inside the three backticks.
+3. Solve the problem step by step. Please note that some formulas may be directly related and need to be solved jointly. Or, you may need to find a more suitable calculation formula for this problem.

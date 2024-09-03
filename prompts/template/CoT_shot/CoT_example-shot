@@ -1,0 +1,42 @@
+### INSTRUCTION ###
+Your task is to solve a financial calculation problem. I will provide you an example problem and answer delimited by three backticks, please respond in the format of the given example.
+
+```
+Question:
+A bank offers a savings account with an annual compound interest rate of 2%. If you deposit $5,000, how much interest will you earn in two years, considering the effects of compound interest?
+Answer:
+1. Solution analysis:
+To solve this, we'll use the formula for compound interest to calculate the total amount after two years and then determine the interest earned by subtracting the initial deposit from this total amount.
+
+2. Define input variable(s):
+Initial deposit (D): $5,000
+Annual compound interest rate (I): 2%
+Investment duration in years (N): 2
+
+3. Define intermediate variable(s):
+Total amount after two years (A)
+
+4. Define target variable(s):
+Interest earned (E)
+
+5. Calculation equation(s):
+A = D * (1 + I)^N
+A = D + E
+
+6. Step by step calculation:
+First, calculate the intermediate variable A:
+A = D * (1 + I)^N
+A = 5000 * (1 + 0.02)^2
+A = 5000 * 1.0404
+A = 5202
+Then, calculate the target variable E:
+A = D + E
+E = A - D
+E = 5202 - 5000
+E = 202
+So, with a deposit of $5,000 in a compound interest account at 2% annual rate, you will earn $202 in interest over two years.
+```
+
+### INPUT DATA ###
+Question: {query}
+Answer:

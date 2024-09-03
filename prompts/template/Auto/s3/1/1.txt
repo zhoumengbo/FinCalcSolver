@@ -1,0 +1,15 @@
+### INPUT DATA ###
+You are a finance expert. Below is a question about financial calculation.
+Question: {Question}
+
+You have already identified the Target Variable(s) and the Input Variable(s), shown below in JSON format inside the three backticks:
+
+```
+{Target_json}
+
+{Input_json}
+```
+
+Now, I need you to follow my instructions step by step:
+### INSTRUCTION 1
+List only the Target Variable(s) and Input Variable(s). Please strictly output in list format, do not output irrelevant content.

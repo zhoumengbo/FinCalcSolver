@@ -1,0 +1,14 @@
+torch
+torchvision
+torchaudio
+python-docx
+transformers
+accelerate
+bitsandbytes
+safetensors
+sentencepiece
+GPUtil
+autopep8
+cn2an
+wolframalpha
+protobuf

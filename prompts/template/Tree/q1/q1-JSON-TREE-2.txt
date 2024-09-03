@@ -1,0 +1,40 @@
+### INSTRUCTION ###
+Your task is to solve a financial calculation problem. I have provided you with all the neccessary information in the JSON format delimited by three backticks, which includes a list of all potentially applicable formulas/equations. Now, I need you to follow my instructions step by step in answering my questions.
+
+
+### JSON SOLUTION ###
+```
+{
+  "1. Define Input Variable(s)": {
+    "Initial Deposit (ID)": "ID (USD)",
+    "Three-year rate in August 2022 (A)": "A (decimal)",
+    "Three-year rate in October 2022 (O)": "O (decimal)",
+    "Three-year rate in January 2023 (J)": "J (decimal)",
+    "Term of deposit (T)": "T (years)"
+  },
+  "2. Input Variable(s) Assignment": {
+    "ID": 100000,
+    "A": 0.0315,
+    "O": 0.03,
+    "J": 0.0285,
+    "T": 3
+  },
+  "3. Define Intermediate Variable(s)": {
+    "Simple Interest in August 2022 (SIA)": "SIA (USD)",
+    "Simple Interest in October 2022 (SIO)": "SIO (USD)",
+    "Simple Interest in January 2023 (SIJ)": "SIJ (USD)"
+  },
+  "4. Define Target Variable(s)": {
+    "Less Interest (L)": "L (USD)"
+  },
+  "5. List the formula(s)/equation(s)": {
+    "eq1": "SIA = ID * A * T",
+    "eq2": "SIO = ID * O * T",
+    "eq3": "SIJ = ID * J * T",
+    "eq4": "L = SIA - SIJ"
+  }
+}
+```
+
+### QUESTION ###
+Among the formulas/equations listed in JSON SOLUTION, extract all formulas/equations involving the Target Variable(s) and list them out. Note that you should only list the formulas/equations that involve Target Variable(s) and avoid listing other formulas/equations or engaging in any form of derivation. Now please output your answer in JSON format, with the format as follows: {"Eq1": "your answer 1", "Eq2": "your answer 2"}, etc. If you don't find any formula/equation, don't create arbitrary answers, just output "none". Please strictly output in JSON format, do not output irrelevant content.

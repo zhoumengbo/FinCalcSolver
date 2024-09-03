@@ -1,0 +1,6 @@
+### INSTRUCTION ###
+In order to solve for "Ms_Brown_Cash_Flow", you need to consider the following three points in order:
+
+1. To solve for "Ms_Brown_Cash_Flow", what variables are directly related to it? Please note that directly related variables indicate a direct correlation between them, and there are certain formulas between them (such as a direct correlation between unit price and total price). These variables may be unknown in the question as they also need to be calculated.
+2. Retrieve whether all directly related variables listed in 1 are known in the question, and if so, output their values.
+3. Based on these directly related variables, please list the formula or equation for solving "Ms_Brown_Cash_Flow". Note: Must not perform calculations.

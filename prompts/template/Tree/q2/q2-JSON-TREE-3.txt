@@ -1,0 +1,99 @@
+### INSTRUCTION ###
+Your task is to solve a financial calculation problem. I have provided you with all the neccessary information in the JSON format delimited by three backticks, which includes a list of all potentially applicable formulas/equations. Now, I need you to follow my instructions step by step in answering my questions.
+
+
+### JSON SOLUTION ###
+```
+{
+  {
+  "Target Variable(s)": [
+    {
+      "Variable Name": "Present_Value",
+      "Unit": "Yuan",
+      "General Financial Interpretation for Variable": "The present value of a financial instrument or investment, which represents the current worth of future cash flows, considering the time value of money and the risk-free interest rate.",
+      "Interpretation Specific to our Question for Variable": "The present value of the 5-year government bond, considering the time value of money and the risk-free interest rate, given the face value, annual coupon rate, and annual discount rate."
+    }
+  ]
+},
+{
+  "Input Variable(s)": [
+    {
+      "Variable Name": "Bond_term",
+      "Numerical Value": 5,
+      "Unit": "years",
+      "General Financial Interpretation for Variable": "The duration of the bond, in years",
+      "Interpretation Specific to our Question for Variable": "The duration of the 5-year government bond"
+    },
+    {
+      "Variable Name": "Face_value",
+      "Numerical Value": 1000,
+      "Unit": "yuan",
+      "General Financial Interpretation for Variable": "The initial principal amount of the bond",
+      "Interpretation Specific to our Question for Variable": "The initial principal amount of the 1000 yuan bond"
+    },
+    {
+      "Variable Name": "Coupon_rate",
+      "Numerical Value": 0.12,
+      "Unit": "",
+      "General Financial Interpretation for Variable": "The annual interest rate paid on the bond",
+      "Interpretation Specific to our Question for Variable": "The annual interest rate of 0.12 paid on the bond"
+    },
+    {
+      "Variable Name": "Discount_rate",
+      "Numerical Value": 0.1,
+      "Unit": "",
+      "General Financial Interpretation for Variable": "The annual interest rate used to discount future cash flows",
+      "Interpretation Specific to our Question for Variable": "The annual interest rate of 0.1 used to discount future cash flows"
+    }
+  ]
+},
+{
+  "Intermediate Variable(s)": [
+    {
+      "Variable Name": "Time_to_maturity",
+      "Unit": "years",
+      "General Financial Interpretation": "The duration of the bond, in years",
+      "Specific Interpretation": "The duration of the 5-year government bond"
+    },
+    {
+      "Variable Name": "Interest_rate",
+      "Unit": "",
+      "General Financial Interpretation": "The annual interest rate paid on the bond",
+      "Specific Interpretation": "The annual interest rate of 0.12 paid on the bond"
+    },
+    {
+      "Variable Name": "Future_value",
+      "Unit": "yuan",
+      "General Financial Interpretation": "The future value of an investment or financial instrument, considering the time value of money and the risk-free interest rate",
+      "Specific Interpretation": "The future value of the bond, considering the time value of money and the risk-free interest rate"
+    },
+    {
+      "Variable Name": "Coupon_payment",
+      "Unit": "yuan",
+      "General Financial Interpretation": "The annual interest payment received from a bond",
+      "Specific Interpretation": "The annual interest payment received from the bond"
+    }
+  ]
+},
+{
+  "eq1": "- Bond_term = 5",
+  "eq2": "- Future_value = Face_value * (1 + Interest_rate)^Time_to_maturity",
+  "eq3": "- Coupon_payment = Face_value * Coupon_rate",
+  "eq4": "- Present_value = Future_value / (1 + Discount_rate)^Time_to_maturity",
+  "eq5": "- Present_value = Face_value * (1 + Discount_rate)^(-Bond_term) + Coupon_payment * (1 + Discount_rate)^(-Bond_term) * (1 - (1 + Discount_rate)^(-Bond_term)) / Discount_rat<|im_end|>",
+  "eq6": "- Time_to_maturity = Bond_term",
+  "eq7": "- Coupon_payment = Face_value * Interest_rate",
+  "eq8": "Present Value = Face Value * (1 + Coupon Rate)^(Bond Term) / (1 + Discount Rate)^(Bond Term)",
+  "eq9": "Future Value = Face Value * (1 + Coupon Rate)^(Bond Term)",
+  "eq10": "Coupon Payment = Face Value * Coupon Rate",
+  "eq11": "Present Value = Face Value / (1 + Discount Rate)^(Bond Term)",
+  "eq12": "Coupon Payment = Face Value * Interest Rate"
+}
+```
+
+### QUESTION ###
+Among the formulas/equations listed in JSON SOLUTION, extract all formulas/equations involving the Target Variable(s) and list them out. Note that you should only list the formulas/equations that involve Target Variable(s) and avoid listing other formulas/equations or engaging in any form of derivation. Now please output your answer in JSON format, with the format as follows: {"Eq1": "your answer 1", "Eq2": "your answer 2"}, etc. If you don't find any formula/equation, don't create arbitrary answers, just output "none". Please strictly output in JSON format, do not output irrelevant content.
+
+
+###
+Among the formulas/equations listed in JSON SOLUTION, extract all formulas/equations involving the "Future_value" and list them out. Note that you should only list the formulas/equations that involve "Future_value" and avoid listing other formulas/equations or engaging in any form of derivation. Now please output your answer in JSON format, with the format as follows: {"Eq1": "your answer 1", "Eq2": "your answer 2"}, etc. If you don't find any formula/equation, don't create arbitrary answers, just output "none". Please strictly output in JSON format, do not output irrelevant content.

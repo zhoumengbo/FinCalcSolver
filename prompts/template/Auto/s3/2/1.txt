@@ -1,0 +1,21 @@
+### INPUT DATA ###
+You are a finance expert. Below is a question about financial calculation.
+Question: {Question}
+
+You have already identified the Target Variable(s) and the Input Variable(s), shown below in JSON format inside the three backticks:
+
+```
+{Target_json}
+
+{Input_json}
+```
+
+Now, I need you to follow my instructions step by step:
+### INSTRUCTION 1
+List only the Target Variable(s).
+
+For each Target Variable, perform the following steps:
+1. Read carefully its "General Financial Interpretation for Variable" section, what's the meaning of this variable in general Finance?
+2. List all formulas/equations in general Finance which involve the-said variable(note: list all formulas/equations involving this variable).
+
+Note: Use underscores to connect words within each variable name. For example, if the financial term is 'Interest Rate', then the variable name should be 'Interest_rate'. The variable names in formulas/equations must also be represented in this manner, such as "Interest_2024 = Deposit_amount * Interest_rate * Term_of_deposit".

@@ -1,0 +1,128 @@
+### INSTRUCTION ###
+Your task is to solve financial calculation problems that are delimited by three double quotes. The output format should be consistent with the Structured Answer Instructions and Example provided. The content of your output should align with the text delimited by three backticks.
+First, I will outline the structured answer instructions and format. This will establish a clear guideline for formulating structured answers. Following these foundational instructions, I will present a sample question and demonstrate its structured solution, applying the outlined instructions for clarity and precision. Please adhere to these instructions for a systematic and comprehensive understanding of the calculation process. Ensure that each variable name is unique across all sections to avoid confusion. Distinctly name input variables, intermediate variables, and target variables, especially if they represent different concepts or stages in the calculation. Ensure to append the unit of measurement to each variable description. Ensure to distinguish between currency units when appending them to variable descriptions, for example, use (yuan) for yuan and ($) for dollars.
+
+### Structured Answer Instruction ###
+{
+  "1. Define Input Variable(s)": {
+    "Instruction": "List each numerical detail explicitly mentioned in the question as a unique variable. Focus exclusively on the numbers given in the question, without including inferred or calculated values. This approach is essential for laying the groundwork for the calculation process, ensuring that all relevant numerical data are systematically defined and ready for use. Avoid including inferred or calculated values at this stage. Input variables should be clearly distinguished from target variables and should not include those variables for which values cannot be extracted from the problem description."
+  },
+  "2. Input Variable(s) Assignment": {
+    "Instruction": "Precisely assign the actual numerical values to the input variables identified in the first step. This involves directly transferring the quantitative data from the question to the respective variables, ensuring accuracy in the values being used as the basis for calculations. At this stage, only direct value assignments should be made, without performing any form of calculation. Avoid the use of any calculation symbols (such as plus, minus, multiply, divide)."
+  },
+  "3. Define Intermediate Variable(s)": {
+    "Instruction": "Enumerate any variables that are crucial for bridging between the initial input data and the final output, but are not explicitly mentioned in the question. Extract the content within the three backticks, focusing primarily on the variables within the formulas. Any variables that are not input or target variables must be defined as intermediate variables."
+  },
+  "4. Define Target Variable(s)": {
+    "Instruction": "Clearly identify the final or target variable(s) that the calculation seeks to solve for or compute. These target variables represent the end goal of the calculation process and are derived from the combination of input and intermediate variables. Defining the target variables sets a clear objective for what the calculation will arrive at. The target variables should not include those variables whose numerical values can already be extracted from the question description and assigned to them(i.e. for these variables it is better to define them as input variables)."
+  },
+  "5. List the equation(s) that include all defined variables": {
+    "Instruction": "Develop equations eventually leading to solve for the target variables(s). To do that, we first develop a system of equations involving all variables. Extract the non-empty formulas within the three backticks and list them one by one. Please use the original formulas and must not derive them. Each equation should be clearly structured."
+  }
+}
+
+### Example ###
+Sample Question:
+Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+
+Structured Answer:
+{
+  "1. Define Input Variable(s)": {
+    "Olivia's initial money ($)": "O",
+    "Cost of each bagel ($)": "B",
+    "Number of bagels": "N"
+  },
+  "2. Input Variable(s) Assignment": {
+    "O": 23,
+    "B": 3,
+    "N": 5
+  },
+  "3. Define Intermediate Variable(s)": {
+    "Total cost ($)": "T"
+  },
+  "4. Define Target Variable(s)": {
+    "Remaining money ($)": "R"
+  },
+  "5. List the equation(s) that include all defined variables": {
+    "eq1": "T = N * B",
+    "eq2": "R = 0 - T"
+  }
+}
+
+### INPUT DATA ###
+"""
+Question: To stimulate economic growth, since 2022, the country has repeatedly lowered bank deposit interest rates. The three-year rate was 0.0315 in August 2022, reduced to 0.03 in October, and further to 0.0285 in January 2023. These rates are simple annual interest rates. In January 2023, if Mr. Wang has a deposit of $100,000 for a fixed term of three years (note that this is a fixed-term deposit for three years), how much less interest will he earn compared to a similar three-year term deposit that if he had started in August 2022? Please use simple interest in your calculations, and do not use exponential or continuous compounding.
+"""
+
+```
+Target Variable(s):
+- Less Interest (L)
+
+Input Variable(s):
+- Initial Deposit Amount (IDA) = $100,000
+- Three-year Rate in August 2022 (T3R_A) = 0.0315
+- Three-year Rate in October 2022 (T3R_O) = 0.03
+- Three-year Rate in January 2023 (T3R_J) = 0.0285
+- Fixed Term of Deposit (FTD) = 3 years
+
+Variable Name:
+- Initial Deposit Amount (IDA)
+- Three-year Rate in August 2022 (T3R_A)
+- Three-year Rate in October 2022 (T3R_O)
+- Three-year Rate in January 2023 (T3R_J)
+- Fixed Term of Deposit (FTD)
+
+Financial Interpretation:
+- Initial Deposit Amount (IDA): The principal amount of money deposited by Mr. Wang for a fixed term of three years.
+- Three-year Rate in August 2022 (T3R_A): The simple annual interest rate for a three-year term deposit in August 2022.
+- Three-year Rate in October 2022 (T3R_O): The simple annual interest rate for a three-year term deposit in October 2022.
+- Three-year Rate in January 2023 (T3R_J): The simple annual interest rate for a three-year term deposit in January 2023.
+- Fixed Term of Deposit (FTD): The duration of the fixed-term deposit, which is three years.
+
+Unit:
+- Initial Deposit Amount (IDA): $
+- Three-year Rate in August 2022 (T3R_A), Three-year Rate in October 2022 (T3R_O), Three-year Rate in January 2023 (T3R_J): %
+- Fixed Term of Deposit (FTD): years
+
+Structured Format:
+- Initial Deposit Amount (IDA): $100,000
+- Three-year Rate in August 2022 (T3R_A): 0.0315%
+- Three-year Rate in October 2022 (T3R_O): 0.03%
+- Three-year Rate in January 2023 (T3R_J): 0.0285%
+- Fixed Term of Deposit (FTD): 3 years
+
+Target Variable(s):
+- Less Interest (L)
+
+Input Variable(s):
+- Initial Deposit Amount (IDA)
+- Three-year Rate in August 2022 (T3R_A)
+- Three-year Rate in October 2022 (T3R_O)
+- Three-year Rate in January 2023 (T3R_J)
+- Fixed Term of Deposit (FTD)
+
+Intermediate Variable(s):
+- Interest Earned in August 2022 (IE_A)
+- Interest Earned in October 2022 (IE_O)
+- Interest Earned in January 2023 (IE_J)
+
+Formulas/Equations Involving Target Variable(s) and Input Variable(s):
+1. Simple Interest Formula:
+   Interest Earned = Principal Amount × Rate × Time
+
+Formulas/Equations Involving Intermediate Variable(s):
+1. Interest Earned in August 2022 (IE_A):
+   IE_A = IDA × T3R_A × FTD
+2. Interest Earned in October 2022 (IE_O):
+   IE_O = IDA × T3R_O × FTD
+3. Interest Earned in January 2023 (IE_J):
+   IE_J = IDA × T3R_J × FTD
+
+Formulas/Equations Involving Target Variable(s) and Intermediate Variable(s):
+1. Less Interest (L):
+   L = IE_A - IE_J
+```
+
+Note:
+The content within the three backticks is crucial. Please extract the contents, and define all the variables that appear in it. Ensuring no variables or formulas are missed. Carefully differentiate the variables - which ones are input variables, and which are output variables? If a variable is neither an input nor an output, consider it an intermediate variable. In line with the context of the question, list the formulas using abbreviations under '5. List the equation(s) that include all defined variables'. Please strictly enumerate following the format "eq1": "T = N * B", "eq2": "R = 0 - T".Just list the original formulas, and do not derive any formulas.
+Your answer must strictly conform to the JSON structure outlined in the template. Offer a clear, methodical, and accurate representation of the calculation process, following the question's parameters closely. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

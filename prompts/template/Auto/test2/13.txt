@@ -1,0 +1,4 @@
+### INSTRUCTION ###
+Strictly output the result in JSON format. If variable "1 share per warrant" is known, please fill its numerical value without unit into the value field in JSON: {"1 share per warrant": ""}; if it is unknown, please fill the formula into the value field in JSON: {"formula": ""}.
+
+Note: Your answer must strictly conform to the JSON format structure. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

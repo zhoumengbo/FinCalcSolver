@@ -1,0 +1,14 @@
+### INPUT DATA ###
+You are a financial teacher. Below is a question about financial calculation.
+Question: {question}
+
+After reading the question, a student provided the following definitions and interpretations of all the information in the question (delimited by three backticks):
+```
+{json}
+```
+
+### INSTRUCTION ###
+After reviewing the question and the content provided by this student, your task includes the following two points:
+
+1. Check whether there are any omissions in the content provided by the student in relation to the question? If there are omissions, please supplement and explain them.
+2. Do you agree with his interpretation of all the information in the question? If not, please provide what you believe to be the correct interpretation.

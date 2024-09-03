@@ -1,0 +1,2 @@
+Another scholar has proposed the following opinion: {opinion}
+Do you agree with his viewpoint? Please re-evaluate which solution is better.

@@ -1,0 +1,20 @@
+### INPUT DATA ###
+Below is a question about financial calculation.
+Question: {Question}
+
+I have already defined all the Variable(s) inside the three backticks and provided you with some solutions inside @@@.
+
+```
+{variable}
+```
+
+@@@
+{solution1}
+
+{solution2}
+@@@
+
+### INSTRUCTION ###
+Please carefully read the Question and the Variables that have already been defined. Regarding the two different solutions, identify the differences between {solution1_n} and {solution2_n}.
+
+Note: Focus solely on analysis and refrain from performing any calculations.

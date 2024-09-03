@@ -1,0 +1,147 @@
+### INSTRUCTION ###
+Your task is to extract all formula(s)/equation(s) from the part delimited by three backticks. The output format should be consistent with the Structured Answer Instructions and Example provided.
+
+### Structured Answer Instruction ###
+{
+  "List the formula(s)/equation(s)": {
+  "Instructions": "Extract all formulas/equations from and list here. Don't make any modification or change."
+  }
+}
+
+### Example ###
+{
+  "List all formula(s)/equation(s)": {
+    "eq1": "T = N * B",
+    "eq2": "R = 0 - T"
+  }
+}
+
+### INPUT DATA ###
+
+```
+2. Read carefully its "Interpretation Specific to our Question for Variable" section, what's the meaning of this variable according to our specific question? Then apply the above-listed general formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-duplicating Intermediate Variables (note: Intermediate Variables should not duplicate with any of those Target Variables or Input Variables) according to Finance common practice. Based on the context of the specific question, provide a specific interpretation for the formulas/equations in the context of our specific question. Let's call it 'Interpretation Specific to our Question for Formulas'.
+
+Input Variable(s):
+
+a. Bond_term:
+- Interpretation Specific to our Question for Variable: The duration of the 5-year government bond
+- Interpretation Specific to our Question for Formulas:
+  - Bond_term = 5
+
+b. Face_value:
+- Interpretation Specific to our Question for Variable: The initial principal amount of the 1000 yuan bond
+- Interpretation Specific to our Question for Formulas:
+  - Future_value = Face_value * (1 + Interest_rate)^Time_to_maturity
+
+c. Coupon_rate:
+- Interpretation Specific to our Question for Variable: The annual interest rate of 0.12 paid on the bond
+- Interpretation Specific to our Question for Formulas:
+  - Coupon_payment = Face_value * Coupon_rate
+
+d. Discount_rate:
+- Interpretation Specific to our Question for Variable: The annual interest rate of 0.1 used to discount future cash flows
+- Interpretation Specific to our Question for Formulas:
+  - Present_value = Future_value / (1 + Discount_rate)^Time_to_maturity
+
+Target Variable(s):
+
+a. Present_Value:
+- Interpretation Specific to our Question for Variable: The present value of the 5-year government bond, considering the time value of money and the risk-free interest rate, given the face value, annual coupon rate, and annual discount rate.
+- Interpretation Specific to our Question for Formulas:
+  - Present_value = Face_value * (1 + Discount_rate)^(-Bond_term) + Coupon_payment * (1 + Discount_rate)^(-Bond_term) * (1 - (1 + Discount_rate)^(-Bond_term)) / Discount_rat<|im_end|>
+
+
+4. For each variable in the Intermediate Variables, list all formulas/equations in Finance which involve the-said variable (note: list all formulas/equations involving this variable). According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to Finance common practice.
+
+Intermediate Variable(s):
+
+a. Time_to_maturity:
+- General Financial Interpretation for Variable: The duration of the bond, in years
+- General Financial Interpretation for Formulas:
+  - Time_to_maturity = Bond_term
+
+b. Interest_rate:
+- General Financial Interpretation for Variable: The annual interest rate paid on the bond
+- General Financial Interpretation for Formulas:
+  - Coupon_payment = Face_value * Interest_rate
+
+c. Future_value:
+- General Financial Interpretation for Variable: The future value of an investment or financial instrument, considering the time value of money and the risk-free interest rate
+- General Financial Interpretation for Formulas:
+  - Future_value = Face_value * (1 + Interest_rate)^Time_to_maturity
+
+d. Coupon_payment:
+- General Financial Interpretation for Variable: The annual interest payment received by the bondholder
+- General Financial Interpretation for Formulas:
+  - Coupon_payment = Face_value * Coupon_rate
+
+e. Discount_rate:
+- General Financial Interpretation for Variable: The annual interest rate used to discount future cash flows
+- General Financial Interpretation for Formulas:
+  - Present_value = Future_value / (1 + Discount_rate)^Time_to_maturity
+
+
+
+1. (Present_Value, Coupon_rate)
+
+Formulas/equations involving Present_Value and Coupon_rate:
+- Present Value of an Annuity Due (PVAD) formula: PVAD = FV / (1 + r)^n - r * PVAD
+- Coupon rate formula: Coupon rate = (Annual coupon payment / Face value) * 100
+
+2. (Present_Value, Future_value)
+
+Formulas/equations involving Present_Value and Future_value:
+- Future Value of an Annuity Due (FVAD) formula: FVAD = FV * (1 + r)^n
+
+3. (Coupon_rate, Future_value)
+
+Formulas/equations involving Coupon_rate and Future_value:
+- Coupon rate formula: Coupon rate = (Annual coupon payment / Face value) * 100
+
+4. (Present_Value, Discount_rate)
+
+Formulas/equations involving Present_Value and Discount_rate:
+- Present Value of an Annuity Due (PVAD) formula: PVAD = FV / (1 + r)^n - r * PVAD
+
+Given the specific question:
+
+Question: There is a 5-year government bond with a face value of 1000 yuan, an annual coupon rate of 0.12. And the interests are compounded(using the annual coupon rate 0.12) annually but not physically paid out to the investor until maturity. Instead, these interests are accrued and recorded and added to the previous compounding basis to form the new basis for compounding(using the annual coupon rate 0.12 to compound) the next year. That's to say, in year 0, the compounding basis is 1000 yuan, then in year 1, the compounding basis becomes 1000*(1+0.12)^1 yuan, in year 2, the compounding basis becomes 1000*(1+0.12)^2 yuan, ... so on and so forth. Then all the accrued interests are paid out at maturity in a lump-sum payment, together with the repayment of the principal. That's to say, both the principal and accrued interests are physically paid out to the investor in a single lump-sum payment at maturity. Assuming an annual discount rate of 0.1, what is its present value?
+
+Applying the formulas/equations to the specific question:
+
+1. (Present_Value, Coupon_rate)
+
+- Coupon rate formula: Coupon rate = (Annual coupon payment / Face value) * 100
+  - Annual coupon payment = Face value * Coupon rate
+  - Coupon rate = 0.12
+  - Annual coupon payment = 1000 * 0.12 = 120 yuan
+
+2. (Present_Value, Future_value)
+
+- Future Value of an Annuity Due (FVAD) formula: FVAD = FV * (1 + r)^n
+  - FV = Face value + (Annual coupon payment * Number of years)
+  - FV = 1000 + (120 * 5) = 1000 + 600 = 1600 yuan
+  - FVAD = 1600 * (1 + 0.1)^5 = 1600 * (1.1)^5 ≈ 2480.96 yuan
+
+3. (Coupon_rate, Future_value)
+
+- Coupon rate formula: Coupon rate = (Annual coupon payment / Face value) * 100
+  - Annual coupon payment = Face value * Coupon rate
+  - Coupon rate = 0.12
+  - Annual coupon payment = 1000 * 0.12 = 120 yuan
+
+4. (Present_Value, Discount_rate)
+
+- Present Value of an Annuity Due (PVAD) formula: PVAD = FV / (1 + r)^n - r * PVAD
+  - FV = Face value + (Annual coupon payment * Number of years)
+  - FV = 1000 + (120 * 5) = 1000 + 600 = 1600 yuan
+  - PVAD = 1600 / (1 + 0.1)^5 - 0.1 * PVAD
+  - PVAD ≈ 1600 / 1.61051 - 0.1 * PVAD ≈ 1600 / 1.61051 - 0.161051 * PVAD
+  - PVAD ≈ 1600 / 1.61051 - 0.161051 * PVAD ≈ 992.59 yuan
+
+Based on the calculations above, the present value of the 5-year government bond is approximately 992.59 yuan.
+```
+
+Note:
+The content within the three backticks is crucial. Please extract the formulas/equations, ensuring no formulas/equations are missed. Please strictly enumerate following the format "eq1": "T = N * B", "eq2": "R = 0 - T". Just list the original formulas/equations, and do not derive any formulas/equations.
+Your answer must strictly conform to the JSON structure outlined in the template. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

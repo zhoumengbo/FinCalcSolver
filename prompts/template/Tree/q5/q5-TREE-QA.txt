@@ -1,0 +1,10 @@
+### Question ###
+Among the formulas/equations listed in JSON SOLUTION, extract all formulas/equations involving the variable "SE" and list them out. Note that you should only list the formulas/equations that involve "SE" and avoid listing other formulas/equations or engaging in any form of derivation. Now please output your answer in JSON format, with the format as follows: {"Eq1": "your answer 1", "Eq2": "your answer 2"}, etc. If you don't find any formula/equation, don't create arbitrary answers, just output "none". Please strictly output in JSON format, do not output irrelevant content.
+
+
+###1
+Among the equation(s) listed in JSON SOLUTION, is there a direct equation for calculate "IE_A"? Please find equation for calculate "IE_A". Note that you should only list the equation for calculating the "IE_A" and avoid listing other equation or engaging in any form of derivation. Now please output your answer in json format, with the format as follows: {"Direct equation": ""}. If there is a direct equation for calculation, fill in the equation in the value. If not, fill in "None". Please strictly output in JSON format, do not output irrelevant content.
+
+
+###2
+Among the equation(s) listed in JSON SOLUTION, is there a direct equation for calculate "IE_J"? Please find equation for calculate "IE_J". Note that you should only list the equation for calculating the "IE_J" and avoid listing other equation or engaging in any form of derivation. Now please output your answer in json format, with the format as follows: {"Direct equation": ""}. If there is a direct equation for calculation, fill in the equation in the value. If not, fill in "None". Please strictly output in JSON format, do not output irrelevant content.

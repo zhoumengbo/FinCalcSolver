@@ -1,0 +1,19 @@
+### INSTRUCTION 5
+For each Intermediate Variable, present the variable names, units, general financial interpretations and specific interpretations in JSON format. Please strictly output in JSON format, do not output irrelevant content. JSON Format:
+{
+  "Intermediate Variable(s)": [
+    {
+      "Variable Name": "",
+      "Unit": "",
+      "General Financial Interpretation for Variable": "",
+      "Interpretation Specific to our Question for Variable": ""
+    },
+    {
+      "Variable Name": "",
+      "Unit": "",
+      "General Financial Interpretation for Variable": "",
+      "Interpretation Specific to our Question for Variable": ""
+    },
+    ...
+  ]
+}

@@ -1,0 +1,2 @@
+A scholar has proposed the following opinion: {opinion}
+Based off the opinion of this scholar, can you give an updated answer?

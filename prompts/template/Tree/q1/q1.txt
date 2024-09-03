@@ -1,0 +1,46 @@
+###1
+Below is a question about financial calculation.
+Question: To stimulate economic growth, since 2022, the country has repeatedly lowered bank deposit interest rates. The three-year rate was 0.0315 in August 2022, reduced to 0.03 in October, and further to 0.0285 in January 2023. These rates are simple annual interest rates. In January 2023, if Mr. Wang has a deposit of $100,000 for a fixed term of three years (note that this is a fixed-term deposit for three years), how much less interest will he earn compared to a similar three-year term deposit that if he had started in August 2022? Please use simple interest in your calculations, and do not use exponential or continuous compounding.
+
+Please only list target variable(s) and use abbreviations to represent each variable. Instruction: Clearly identify the final variable(s) that the calculation seeks to resolve. These target variables represent the end goal of the calculation process and are derived from the combination of input and intermediate variables. Defining the target variables sets a clear objective for what the calculation will ascertain. Do not to engage in any form of caculation. Note that only list target variable(s). There must be no redundant information other than the target variable(s).
+
+
+###2
+Please list all the numerical information in the question. Focus exclusively on the numbers given in the question, assigning each a unique variable. Instruction: List each numerical detail explicitly mentioned in the question as a unique variable and use abbreviations to represent each variable. Focus exclusively on the numbers given in the question, without including inferred or calculated values. Precisely assign the actual numerical values to the input variables identified in the first step. This involves directly transferring the quantitative data from the question to the respective variables, ensuring accuracy in the values being used as the basis for calculations. This approach is essential for laying the groundwork for the calculation process, ensuring that all relevant numerical data are systematically defined and ready for use. At this stage, only direct value assignments should be made, without performing any form of calculation. Avoid the use of any calculation symbols (such as plus, minus, multiply, divide). Do not to engage in any form of caculation. Note that only list variable(s) and use abbreviations to represent each variable. There must be no redundant information other than the variable(s).
+
+###2
+Please list all the numerical information in the question. Focus exclusively on the numbers given in the question, assigning each a unique variable. Instruction: List each numerical detail explicitly mentioned in the question as a unique variable and use abbreviations to represent each variable. Focus exclusively on the numbers given in the question, without including calculated values. Precisely assign the actual numerical values to the input variables identified in the first step. This involves directly transferring the quantitative data from the question to the respective variables, ensuring accuracy in the values being used as the basis for calculations. You can also include the "implicitly" numeric numbers, for example, 3-month and three months are both considered as "numerical quantity" and should be listed out. This approach is essential for laying the groundwork for the calculation process, ensuring that all relevant numerical data are systematically defined and ready for use. At this stage, only direct value assignments should be made, without performing any form of calculation. Avoid the use of any calculation symbols (such as plus, minus, multiply, divide). Do not to engage in any form of caculation. Note that only list variable(s) and use abbreviations to represent each variable. There must be no redundant information other than the variable(s).
+
+
+###3
+Focus your attention on the aforementioned variables(including the target variable), setting aside the question. You have a vast reserve of financial knowledge and are familiar with all financial formulas and theorems. Please list all formulas related to each of these variables in finance. Consider all possible calculation formulas and theorems in which these variables might be used. Note that for every pair of variables, you must list all the formulas involving their relationship in finance. If multiple formulas exist for two variables, list them all. However, if no formula exists between two variables, do not list any formula randomly! The formula must be correct and relevant. Do not limit yourself to the formulas mentioned in the question, but include all formulas involving these variables. Be careful not to engage in any form of inference.
+
+
+###3
+You are a Finance expert. For each variable listed above, do the following:
+1. first list all formulas/equations in Finance Domain involving that variable. 
+2. then apply the formulas/equations to our specific question and write out with the variables defined previously(you may also create new intermediate variables following the format of our previous variable definitions). 
+
+Note: Be sure not to miss any variable. For each variable, list all formulas that involves the variable. If a variable does not involve any formulas, do not list it arbitrarily.
+
+
+###4
+Focus your attention on the aforementioned variables(including the target variable), setting aside the question. You have a vast reserve of financial knowledge and are familiar with all financial formulas and theorems. For every two aforementioned variables, list all formulas that express the relationship between them. Consider all possible calculation formulas and theorems in which these variables might be used. Note that for every pair of variables, you must list all the formulas involving their relationship in finance. If multiple formulas exist for two variables, list them all. However, if no formula exists between two variables, do not list any formula randomly! The formula must be correct and relevant. Do not limit yourself to the formulas mentioned in the question, but include all formulas involving these variables. Be careful not to engage in any form of inference.
+
+
+###5
+Question: To stimulate economic growth, since 2022, the country has repeatedly lowered bank deposit interest rates. The three-year rate was 0.0315 in August 2022, reduced to 0.03 in October, and further to 0.0285 in January 2023. These rates are simple annual interest rates. In January 2023, if Mr. Wang has a deposit of $100,000 for a fixed term of three years (note that this is a fixed-term deposit for three years), how much less interest will he earn compared to a similar three-year term deposit that if he had started in August 2022? Please use simple interest in your calculations, and do not use exponential or continuous compounding.
+
+Among the formulas you have listed above, which one is used for the direct calculation of the target variable? Please analyze in conjunction with the context of the question and list only the direct calculation formula for the target variable. Note that you should only list the formula for calculating the target variable and avoid listing other formulas or engaging in any form of derivation.
+
+
+###6
+Among the formulas you have listed above, which one is used for the direct calculation of the "FV1"? Please list only the direct calculation formula for the "FV1". Note that you should only list the formula for calculating the "FV1" and avoid listing other formulas or engaging in any form of derivation.
+
+
+###7
+Among the formulas you have listed above, which one is used for the direct calculation of the "T"? Please list only the direct calculation formula for the "T". Note that you should only list the formula for calculating the "T" and avoid listing other formulas or engaging in any form of derivation.
+
+
+###8
+Among the formulas you have listed above, which one is used for the direct calculation of the "FV2"? Please list only the direct calculation formula for the "FV2". Note that you should only list the formula for calculating the "FV2" and avoid listing other formulas or engaging in any form of derivation.

@@ -1,0 +1,2 @@
+### INSTRUCTION ###
+Carefully examine each solution's approach to the problem in relation to the specifics of the Question. Focus particularly on how they utilize the predefined variables and the information provided within the Question. Assess their respective methodologies, paying special attention to their effectiveness in leveraging the available information to solve the problem. Conclude by determining which solution is more effective, providing a reasoned justification based on their use of the given information and adherence to the problem's requirements.

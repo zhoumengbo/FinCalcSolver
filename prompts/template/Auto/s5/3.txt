@@ -1,0 +1,2 @@
+### INSTRUCTION ###
+Output the new formula strictly in JSON format: {"new_formula": "T = N * B"}. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

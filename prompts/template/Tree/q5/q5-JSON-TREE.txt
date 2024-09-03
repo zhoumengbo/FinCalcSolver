@@ -1,0 +1,76 @@
+### INSTRUCTION ###
+Your task is to a solve financial calculation problem that are delimited by three double quotes. I have provided you with the JSON format of the solution approach delimited by three backticks for this question, which includes a list of all potentially applicable formulas. Now, I need you to follow my instructions step by step in answering my questions.
+
+### Financial calculation problem ###
+"""
+Question: Jindi Company's 2015 income statement shows sales revenue of 8 million yuan, with net profit being 8% of sales revenue. The balance sheet shows current assets of 2 million yuan, fixed assets of 6 million yuan, net working capital of 1 million yuan, and long-term liabilities of 3 million yuan. Please calculate the Return on Equity (ROE). Please do not use the DuPont formula.
+"""
+
+### JSON SOLUTION ###
+```
+{
+  "1. Define Input Variable(s)": {
+    "Sales Revenue (SR) (unit: yuan)": "SR",
+    "Net Profit (NP) (unit: yuan)": "NP",
+    "Current Assets (CA) (unit: yuan)": "CA",
+    "Fixed Assets (FA) (unit: yuan)": "FA",
+    "Net Working Capital (NWC) (unit: yuan)": "NWC",
+    "Long-Term Liabilities (LTL) (unit: yuan)": "LTL"
+  },
+  "2. Input Variable(s) Assignment": {
+    "SR": 8000000,
+    "NP": 0.08 * SR,
+    "CA": 2000000,
+    "FA": 6000000,
+    "NWC": 1000000,
+    "LTL": 3000000
+  },
+  "3. Define Intermediate Variable(s)": {
+    "Net Profit Margin (NPM)": "NPM",
+    "Current Liabilities (CL)": "CL",
+    "Total Liabilities (TL)": "TL",
+    "Total Assets (TA)": "TA",
+    "Shareholders' Equity (SE)": "SE"
+  },
+  "4. Define Target Variable(s)": {
+    "Return on Equity (ROE)": "ROE"
+  },
+  "5. List the formula(s)/equation(s)": {
+    "eq1": "NP = SR * NPM",
+    "eq2": "CA = NWC + CL",
+    "eq3": "FA = TA - CA - SE",
+    "eq4": "NWC = CA - CL",
+    "eq5": "LTL = TL - CL",
+    "eq6": "TL = LTL + CL",
+    "eq7": "TA = CA + FA + SE",
+    "eq8": "NPM = NP / SR",
+    "eq9": "CL = TL - LTL",
+    "eq10": "TL = LTL + CL",
+    "eq11": "TA = CA + FA + SE",
+    "eq12": "ROE = NP / SE",
+    "eq13": "CL = TL - LTL",
+    "eq14": "TL = LTL + CL",
+    "eq15": "TA = CA + FA + SE",
+    "eq16": "ROE = NP / SE",
+    "eq17": "CL = TL - LTL",
+    "eq18": "TL = LTL + CL",
+    "eq19": "TA = CA + FA + SE",
+    "eq20": "ROE = NP / SE",
+    "eq21": "CL = TL - LTL",
+    "eq22": "TL = LTL + CL",
+    "eq23": "TA = CA + FA + SE",
+    "eq24": "ROE = NP / SE",
+    "eq25": "ROE = NP / SE",
+    "eq26": "CL = TL - LTL",
+    "eq27": "TL = LTL + CL",
+    "eq28": "TA = CA + FA + SE",
+    "eq29": "ROE = NP / SE",
+    "eq30": "CL = TL - LTL",
+    "eq31": "TL = LTL + CL",
+    "eq32": "TA = CA + FA + SE"
+  }
+}
+```
+
+### QUESTION ###
+Among the equation(s) listed in JSON SOLUTION, is there a direct equation for calculate "ROE"? Please find equation for calculate "ROE". Note that you should only list the equation for calculating the "ROE" and avoid listing other equation or engaging in any form of derivation. Now please output your answer in json format, with the format as follows: {"Direct equation": ""}. If there is a direct equation for calculation, fill in the equation in the value. If not, fill in "None". Please strictly output in JSON format, do not output irrelevant content.

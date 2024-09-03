@@ -1,0 +1,22 @@
+### INPUT DATA ###
+Below is a question about financial calculation.
+Question: {Question}
+
+I have provided you with the following two solutions inside @@@.
+@@@
+{solution1}
+
+{solution2}
+@@@
+
+After intense discussion, two scholars have diverged in their choice of the superior solution. Their "Superior solution" and "Reason" have provided inside the three backticks.
+```
+{agent1}
+
+{agent2}
+```
+
+### INSTRUCTION ###
+After thoroughly reviewing the question and the reason behind the choices of the two scholars, you are required to make a final choices between the two solution options. Primarily based on the correctness of the formula usage and their compliance with the given requirements. Your decision will guide our direction, ensuring that we follow the most rational and precise path in financial calculations.
+
+Note: Focus solely on analysis and refrain from performing any calculations.

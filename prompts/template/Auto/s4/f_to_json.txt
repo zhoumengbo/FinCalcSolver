@@ -1,0 +1,15 @@
+### INPUT DATA ###
+
+```
+{f3_1}
+
+{f3_2}
+
+{f3_3}
+
+{f3_4}
+```
+
+Note:
+The content related to "=" inside the three backticks is crucial. You must extract all the formula(s)/equation(s) within the three backticks, ensuring no formula(s)/equation(s) are missed. Please strictly enumerate following the format "eq1": "T = N * B", "eq2": "R = O - T". Just list the original formula(s)/equation(s), and do not derive any formula(s)/equation(s).
+Your answer must strictly conform to the JSON structure outlined in the template. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

@@ -1,0 +1,4 @@
+### INSTRUCTION ###
+Summarize the reasons for your final choice, including why you chose it and why you did not choose the other solution.
+Output your final choice and reason in JSON format, with the format as follows:
+{"Superior solution": "Solution ?", "Reason": ""}

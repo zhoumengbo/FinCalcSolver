@@ -1,0 +1,4 @@
+### INSTRUCTION ###
+Strictly output the formulas in JSON format: {"eq1": "T = N * B", "eq2": "R = O - T"}. If there are no formulas, please output {"None": ""}.
+
+Note: Your answer must strictly conform to the JSON format structure. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

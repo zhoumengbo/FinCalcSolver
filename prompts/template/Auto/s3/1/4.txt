@@ -1,0 +1,7 @@
+### INSTRUCTION 4
+For each variable you have listed, perform the following steps:
+1. Read carefully its "Interpretation Specific to our Question for Variable" section, what's the meaning of this variable according to our specific question?
+2. Then apply the above-listed general formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations).
+3. Define necessary but non-duplicating Intermediate Variables (note: Intermediate Variables should not duplicate with any of those Target Variable(s) or Input Variable(s)) according to Finance common practice.
+
+Note: Use underscores to connect words within each variable name. For example, if the financial term is 'Interest Rate', then the variable name should be 'Interest_rate'. The variable names in formulas/equations must also be represented in this manner, such as "Interest_2024 = Deposit_amount * Interest_rate * Term_of_deposit".

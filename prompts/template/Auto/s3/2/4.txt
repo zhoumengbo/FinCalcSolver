@@ -1,0 +1,9 @@
+### INSTRUCTION 4
+List only the Intermediate Variable(s).
+
+For each Intermediate Variable, perform the following steps:
+1. Consider what the meaning of this variable is in general finance?
+2. List all formulas/equations in general Finance which involve the-said variable(note: list all formulas/equations involving this variable).
+3. Apply the formula/equation to our specific question(note: don't substitute numerical values into formula/equation).
+
+Note: Use underscores to connect words within each variable name. For example, if the financial term is 'Interest Rate', then the variable name should be 'Interest_rate'. The variable names in formulas/equations must also be represented in this manner, such as "Interest_2024 = Deposit_amount * Interest_rate * Term_of_deposit".

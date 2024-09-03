@@ -1,0 +1,2 @@
+### INSTRUCTION ###
+Please determine whether the variable "Current stock price" appearing in the previous formula is known in the question. If so, output its value; if not, think about what formula or equation I should use to solve it?

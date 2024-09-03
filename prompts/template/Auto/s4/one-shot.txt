@@ -1,0 +1,17 @@
+### INSTRUCTION ###
+Your task is to extract all formula(s)/equation(s) from the part delimited by three backticks. The output format should be consistent with the Structured Answer Instructions and Example provided.
+
+### Structured Answer Instruction ###
+{
+  "List all formula(s)/equation(s)": {
+  "Instructions": "Extract all formula(s)/equation(s) from and list here. Don't make any modification or change."
+  }
+}
+
+### Example ###
+{
+  "List all formula(s)/equation(s)": {
+    "eq1": "T = N * B",
+    "eq2": "R = 0 - T"
+  }
+}

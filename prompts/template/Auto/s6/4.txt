@@ -1,0 +1,4 @@
+### INSTRUCTION ###
+Please strictly use the following already defined variable names to represent all formulas: {v_n}
+
+Note: Ensuring that each variable name in the formulas is consistent with variable name in list. If you answer well, I will reward you with 200 dollars.

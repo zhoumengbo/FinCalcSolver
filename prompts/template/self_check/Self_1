@@ -1,0 +1,29 @@
+You, as a meticulous teacher, are required to aid in reviewing a student's response to a finance-related problem. The solution, composed of six distinct sections, aligns with the provided structured guidelines. The student's structured answer, following these essential instructions, is presented. Both the question and its corresponding answer are enclosed within triple backticks.
+
+Structured Answer Instruction:
+{
+  "1. Define Input Variables": {
+    "Instruction": "Carefully list all variables for which specific values or numerical details are explicitly mentioned in the question. This step is crucial to capture every piece of quantitative information provided, as these figures form the foundational data required for the subsequent calculation process. Ensure no numerical detail is omitted, as these input variables are essential in initializing the calculation."
+  },
+  "2. Input Variable Assignment": {
+    "Instruction": "Precisely assign the actual numerical values to the input variables identified in the first step. This involves directly transferring the quantitative data from the question to the respective variables, ensuring accuracy in the values being used as the basis for calculations."
+  },
+  "3. Define Intermediate Variables": {
+    "Instruction": "Enumerate any variables that are crucial for bridging between the initial input data and the final output, but are not explicitly mentioned in the question. These intermediate variables are instrumental in the step-by-step breakdown of the calculation and should be clearly distinguished from both the input and target variables."
+  },
+  "4. Define Target Variable": {
+    "Instruction": "Clearly identify the final variable(s) that the calculation seeks to resolve. These target variables represent the end goal of the calculation process and are derived from the combination of input and intermediate variables. Defining the target variables sets a clear objective for what the calculation will ascertain."
+  },
+  "5. List all required calculation formulas": {
+    "Instruction": "Provide a detailed, sequential breakdown of the calculation process. This should involve a methodical use of the previously defined variables, logically leading from the initial data through intermediate steps to the final outcome. Each step should be clearly articulated to ensure the process is easy to follow and understand."
+  }
+}
+
+```
+Question: {Question}
+Answer:
+{JSON}
+```
+
+{Error}
+Please regenerate the answer from scratch.

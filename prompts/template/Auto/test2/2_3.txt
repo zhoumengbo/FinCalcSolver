@@ -1,0 +1,7 @@
+### INSTRUCTION ###
+In order to solve for "New_stock_price", you need to consider the following four points in order:
+
+1. What information are directly related to "New_stock_price"?
+2. How are these pieces of information directly related to "New_stock_price"?
+3. How can these pieces of information help us solve for "New_stock_price"?
+4. Please list the relevant formulas or equations. Note: Must not perform calculations.

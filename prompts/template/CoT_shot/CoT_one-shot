@@ -1,0 +1,41 @@
+### INSTRUCTION ###
+Your task is to solve a financial calculation problem. I will provide you an example problem and answer delimited by three backticks, please respond in the format of the given example.
+
+```
+Question:
+Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+Answer:
+1. Solution analysis:
+First calculate how much money Olivia spent, and then subtract the expenses from the initial money to get the remaining money.
+
+2. Define input variable(s):
+Olivia's initial money (O): $23
+Cost of each bagel (B): $3
+Number of bagels (N): 5
+
+2. Define intermediate variable(s)":
+Total cost (T)
+
+2. Define target variable(s)":
+Remaining money (R)
+
+3. Calculation equation(s):
+T = N * B
+O = R + T
+
+4. Step by step calculation:
+First, calculate the intermediate variable T:
+T = N * B
+T = 5 * 3
+T = 15
+Then, calculate the target variable R:
+O = R + T
+R = O - T
+R = 23 - 15
+R = 8
+So, Olivia has $8 left after buying 5 bagels.
+```
+
+### INPUT DATA ###
+Question: {query}
+Answer:

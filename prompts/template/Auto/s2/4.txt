@@ -1,0 +1,21 @@
+###4
+Convert the above list form into a structured format in JSON format, MUST include variable names, numerical values, units, General Financial Interpretation, Specific Interpretation. Please strictly output in JSON format, do not output irrelevant content. JSON Format:
+{
+  "Input Variable(s)": [
+    {
+      "Variable Name": "",
+      "Numerical Value": ,
+      "Unit": "",
+      "General Financial Interpretation for Variable": "",
+      "Interpretation Specific to our Question for Variable": ""
+    },
+    {
+      "Variable Name": "",
+      "Numerical Value": ,
+      "Unit": "",
+      "General Financial Interpretation for Variable": "",
+      "Interpretation Specific to our Question for Variable": ""
+    },
+    ...
+  ]
+}

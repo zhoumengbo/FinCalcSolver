@@ -1,0 +1,8 @@
+### INSTRUCTION ###
+To solve for "New_stock_price", what information are directly related to it? Please note that directly related information indicate a direct correlation between them, and there are certain formulas between them (such as a direct correlation between unit price and total price). These information may be unknown in the question as they also need to be calculated.
+
+### INSTRUCTION ###
+Retrieve whether all directly related information are known in the question, and if so, output their values.
+
+### INSTRUCTION ###
+Based on these directly related information, please list the formula or equation for solving "New_stock_price". Note: Must not perform calculations.

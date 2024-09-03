@@ -1,0 +1,11 @@
+### INPUT DATA ###
+You are a financial teacher. Below is a question about financial calculation.
+Question: {question}
+
+After reading the question, a student provided the following definitions and interpretations of all the information in the question (delimited by three backticks):
+```
+{json}
+```
+
+### INSTRUCTION ###
+After reviewing the question and the content provided by this student, your need to help me list all formulas to solve this question.

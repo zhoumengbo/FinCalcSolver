@@ -1,0 +1,53 @@
+###1
+Below is a question about financial calculation.
+Question: Jindi Company's 2015 income statement shows sales revenue of 8 million yuan, with net profit being 0.08 of sales revenue. The balance sheet shows current assets of 2 million yuan, fixed assets of 6 million yuan, net working capital of 1 million yuan, and long-term liabilities of 3 million yuan. Please calculate the Return on Equity (ROE). Please do not use the DuPont formula.
+
+Please only list target variable(s) and use abbreviations to represent each variable. Instruction: Clearly identify the final variable(s) that the calculation seeks to resolve. These target variables represent the end goal of the calculation process and are derived from the combination of input and intermediate variables. Defining the target variables sets a clear objective for what the calculation will ascertain. Do not to engage in any form of caculation. Note that only list target variable(s). There must be no redundant information other than the target variable(s).
+
+
+###2
+Please list all the numerical information in the question. Focus exclusively on the numbers given in the question, assigning each a unique variable. Instruction: List each numerical detail explicitly mentioned in the question as a unique variable and use abbreviations to represent each variable. Focus exclusively on the numbers given in the question, without including inferred or calculated values. Precisely assign the actual numerical values to the input variables identified in the first step. This involves directly transferring the quantitative data from the question to the respective variables, ensuring accuracy in the values being used as the basis for calculations. This approach is essential for laying the groundwork for the calculation process, ensuring that all relevant numerical data are systematically defined and ready for use. At this stage, only direct value assignments should be made, without performing any form of calculation. Avoid the use of any calculation symbols (such as plus, minus, multiply, divide). Do not to engage in any form of caculation. Note that only list variable(s) and use abbreviations to represent each variable. There must be no redundant information other than the variable(s).
+
+
+###3
+Focus your attention on the aforementioned variables(including the target variable), setting aside the question. You have a vast reserve of financial knowledge and are familiar with all financial formulas and theorems. Please list all formulas related to each of these variables in finance. Consider all possible calculation formulas and theorems in which these variables might be used. Note that for every pair of variables, you must list all the formulas involving their relationship in finance. If multiple formulas exist for two variables, list them all. However, if no formula exists between two variables, do not list any formula randomly! The formula must be correct and relevant. Do not limit yourself to the formulas mentioned in the question, but include all formulas involving these variables. Be careful not to engage in any form of caculation.
+
+
+###4
+Focus your attention on the aforementioned variables(including the target variable), setting aside the question. You have a vast reserve of financial knowledge and are familiar with all financial formulas and theorems. For every two aforementioned variables, list all formulas that express the relationship between them. Consider all possible calculation formulas and theorems in which these variables might be used. Note that for every pair of variables, you must list all the formulas involving their relationship in finance. If multiple formulas exist for two variables, list them all. However, if no formula exists between two variables, do not list any formula randomly! The formula must be correct and relevant. Do not limit yourself to the formulas mentioned in the question, but include all formulas involving these variables. Be careful not to engage in any form of caculation.
+
+
+###5
+Among the formulas you have listed above, which one is used for the direct calculation of the target variable? Please list only the direct calculation formula for the target variable. Note that you should only list the formula for calculating the target variable and avoid listing other formulas or engaging in any form of derivation.
+
+
+###6
+Among the formulas you have listed above, which one is used for the direct calculation of the "NP"? Please list only the direct calculation formula for the "NP". Note that you should only list the formula for calculating the "NP" and avoid listing other formulas or engaging in any form of derivation.
+
+
+###7
+Among the formulas you have listed above, which one is used for the direct calculation of the "SE"? Please list only the direct calculation formula for the "SE". Note that you should only list the formula for calculating the "SE" and avoid listing other formulas or engaging in any form of derivation.
+
+
+###8
+Among the formulas you have listed above, which one is used for the direct calculation of the "TA"? Please list only the direct calculation formula for the "TA". Note that you should only list the formula for calculating the "TA" and avoid listing other formulas or engaging in any form of derivation.
+
+
+###9
+Among the formulas you have listed above, which one is used for the direct calculation of the "OA"? Please list only the direct calculation formula for the "OA". Note that you should only list the formula for calculating the "OA" and avoid listing other formulas or engaging in any form of derivation.
+
+
+###10
+Among the formulas you have listed above, which one is used for the direct calculation of the "TL"? Please list only the direct calculation formula for the "TL". Note that you should only list the formula for calculating the "TL" and avoid listing other formulas or engaging in any form of derivation.
+
+
+###11
+Among the formulas you have listed above, which one is used for the direct calculation of the "OL"? Please list only the direct calculation formula for the "OL". Note that you should only list the formula for calculating the "OL" and avoid listing other formulas or engaging in any form of derivation.
+
+
+###12
+Among the formulas you have listed above, which one is used for the direct calculation of the "CL"? Please list only the direct calculation formula for the "CL". Note that you should only list the formula for calculating the "CL" and avoid listing other formulas or engaging in any form of derivation.
+
+
+###13
+Among the formulas you have listed above, which one can be used to indirectly calculate 'CL'? Please list only the formula for indirectly calculating 'CL'. Note that you should only list the one formula that meets the requirements, and avoid listing other formulas or making any form of derivation.

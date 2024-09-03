@@ -1,0 +1,2 @@
+### INSTRUCTION ###
+Pay close attention to how each solution approaches the problem, uses the defined variables, and any variance in their methodologies. Finally, Evaluate which solution is superior, and explain your reasoning.

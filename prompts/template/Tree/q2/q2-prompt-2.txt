@@ -1,0 +1,160 @@
+###1 提取目标变量（当前使用）
+Below is a question about financial calculation.
+Question: There is a 5-year government bond with a face value of 1000 yuan, an annual coupon rate of 0.12. And the interests are compounded(using the annual coupon rate 0.12) annually but not physically paid out to the investor until maturity. Instead, these interests are accrued and recorded and added to the previous compounding basis to form the new basis for compounding(using the annual coupon rate 0.12 to compound) the next year. That's to say, in year 0, the compounding basis is 1000 yuan, then in year 1, the compounding basis becomes 1000*(1+0.12)^1 yuan, in year 2, the compounding basis becomes 1000*(1+0.12)^2 yuan, ... so on and so forth. Then all the accrued interests are paid out at maturity in a lump-sum payment, together with the repayment of the principal. That's to say, both the principal and accrued interests are physically paid out to the investor in a single lump-sum payment at maturity. Assuming an annual discount rate of 0.1, what is its present value?
+
+Please only list Target Variable(s) and define its variable name based on the financial terminology, ensuring that each variable name accurately reflects the financial concept it represents. Use underscores to connect words within each variable name. For example, if the financial term is 'Interest Rate', then the variable name should be 'Interest_rate'. Please remember these Target Variable(s), later we will use them. Instruction: Clearly identify the final variable(s) that the calculation seeks to resolve. These target variables represent the end goal of the calculation process and are derived from the combination of input and intermediate variables. Defining the target variables sets a clear objective for what the calculation will ascertain. Do not to engage in any form of calculation. Note that only list target variable(s). There must be no redundant information other than the target variable(s).
+
+
+###1 (这个能够得到一些更丰富的输出，未来可能有用）
+Below is a question about financial calculation.
+Question: To stimulate economic growth, since 2022, the country has repeatedly lowered bank deposit interest rates. The three-year rate was 0.0315 in August 2022, reduced to 0.03 in October, and further to 0.0285 in January 2023. These rates are simple annual interest rates. In January 2023, if Mr. Wang has a deposit of $100,000 for a fixed term of three years (note that this is a fixed-term deposit for three years), how much less interest will he earn compared to a similar three-year term deposit that if he had started in August 2022? Please use simple interest in your calculations, and do not use exponential or continuous compounding.
+
+Please identify the Target Variable(s) and use Finance common practice abbreviations following financial industry conventions to represent each variable. Instruction: Clearly identify the final variable(s) that the calculation seeks to resolve. These Target Variables represent the end goal of the calculation process and are derived from the combination of input and intermediate variables. Defining the target variables sets a clear objective for what the calculation will ascertain. Do not to engage in any form of calculation. Note that only list Target Variable(s). There must be no redundant information other than the Target Variable(s).
+
+
+###2  提取输入变量（当前使用）(好像更好一些，因为下面的table格式会自动做运算，算出一些值，比如会把NP=0.08*SR直接算出来，放到表里。但是我们不信任LLM做推导和运算，所以应该避免）
+Identify all the numerical values in the question, including implicit numerical values such as "three-month," "three months," "five-inch," "five inches," etc. And convert "1 million" or "one million" into 1,000,000, etc. However, do not include numerical values that require derivation and calculation. In the following, we will assign variable names to these numerical values. Please remember these variables as "Input Variable(s)" as a whole, later we will refer to these "Input Variable(s)".
+For each numerical value identified above, perform the following tasks:
+1. In accordance with the context of the question and following financial industry conventions, for this numerical value, create a new variable and define its variable name based on the financial terminology, ensuring that each variable name accurately reflects the financial concept it represents. Use underscores to connect words within each variable name. For example, if the financial term is 'Interest Rate', then the variable name should be 'Interest_rate'.
+2. Assign the numerical value(note:only numbers, no formulas or equations or other variables) to this variable.
+3. Based on the context of the question, provide a financial interpretation for this variable.
+4. Extract the unit of the numerical value.
+5. Present the financial interpretation, variable name, unit, and numerical value in a structured format in list form.
+
+###2
+Identify all the numerical values in the question, including implicit numerical values such as "three-month," "three months," "five-inch," "five inches," etc. And convert "1 million" or "one million" into 1,000,000, etc. However, do not include numerical values that require derivation and calculation. In the following, we will assign variable names to these numerical values. Please remember these variables as "Input Variable(s)" as a whole, later we will refer to these "Input Variable(s)".
+For each numerical value identified above, perform the following tasks:
+1. In accordance with the context of the question and following financial industry conventions, for this numerical value, create a new variable and define its variable name in an English acronym form that conforms to financial industry standards and Finance common practice(note: acronym form is MUST, i.e. use "FV" for "Face Value", etc.).
+2. Assign the numerical value(note:only numbers, no formulas or equations or other variables) to this variable.
+3. Based on the context of the question, provide a financial interpretation for this variable.
+4. Extract the unit of the numerical value.
+5. Present the variable name, variable name in full, financial interpretation, unit, and numerical value in a structured format in table form. Example: | FV | Face Value | Principal or face value of the bond in question | Yuan | 5000 |
+
+###3
+You are a finance expert. Do the following tasks:
+For each variable in Input Variable(s) and Target Variable(s), perform the following steps:
+1. List all formulas/equations in Finance involving the-said variable (note: list all formulas/equations involving this variable. If a variable does not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Create necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to the question and Finance common practice.
+
+###3 (一个一个列)
+You are a finance expert. For input variable "Face_Value (unit: yuan)": "Face_Value", perform the following steps:
+1. According to our specific question, in the context of our question, what's the meaning of this variable? List all formulas/equations in Finance which involve the-said variable(note: list all formulas/equations involving this variable).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-duplicating Intermediate Variables (note: Intermediate Variables should not duplicate with any of those Target Variables or Input Variables) according to Finance common practice.
+
+
+###3 (好像更加准确一些）
+You are a finance expert. Do the following tasks:
+For each variable in Input Variable(s) and then for each variable in Target Variable(s), perform the following steps:
+1. List all formulas/equations in Finance which involve the-said variable (note: list all formulas/equations involving this variable).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to Finance common practice.
+
+###3 （当前使用）
+You are a finance expert. For each variable in Input Variable(s) and then for each variable in Target Variable(s), perform the following steps:
+1. According to our specific question, in the context of our question, what's the meaning of this variable? List all formulas/equations in Finance which involve the-said variable(note: list all formulas/equations involving this variable).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-duplicating Intermediate Variables (note: Intermediate Variables should not duplicate with any of those Target Variables or Input Variables) according to Finance common practice.
+
+###3 （当前使用）
+You are a finance expert. For each variable in Input Variable(s) and then for each variable in Target Variable(s), perform the following steps:
+1. According to our specific question, in the context of our question, what's the meaning of this variable? List all formulas/equations in Finance which involve the-said variable(note: list all formulas/equations involving this variable).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-duplicating Intermediate Variables (note: Intermediate Variables should not duplicate with any of those Target Variables or Input Variables) according to Finance common practice.
+
+
+###4 （当前使用）
+You are a finance expert. Do the following tasks:
+For each variable in the Intermediate Variables, perform the following steps:
+1. List all formulas/equations in Finance which involve the-said variable (note: list all formulas/equations involving this variable).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to Finance common practice.
+
+
+###5（当前使用）（这里可能要重复几遍）
+You are a finance expert. Do the following tasks:
+For each variable in all Intermediate Variables, perform the following steps:
+1. List all formulas/equations in Finance which involve the-said variable (note: list all formulas/equations involving this variable).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to Finance common practice.
+
+###6 （当前使用）
+You are a Finance expert. Put all variables in the Input Variables into a new set A. Then put all variables in the Target Variables into the set A. Then put all variables in the Intermediate Variables into the set A. Note: ignore the origins of the variables when putting them into the set A. Manually enumerate all possible combinations of two elements from this set. Do not use any programming language or code to generate these combinations. Instead, list each possible pair of elements from set A, ensuring that each combination is unique and no pair is repeated. Provide a complete list of these two-element combinations.
+
+###7 （当前使用）
+Two-element combinations:
+1. (face_value, annual_coupon_rate)
+2. (face_value, annual_discount_rate)
+3. (face_value, maturity_year)
+4. (face_value, compounding_basis)
+5. (face_value, accrued_interests)
+6. (face_value, lump_sum_payment)
+7. (face_value, present_value)
+8. (annual_coupon_rate, annual_discount_rate)
+9. (annual_coupon_rate, maturity_year)
+10. (annual_coupon_rate, compounding_basis)
+11. (annual_coupon_rate, accrued_interests)
+12. (annual_coupon_rate, lump_sum_payment)
+13. (annual_coupon_rate, present_value)
+14. (annual_discount_rate, maturity_year)
+15. (annual_discount_rate, compounding_basis)
+16. (annual_discount_rate, accrued_interests)
+17. (annual_discount_rate, lump_sum_payment)
+18. (annual_discount_rate, present_value)
+19. (maturity_year, compounding_basis)
+20. (maturity_year, accrued_interests)
+21. (maturity_year, lump_sum_payment)
+22. (maturity_year, present_value)
+23. (compounding_basis, accrued_interests)
+24. (compounding_basis, lump_sum_payment)
+25. (compounding_basis, present_value)
+26. (accrued_interests, lump_sum_payment)
+27. (accrued_interests, present_value)
+28. (lump_sum_payment, present_value)
+
+
+-------------------------------------------
+
+Given the above 'Two-Element Combinations' table, for each of these two-element combinations, represented as (a, b), perform the following steps:
+1. List all formulas/equations in Finance involving the-said two variables a and b (note: list all formulas/equations involving the two variables. If the two variables do not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question in the [Question] section delimited by three backticks, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Create necessary but non-duplicating Intermediate Variables (note: Intermediate Variables should not  with any of those Target Variables or Input Variables) according to the question and Finance common practice.
+
+
+-------------------------------------------
+```[Question]
+Question: There is a 5-year government bond with a face value of 1000 yuan, an annual coupon rate of 0.12. And the interests are compounded(using the annual coupon rate 0.12) annually but not physically paid out to the investor until maturity. Instead, these interests are accrued and recorded and added to the previous compounding basis to form the new basis for compounding(using the annual coupon rate 0.12 to compound) the next year. That's to say, in year 0, the compounding basis is 1000 yuan, then in year 1, the compounding basis becomes 1000*(1+0.12)^1 yuan, in year 2, the compounding basis becomes 1000*(1+0.12)^2 yuan, ... so on and so forth. Then all the accrued interests are paid out at maturity in a lump-sum payment, together with the repayment of the principal. That's to say, both the principal and accrued interests are physically paid out to the investor in a single lump-sum payment at maturity. Assuming an annual discount rate of 0.1, what is its present value?
+```
+
+
+###7 （另一种解法用来解决token不够和历史影响的问题：先输出所有变量，然后清空历史，给问题和变量，执行双变量循环）
+Print the Input Variables:
+Print the Target Variables:
+Print the Intermediate Variables:
+
+###7
+For each of these two-element combinations, say (a, b), perform the following steps:
+1. List all formulas/equations in Finance involving the-said variable a and b (note: list all formulas/equations involving the two variables. If the two variables do not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Create necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to the question and Finance common practice.
+
+（一个一个列）
+###7
+For the following two-element combination (FV, ACR), perform the following steps:
+1. List all formulas/equations in Finance involving the-said variable FV and ACR. For each formula/equation, write out explictly its complete form(note: list all formulas/equations involving the two variables. If the two variables do not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Create necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to the question and Finance common practice.
+
+###8 转化为JSON格式 （当前使用）
+q2-CoT-JSON.txt
+
+###9 （当前使用）
+Note: if a percentage number had already been converted into a decimal number, use 'decimal' instead of '%' as its unit.
+For example, if you use '0.05' to represent '5%', then use 'decimal' instead of '%' as the unit of 0.05 or its defined variable.
+Units of the variables
+
+###10 （当前使用）
+q1-JSON-TREE-2.txt
+
+###11 （当前使用）
+q1-TREE-QA.txt
+
+
+
+#附录（记录在案，以后可能有用）：
+###6
+Combine the variables in the Input Variable(s) and in the Target Variable(s) into a new set A, where its elements are the variables. Manually enumerate all possible combinations of two elements from this set. Do not use any programming language or code to generate these combinations. Instead, list each possible pair of elements from set A, ensuring that each combination is unique and no pair is repeated. Provide a complete list of these two-element combinations.<|im_end|>
+
+###6
+You are a Finance expert. Put all variables in the Input Variables into a new set A. Then put all variables in the Target Variables into the set A. Then put all variables in the Intermediate Variables into the set A. Note: ignore the origins of the variables when putting them into the set A. Manually enumerate all possible combinations of two elements from this set. Do not use any programming language or code to generate these combinations. Instead, list each possible pair of elements from set A, ensuring that each combination is unique and no pair is repeated. Provide a complete list of these two-element combinations.

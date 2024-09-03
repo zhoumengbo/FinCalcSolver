@@ -1,0 +1,5 @@
+### INSTRUCTION ###
+Strictly output the result in JSON format.
+If variable "{v}" is known, please output its numerical value without unit in JSON: {{"{v}": ""}}, format example: {{"{v}": 10}}.
+If variable "{v}" is unknown, please output the most suitable formula in JSON: {{"formula": ""}}, format example: {{"formula": "T = N * B"}}.
+Note: Your answer must strictly conform to the JSON format structure. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

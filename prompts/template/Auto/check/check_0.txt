@@ -1,0 +1,10 @@
+### INPUT DATA ###
+There is a financial calculation problem now, and your task is to make a common sense judgment on the numerical value of the target variable: '{t_v}'.
+I have already defined all the Variable(s) below inside the three backticks.
+```
+{q_json_v}
+```
+
+Must not perform the calculation. Based on your financial knowledge and common sense, help me evaluate whether the value of '{t_v}' could possibly be zero.
+
+I can give you some examples, such as when the target variable is cost, price, return, etc., then based on financial knowledge and common sense, it can be judged that the value of this variable must be positive, and cannot be zero or negative; if the target variable is interest rate, rate of return, growth rate, etc., then according to financial knowledge and common sense, it is usually judged that the value of this variable is typically positive. However, in certain situations, some rates can also be zero or negative, especially in cases of economic recession, market downturns, or poor company management.

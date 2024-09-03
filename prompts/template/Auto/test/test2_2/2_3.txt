@@ -1,0 +1,7 @@
+### INSTRUCTION ###
+In order to solve for "Ms_Brown_Cash_Flow", you need to consider the following four points in order:
+
+1. What information are directly related to "Ms_Brown_Cash_Flow"?
+2. How are these pieces of information directly related to "Ms_Brown_Cash_Flow"?
+3. How can these pieces of information help us solve for "Ms_Brown_Cash_Flow"?
+4. Please list the relevant formulas or equations. Note: Must not perform calculations.

@@ -1,0 +1,44 @@
+### INSTRUCTION ###
+Your task is to a solve financial calculation problem that are delimited by three double quotes. I have provided you with the JSON format of the solution approach delimited by three backticks for this question, which includes a list of all potentially applicable formulas. Now, I need you to follow my instructions step by step in answering my questions.
+
+### Financial calculation problem ###
+"""
+Question: To stimulate economic growth, since 2022, the country has repeatedly lowered bank deposit interest rates. The three-year rate was 0.0315 in August 2022, reduced to 0.03 in October, and further to 0.0285 in January 2023. These rates are simple annual interest rates. In January 2023, if Mr. Wang has a deposit of $100,000 for a fixed term of three years (note that this is a fixed-term deposit for three years), how much less interest will he earn compared to a similar three-year term deposit that if he had started in August 2022? Please use simple interest in your calculations, and do not use exponential or continuous compounding.
+"""
+
+### JSON SOLUTION ###
+```
+{
+  "1. Define Input Variable(s)": {
+    "Initial Deposit Amount (IDA)": "IDA",
+    "Three-year Rate in August 2022 (T3R_A)": "T3R_A",
+    "Three-year Rate in October 2022 (T3R_O)": "T3R_O",
+    "Three-year Rate in January 2023 (T3R_J)": "T3R_J",
+    "Fixed Term of Deposit (FTD)": "FTD"
+  },
+  "2. Input Variable(s) Assignment": {
+    "IDA": 100000,
+    "T3R_A": 0.0315,
+    "T3R_O": 0.03,
+    "T3R_J": 0.0285,
+    "FTD": 3
+  },
+  "3. Define Intermediate Variable(s)": {
+    "Interest Earned in August 2022 (IE_A)": "IE_A",
+    "Interest Earned in October 2022 (IE_O)": "IE_O",
+    "Interest Earned in January 2023 (IE_J)": "IE_J"
+  },
+  "4. Define Target Variable(s)": {
+    "Less Interest (L)": "L"
+  },
+  "5. List the equation(s) that include all defined variables": {
+    "eq1": "IE_A = IDA × T3R_A × FTD",
+    "eq2": "IE_O = IDA × T3R_O × FTD",
+    "eq3": "IE_J = IDA × T3R_J × FTD",
+    "eq4": "L = IE_A - IE_J"
+  }
+}
+```
+
+### QUESTION ###
+Among the equation(s) listed in JSON SOLUTION, is there a direct equation for calculate "L"? Please find equation for calculate "L". Note that you should only list the equation for calculating the "L" and avoid listing other equation or engaging in any form of derivation. Now please output your answer in json format, with the format as follows: {"Direct equation": ""}. If there is a direct equation for calculation, fill in the equation in the value. If not, fill in "None". Please strictly output in JSON format, do not output irrelevant content.

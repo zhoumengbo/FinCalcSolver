@@ -1,0 +1,10 @@
+### Question ###
+Among the formulas/equations listed in JSON SOLUTION, extract all formulas/equations involving the Target Variable(s) and list them out. Note that you should only list the formulas/equations that involve Target Variable(s) and avoid listing other formulas/equations or engaging in any form of derivation. Now please output your answer in JSON format, with the format as follows: {"Eq1": "your answer 1", "Eq2": "your answer 2"}, etc. If you don't find any formula/equation, don't create arbitrary answers, just output "none". Please strictly output in JSON format, do not output irrelevant content.
+
+
+###1
+Among the formulas/equations listed in JSON SOLUTION, extract all formulas/equations involving the "SIA" and list them out. Note that you should only list the formulas/equations that involve "SIA" and avoid listing other formulas/equations or engaging in any form of derivation. Now please output your answer in JSON format, with the format as follows: {"Eq1": "your answer 1", "Eq2": "your answer 2"}, etc. If you don't find any formula/equation, don't create arbitrary answers, just output "none". Please strictly output in JSON format, do not output irrelevant content.
+
+
+###2
+Among the formulas/equations listed in JSON SOLUTION, extract all formulas/equations involving the "SIJ" and list them out. Note that you should only list the formulas/equations that involve "SIJ" and avoid listing other formulas/equations or engaging in any form of derivation. Now please output your answer in JSON format, with the format as follows: {"Eq1": "your answer 1", "Eq2": "your answer 2"}, etc. If you don't find any formula/equation, don't create arbitrary answers, just output "none". Please strictly output in JSON format, do not output irrelevant content.

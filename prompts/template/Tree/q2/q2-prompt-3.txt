@@ -1,0 +1,285 @@
+##第一步
+###1 提取目标变量（当前使用）
+Below is a question about financial calculation.
+Question: There is a 5-year government bond with a face value of 1000 yuan, an annual coupon rate of 0.12. And the interests are compounded(using the annual coupon rate 0.12) annually but not physically paid out to the investor until maturity. Instead, these interests are accrued and recorded and added to the previous compounding basis to form the new basis for compounding(using the annual coupon rate 0.12 to compound) the next year. That's to say, in year 0, the compounding basis is 1000 yuan, then in year 1, the compounding basis becomes 1000*(1+0.12)^1 yuan, in year 2, the compounding basis becomes 1000*(1+0.12)^2 yuan, ... so on and so forth. Then all the accrued interests are paid out at maturity in a lump-sum payment, together with the repayment of the principal. That's to say, both the principal and accrued interests are physically paid out to the investor in a single lump-sum payment at maturity. Assuming an annual discount rate of 0.1, what is its present value?
+
+Please only list Target Variable(s) and define its variable name based on the financial terminology, ensuring that each variable name accurately reflects the financial concept it represents. Use underscores to connect words within each variable name. For example, if the financial term is 'Interest Rate', then the variable name should be 'Interest_rate'. Please remember these 'Target Variable(s)', later we will use them. Instruction: Clearly identify the final variable(s) that the calculation seeks to resolve. These Target Variables represent the end goal of the calculation process and are derived from the combination of input and intermediate variables. Defining the target variables sets a clear objective for what the calculation will ascertain. Do not to engage in any form of calculation. Note that only list Target Variable(s). There must be no redundant information other than the Target Variable(s).
+
+Extract units for the Target Variable(s).
+
+Provide a general financial interpretation for the variable(s) according to the general Finance domain or Finance industry common practice. Let's call it 'General Financial Interpretation'.
+
+Based on the context of the specific question, provide a specific interpretation for the variable(s) in the context of our specific question. Let's call it 'Specific Interpretation'.
+
+Present the variable names, units, General Financial Interpretation, Specific Interpretation in structured format in list form.
+
+
+###1-2 转化为JSON（当前使用）
+Convert the above list form into a structured format in JSON format, MUST include variable names, units, General Financial Interpretation, Specific Interpretation. Please strictly output in JSON format, do not output irrelevant content. JSON Format:
+JSON Format:
+{
+  "Target Variable(s)": [
+    {
+      "Variable Name": "",
+      "Unit": "",
+      "General Financial Interpretation": "",
+      "Specific Interpretation": ""
+    },
+    {
+      "Variable Name": "",
+      "Unit": "",
+      "General Financial Interpretation": "",
+      "Specific Interpretation": ""
+    },
+    ...
+  ]
+}
+
+##第二步
+###1 提取输入变量（当前使用）
+Below is a question about financial calculation.
+Question: There is a 5-year government bond with a face value of 1000 yuan, an annual coupon rate of 0.12. And the interests are compounded(using the annual coupon rate 0.12) annually but not physically paid out to the investor until maturity. Instead, these interests are accrued and recorded and added to the previous compounding basis to form the new basis for compounding(using the annual coupon rate 0.12 to compound) the next year. That's to say, in year 0, the compounding basis is 1000 yuan, then in year 1, the compounding basis becomes 1000*(1+0.12)^1 yuan, in year 2, the compounding basis becomes 1000*(1+0.12)^2 yuan, ... so on and so forth. Then all the accrued interests are paid out at maturity in a lump-sum payment, together with the repayment of the principal. That's to say, both the principal and accrued interests are physically paid out to the investor in a single lump-sum payment at maturity. Assuming an annual discount rate of 0.1, what is its present value?
+
+Identify all the numerical values in the question, including implicit numerical values such as "three-month," "three months," "five-inch," "five inches," etc. And convert "1 million" or "one million" into 1,000,000, etc. However, do not include numerical values that require derivation and calculation. In the following, we will assign variable names to these numerical values. Please remember these variables as "Input Variable(s)" as a whole, later we will refer to these "Input Variable(s)".
+For each numerical value identified above, perform the following tasks:
+1. In accordance with the context of the question and following financial industry conventions, for this numerical value, create a new variable and define its variable name based on the financial terminology, ensuring that each variable name accurately reflects the financial concept it represents. Use underscores to connect words within each variable name. For example, if the financial term is 'Interest Rate', then the variable name should be 'Interest_rate'.
+2. Assign the numerical value(note:only numbers, no formulas or equations or other variables) to this variable.
+3. Provide a general financial interpretation for the variable(s) according to the general Finance domain or Finance industry common practice. Lets call it 'General Financial Interpretation'.
+4. Based on the context of the specific question, provide a specific interpretation for the variable(s) in the context of our specific question. Lets call it 'Specific Interpretation'.
+5. Extract the unit of the numerical value.
+6. Present the variable names, units, numerical values, in structured format in list form.
+
+
+###1-2 转化为JSON（当前使用）
+Convert the above list form into a structured format in JSON format, MUST include variable names, numerical values, units, General Financial Interpretation, Specific Interpretation. Please strictly output in JSON format, do not output irrelevant content. JSON Format:
+{
+  "Input Variable(s)": [
+    {
+      "Variable Name": "",
+      "Numerical Value": ,
+      "Unit": "",
+      "General Financial Interpretation": "",
+      "Specific Interpretation": ""
+    },
+    {
+      "Variable Name": "",
+      "Numerical Value": ,
+      "Unit": "",
+      "General Financial Interpretation": "",
+      "Specific Interpretation": ""
+    },
+    ...
+  ]
+}
+
+###1 在获得目标变量和输入变量的JSON后，第一步，列出变量相关公式
+You are a finance expert. Below is a question about financial calculation.
+Question: There is a 5-year government bond with a face value of 1000 yuan, an annual coupon rate of 0.12. And the interests are compounded(using the annual coupon rate 0.12) annually but not physically paid out to the investor until maturity. Instead, these interests are accrued and recorded and added to the previous compounding basis to form the new basis for compounding(using the annual coupon rate 0.12 to compound) the next year. That's to say, in year 0, the compounding basis is 1000 yuan, then in year 1, the compounding basis becomes 1000*(1+0.12)^1 yuan, in year 2, the compounding basis becomes 1000*(1+0.12)^2 yuan, ... so on and so forth. Then all the accrued interests are paid out at maturity in a lump-sum payment, together with the repayment of the principal. That's to say, both the principal and accrued interests are physically paid out to the investor in a single lump-sum payment at maturity. Assuming an annual discount rate of 0.1, what is its present value?
+
+You have already identified the Target Variables and the Input Variables, shown below in JSON format:
+
+{
+  "Target Variable(s)": [
+    {
+      "Variable Name": "Present_Value",
+      "Unit": "Yuan",
+      "General Financial Interpretation for Variable": "The present value of a financial instrument or investment, which represents the current worth of future cash flows, considering the time value of money and the risk-free interest rate.",
+      "Interpretation Specific to our Question for Variable": "The present value of the 5-year government bond, considering the time value of money and the risk-free interest rate, given the face value, annual coupon rate, and annual discount rate."
+    }
+  ]
+}
+
+{
+  "Input Variable(s)": [
+    {
+      "Variable Name": "Bond_term",
+      "Numerical Value": 5,
+      "Unit": "years",
+      "General Financial Interpretation for Variable": "The duration of the bond, in years",
+      "Interpretation Specific to our Question for Variable": "The duration of the 5-year government bond"
+    },
+    {
+      "Variable Name": "Face_value",
+      "Numerical Value": 1000,
+      "Unit": "yuan",
+      "General Financial Interpretation for Variable": "The initial principal amount of the bond",
+      "Interpretation Specific to our Question for Variable": "The initial principal amount of the 1000 yuan bond"
+    },
+    {
+      "Variable Name": "Coupon_rate",
+      "Numerical Value": 0.12,
+      "Unit": "",
+      "General Financial Interpretation for Variable": "The annual interest rate paid on the bond",
+      "Interpretation Specific to our Question for Variable": "The annual interest rate of 0.12 paid on the bond"
+    },
+    {
+      "Variable Name": "Discount_rate",
+      "Numerical Value": 0.1,
+      "Unit": "",
+      "General Financial Interpretation for Variable": "The annual interest rate used to discount future cash flows",
+      "Interpretation Specific to our Question for Variable": "The annual interest rate of 0.1 used to discount future cash flows"
+    }
+  ]
+}
+
+
+Your task: For each variable in Input Variable(s) and then for each variable in Target Variable(s), perform the following steps:
+1. Read carefully its "General Financial Interpretation for Variable" section, what's the meaning of this variable in general Finance? List all formulas/equations in general Finance which involve the-said variable(note: list all formulas/equations involving this variable). Provide a general financial interpretation for the formulas/equations according to the general Finance domain or Finance industry common practice. Let's call it 'General Financial Interpretation for Formulas'.
+
+###1-2 第二步，将公式带入实际问题
+###2
+2. Read carefully its "Interpretation Specific to our Question for Variable" section, what's the meaning of this variable according to our specific question? Then apply the above-listed general formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-duplicating Intermediate Variables (note: Intermediate Variables should not duplicate with any of those Target Variables or Input Variables) according to Finance common practice. Based on the context of the specific question, provide a specific interpretation for the formulas/equations in the context of our specific question. Let's call it 'Interpretation Specific to our Question for Formulas'.
+
+###1-3 第三步，列出中间变量
+###3
+Identify all the intermediate variables in the previous formula. Intermediate variables are new variables that appear in the formula. Please strictly distinguish them from the provided input variables and target variables. If a variable is neither in Input Variable(s) nor Target Variable(s), we define it as a intermediate variable. Please remember these variables as "Intermediate Variable(s)" as a whole, later we will refer to these "Intermediate Variable(s)".
+Finally, list all Intermediate Variable(s).
+
+
+###1-4 第四步，列出中间变量的公式
+###4
+For each variable in the Intermediate Variables, list all formulas/equations in Finance which involve the-said variable (note: list all formulas/equations involving this variable). According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to Finance common practice.
+
+###1-5 第五步，列出中间变量的list
+###5
+For each Intermediate Variable(s), present the variable names, units, general financial interpretations and specific interpretations in structured format in list form.
+
+###1-6 第五步，中间变量转化为JSON
+###6
+Convert the above list form into a structured format in JSON format, MUST include variable names, numerical values, units, General Financial Interpretation, Specific Interpretation. Please strictly output in JSON format, do not output irrelevant content. JSON Format:
+{
+  "Intermediate Variable(s)": [
+    {
+      "Variable Name": "",
+      "Unit": "",
+      "General Financial Interpretation": "",
+      "Specific Interpretation": ""
+    },
+    {
+      "Variable Name": "",
+      "Unit": "",
+      "General Financial Interpretation": "",
+      "Specific Interpretation": ""
+    },
+    ...
+  ]
+}
+
+
+
+
+
+###7 双变量
+You have already identified the Target Variable(s), Input Variable(s) and Intermediate Variable(s), shown below in JSON format:
+
+{
+  "Target Variable(s)": [
+    {
+      "Variable Name": "Present_Value",
+      "Unit": "Yuan",
+      "General Financial Interpretation for Variable": "The present value of a financial instrument or investment, which represents the current worth of future cash flows, considering the time value of money and the risk-free interest rate.",
+      "Interpretation Specific to our Question for Variable": "The present value of the 5-year government bond, considering the time value of money and the risk-free interest rate, given the face value, annual coupon rate, and annual discount rate."
+    }
+  ]
+}
+
+{
+  "Input Variable(s)": [
+    {
+      "Variable Name": "Bond_term",
+      "Numerical Value": 5,
+      "Unit": "years",
+      "General Financial Interpretation for Variable": "The duration of the bond, in years",
+      "Interpretation Specific to our Question for Variable": "The duration of the 5-year government bond"
+    },
+    {
+      "Variable Name": "Face_value",
+      "Numerical Value": 1000,
+      "Unit": "yuan",
+      "General Financial Interpretation for Variable": "The initial principal amount of the bond",
+      "Interpretation Specific to our Question for Variable": "The initial principal amount of the 1000 yuan bond"
+    },
+    {
+      "Variable Name": "Coupon_rate",
+      "Numerical Value": 0.12,
+      "Unit": "",
+      "General Financial Interpretation for Variable": "The annual interest rate paid on the bond",
+      "Interpretation Specific to our Question for Variable": "The annual interest rate of 0.12 paid on the bond"
+    },
+    {
+      "Variable Name": "Discount_rate",
+      "Numerical Value": 0.1,
+      "Unit": "",
+      "General Financial Interpretation for Variable": "The annual interest rate used to discount future cash flows",
+      "Interpretation Specific to our Question for Variable": "The annual interest rate of 0.1 used to discount future cash flows"
+    }
+  ]
+}
+
+{
+  "Intermediate Variable(s)": [
+    {
+      "Variable Name": "Time_to_maturity",
+      "Unit": "years",
+      "General Financial Interpretation": "The duration of the bond, in years",
+      "Specific Interpretation": "The duration of the 5-year government bond"
+    },
+    {
+      "Variable Name": "Interest_rate",
+      "Unit": "",
+      "General Financial Interpretation": "The annual interest rate paid on the bond",
+      "Specific Interpretation": "The annual interest rate of 0.12 paid on the bond"
+    },
+    {
+      "Variable Name": "Future_value",
+      "Unit": "yuan",
+      "General Financial Interpretation": "The future value of an investment or financial instrument, considering the time value of money and the risk-free interest rate",
+      "Specific Interpretation": "The future value of the bond, considering the time value of money and the risk-free interest rate"
+    },
+    {
+      "Variable Name": "Coupon_payment",
+      "Unit": "yuan",
+      "General Financial Interpretation": "The annual interest payment received from a bond",
+      "Specific Interpretation": "The annual interest payment received from the bond"
+    }
+  ]
+}
+
+
+-------------------------------------------
+
+
+Two-element combinations:
+1. (Present_Value, Coupon_rate)
+2. (Present_Value, Future_value)
+3. (Coupon_rate, Future_value)
+4. (Present_Value, Discount_rate)
+5. (Interest_rate, Coupon_rate)
+
+
+-------------------------------------------
+
+Given the above 'Two-Element Combinations' table, for each of these two-element combinations, represented as (a, b), perform the following steps:
+1. List all formulas/equations in Finance involving the-said two variables a and b (note: list all formulas/equations involving the two variables. If the two variables do not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question in the [Question] section delimited by three backticks, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations).
+
+
+-------------------------------------------
+```[Question]
+Question: There is a 5-year government bond with a face value of 1000 yuan, an annual coupon rate of 0.12. And the interests are compounded(using the annual coupon rate 0.12) annually but not physically paid out to the investor until maturity. Instead, these interests are accrued and recorded and added to the previous compounding basis to form the new basis for compounding(using the annual coupon rate 0.12 to compound) the next year. That's to say, in year 0, the compounding basis is 1000 yuan, then in year 1, the compounding basis becomes 1000*(1+0.12)^1 yuan, in year 2, the compounding basis becomes 1000*(1+0.12)^2 yuan, ... so on and so forth. Then all the accrued interests are paid out at maturity in a lump-sum payment, together with the repayment of the principal. That's to say, both the principal and accrued interests are physically paid out to the investor in a single lump-sum payment at maturity. Assuming an annual discount rate of 0.1, what is its present value?
+```
+
+###8 （当前使用）
+test_extract_row.py
+
+###9 （当前使用）
+q2-JSON-TREE-3.txt
+
+
+
+#附录（记录在案，以后可能有用）：
+###6
+Combine the variables in the Input Variable(s) and in the Target Variable(s) into a new set A, where its elements are the variables. Manually enumerate all possible combinations of two elements from this set. Do not use any programming language or code to generate these combinations. Instead, list each possible pair of elements from set A, ensuring that each combination is unique and no pair is repeated. Provide a complete list of these two-element combinations.<|im_end|>
+
+###6
+You are a Finance expert. Put all variables in the Input Variables into a new set A. Then put all variables in the Target Variables into the set A. Then put all variables in the Intermediate Variables into the set A. Note: ignore the origins of the variables when putting them into the set A. Manually enumerate all possible combinations of two elements from this set. Do not use any programming language or code to generate these combinations. Instead, list each possible pair of elements from set A, ensuring that each combination is unique and no pair is repeated. Provide a complete list of these two-element combinations.

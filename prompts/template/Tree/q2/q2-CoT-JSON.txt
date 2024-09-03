@@ -1,0 +1,253 @@
+### INSTRUCTION ###
+Your task is to extract key information from the part delimited by three backticks. The output format should be consistent with the Structured Answer Instructions and Example provided.
+First, I will outline the structured answer instructions and format. This will establish a clear guideline for formulating structured answers. Following these foundational instructions, I will present a sample question and demonstrate its structured solution, applying the outlined instructions for clarity and precision. Please adhere to these instructions. Ensure that each variable name is unique across all sections to avoid confusion. Distinctly name input variables, intermediate variables, and target variables, especially if they represent different concepts or stages in the calculation. Ensure to append the unit of measurement to each variable description. Ensure to distinguish between currency units when appending them to variable descriptions, for example, use (yuan) for yuan and ($) for dollars.
+
+### Structured Answer Instruction ###
+{
+  "1. Define Input Variable(s)": {
+  "Instructions": "List all Input Variable(s) here. Use the following format:'variable name in full (unit)':'variable name'. Here is a real example: 'Olivia's initial money (unit:$)': 'OIM'."
+  },
+  "2. Input Variable(s) Assignment": {
+  "Instructions": "List all Input Variable(s) Assignments here."
+  },
+  "3. Define Intermediate Variable(s)": {
+  "Instructions": "List all Intermediate Variable(s) here. Use the same format as before."
+  },
+  "4. Define Target Variable(s)": {
+  "Instructions": "List all Target Variable(s) here. Use the same format as before."
+  },
+  "5. List the formula(s)/equation(s)": {
+  "Instructions": "Extract all formulas/equations from and list here. Don't make any modification or change."
+  }
+}
+
+### Example ###
+Sample Question:
+Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+
+Structured Answer:
+{
+  "1. Define Input Variable(s)": {
+    "Olivia's initial money (unit:$)": "OIM",
+    "Cost of each bagel (unit:$)": "CB",
+    "Number of bagels" (unit:count): "NB"
+  },
+  "2. Input Variable(s) Assignment": {
+    "OIM": 23,
+    "CB": 3,
+    "NB": 5
+  },
+  "3. Define Intermediate Variable(s)": {
+    "Total cost (unit:$)": "TC"
+  },
+  "4. Define Target Variable(s)": {
+    "Remaining money (unit:$)": "RM"
+  },
+  "5. List the formula(s)/equation(s)": {
+    "eq1": "TC = NB * CB",
+    "eq2": "RM = 0IM - TC"
+  }
+}
+
+### INPUT DATA ###
+
+```
+Target Variable(s): PV (Present Value)
+
+Input Variable(s):
+
+1. Face Value (FV): 1000 yuan
+   Financial Interpretation: The initial amount of the bond that the investor will receive at maturity.
+   Unit: Yuan
+   Numerical Value: 1000
+
+2. Annual Coupon Rate (ACR): 0.12
+   Financial Interpretation: The interest rate paid annually on the bond.
+   Unit: Percentage
+   Numerical Value: 0.12
+
+3. Annual Discount Rate (ADR): 0.1
+   Financial Interpretation: The interest rate used to discount the future cash flows of the bond.
+   Unit: Percentage
+   Numerical Value: 0.1
+
+4. Number of Years (NY): 5
+   Financial Interpretation: The duration of the bond.
+   Unit: Years
+   Numerical Value: 5
+
+Input Variable(s):
+
+1. Face Value (FV): 1000 yuan
+   Financial Interpretation: The initial amount of the bond that the investor will receive at maturity.
+   Unit: Yuan
+   Numerical Value: 1000
+
+2. Annual Coupon Rate (ACR): 0.12
+   Financial Interpretation: The interest rate paid annually on the bond.
+   Unit: Percentage
+   Numerical Value: 0.12
+
+3. Annual Discount Rate (ADR): 0.1
+   Financial Interpretation: The interest rate used to discount the future cash flows of the bond.
+   Unit: Percentage
+   Numerical Value: 0.1
+
+4. Number of Years (NY): 5
+   Financial Interpretation: The duration of the bond.
+   Unit: Years
+   Numerical Value: 5
+
+Target Variable(s): PV (Present Value)
+
+Intermediate Variable(s):
+
+1. Compounding Basis (CB): The initial amount of the bond, adjusted for compounding using the annual coupon rate.
+   Formula: CB = FV * (1 + ACR)^NY
+   Unit: Yuan
+
+2. Accrued Interests (AI): The total interest accrued over the life of the bond, including the final payment at maturity.
+   Formula: AI = CB * (1 + ADR)^NY - CB
+   Unit: Yuan
+
+3. Present Value (PV): The present value of the bond, considering the accrued interests and the principal repayment at maturity.
+   Formula: PV = CB - AI
+   Unit: Yua
+
+Intermediate Variable(s):
+
+1. Compounding Basis (CB): The initial amount of the bond, adjusted for compounding using the annual coupon rate.
+   Formula: CB = FV * (1 + ACR)^NY
+   Unit: Yuan
+
+2. Accrued Interests (AI): The total interest accrued over the life of the bond, including the final payment at maturity.
+   Formula: AI = CB * (1 + ADR)^NY - CB
+   Unit: Yuan
+
+3. Present Value (PV): The present value of the bond, considering the accrued interests and the principal repayment at maturity.
+   Formula: PV = CB - AI
+   Unit: Yuan
+
+For Compounding Basis (CB):
+
+1. Formula: CB = FV * (1 + ACR)^NY
+   Unit: Yuan
+
+For Accrued Interests (AI):
+
+1. Formula: AI = CB * (1 + ADR)^NY - CB
+   Unit: Yuan
+
+For Present Value (PV):
+
+1. Formula: PV = CB - AI
+   Unit: Yua
+
+Intermediate Variable(s):
+
+1. Compounding Basis (CB): The initial amount of the bond, adjusted for compounding using the annual coupon rate.
+   Formula: CB = FV * (1 + ACR)^NY
+   Unit: Yuan
+
+2. Accrued Interests (AI): The total interest accrued over the life of the bond, including the final payment at maturity.
+   Formula: AI = CB * (1 + ADR)^NY - CB
+   Unit: Yuan
+
+3. Present Value (PV): The present value of the bond, considering the accrued interests and the principal repayment at maturity.
+   Formula: PV = CB - AI
+   Unit: Yuan
+
+For Compounding Basis (CB):
+
+1. Formula: CB = FV * (1 + ACR)^NY
+   Unit: Yuan
+
+For Accrued Interests (AI):
+
+1. Formula: AI = CB * (1 + ADR)^NY - CB
+   Unit: Yuan
+
+For Present Value (PV):
+
+1. Formula: PV = CB - AI
+   Unit: Yua
+
+Set A:
+
+1. Face Value (FV)
+2. Annual Coupon Rate (ACR)
+3. Annual Discount Rate (ADR)
+4. Number of Years (NY)
+5. Compounding Basis (CB)
+6. Accrued Interests (AI)
+7. Present Value (PV)
+
+Possible two-element combinations:
+
+1. (FV, ACR)
+   Formulas/Equations: None
+
+2. (FV, ADR)
+   Formulas/Equations: None
+
+3. (FV, NY)
+   Formulas/Equations: None
+
+4. (FV, CB)
+   Formulas/Equations: CB = FV * (1 + ACR)^NY
+
+5. (FV, AI)
+   Formulas/Equations: AI = CB * (1 + ADR)^NY - CB
+
+6. (FV, PV)
+   Formulas/Equations: PV = CB - AI
+
+7. (ACR, ADR)
+   Formulas/Equations: None
+
+8. (ACR, NY)
+   Formulas/Equations: None
+
+9. (ACR, CB)
+   Formulas/Equations: CB = FV * (1 + ACR)^NY
+
+10. (ACR, AI)
+   Formulas/Equations: AI = CB * (1 + ADR)^NY - CB
+
+11. (ACR, PV)
+   Formulas/Equations: PV = CB - AI
+
+12. (ADR, NY)
+   Formulas/Equations: None
+
+13. (ADR, CB)
+   Formulas/Equations: AI = CB * (1 + ADR)^NY - CB
+
+14. (ADR, AI)
+   Formulas/Equations: None
+
+15. (ADR, PV)
+   Formulas/Equations: PV = CB - AI
+
+16. (NY, CB)
+   Formulas/Equations: CB = FV * (1 + ACR)^NY
+
+17. (NY, AI)
+   Formulas/Equations: AI = CB * (1 + ADR)^NY - CB
+
+18. (NY, PV)
+   Formulas/Equations: PV = CB - AI
+
+19. (CB, AI)
+   Formulas/Equations: AI = CB * (1 + ADR)^NY - CB
+
+20. (CB, PV)
+   Formulas/Equations: PV = CB - AI
+
+21. (AI, PV)
+   Formulas/Equations: PV = CB - AI
+```
+
+Note:
+The content within the three backticks is crucial. Please extract the contents, ensuring no variables or formulas/equations are missed. In line with the context of the question, list the formulas using abbreviations under '5. List the formula(s)/equation(s)'. Please strictly enumerate following the format "eq1": "T = N * B", "eq2": "R = 0 - T". Just list the original formulas/equations, and do not derive any formulas/equations.
+Your answer must strictly conform to the JSON structure outlined in the template. Offer a clear, methodical, and accurate representation of the calculation process, following the question's parameters closely. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

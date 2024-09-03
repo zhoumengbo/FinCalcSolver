@@ -1,0 +1,29 @@
+###1
+Below is a question about financial calculation.
+Question: To stimulate economic growth, since 2022, the country has repeatedly lowered bank deposit interest rates. The three-year rate was 0.0315 in August 2022, reduced to 0.03 in October, and further to 0.0285 in January 2023. These rates are simple annual interest rates. In January 2023, if Mr. Wang has a deposit of $100,000 for a fixed term of three years (note that this is a fixed-term deposit for three years), how much less interest will he earn compared to a similar three-year term deposit that if he had started in August 2022? Please use simple interest in your calculations, and do not use exponential or continuous compounding.
+
+Please only list Target Variable(s) and use abbreviations to represent each variable. Please remember these Target Variable(s), later we will use them. Instruction: Clearly identify the final variable(s) that the calculation seeks to resolve. These target variables represent the end goal of the calculation process and are derived from the combination of input and intermediate variables. Defining the target variables sets a clear objective for what the calculation will ascertain. Do not to engage in any form of caculation. Note that only list target variable(s). There must be no redundant information other than the target variable(s).
+
+
+###2
+Identify all the numerical values in the question, including implicit numerical values such as "three-month," "three months," "five-inch," "five inches," etc. However, do not include numerical values that require derivation and calculation. In the following, we will assign variable names to these numerical values. Please remember these variables as "Input Variable(s)" as a whole, later we will refer to these "Input Variable(s)".
+For each numerical value identified above, perform the following tasks:
+2.1 In accordance with the context of the question and following financial industry conventions, define a variable name in an English abbreviation form that conforms to financial industry standards.
+2.2 Assign the numerical value to this variable.
+2.3 Based on the context of the question, provide a financial interpretation for this variable.
+2.4 Extract the unit of the numerical value.
+2.5 Present the financial interpretation, variable name, unit, and numerical value in a structured format.
+
+
+###3
+You are a finance expert. Do the following tasks:
+Identify variables in the Target Variable(s) and the Input Variable(s) listed above (note: ensure that no variable is omitted). For each variable identified, please perform the following operations:
+1. List all formulas/equations in the finance domain that involve this variable (note: list all formulas/equations involving this variable. If a variable does not involve any formulas/equations, do not list it arbitrarily).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question. Create necessary but non-overlapping Intermediate Variable(s) (note: Intermediate Variables cannot overlap with Target Variable(s) or Input Variable(s)) as required by the question.
+
+
+###4
+You are a finance expert. Do the following tasks:
+Identify variables in the Target Variable(s) and the Input Variable(s) listed above (note: ensure that no variable is omitted). For every two variables identified, please perform the following operations:
+List all formulas/equations involving these two variables in the financial field. (Note: List all formulas/equations involving these two variables. If there are no formulas/equations involved between these two variables, please do not list them randomly).
+2. According to our specific question, apply the above-listed formulas/equations to our specific question. Create necessary but non-overlapping Intermediate Variable(s) (note: Intermediate Variables cannot overlap with Target Variable(s) or Input Variable(s)) as required by the question.

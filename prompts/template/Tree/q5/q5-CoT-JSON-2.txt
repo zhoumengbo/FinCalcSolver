@@ -1,0 +1,266 @@
+### INSTRUCTION ###
+Your task is to extract key information from the part delimited by three backticks. The output format should be consistent with the Structured Answer Instructions and Example provided.
+First, I will outline the structured answer instructions and format. This will establish a clear guideline for formulating structured answers. Following these foundational instructions, I will present a sample question and demonstrate its structured solution, applying the outlined instructions for clarity and precision. Please adhere to these instructions. Ensure that each variable name is unique across all sections to avoid confusion. Distinctly name input variables, intermediate variables, and target variables, especially if they represent different concepts or stages in the calculation. Ensure to append the unit of measurement to each variable description. Ensure to distinguish between currency units when appending them to variable descriptions, for example, use (yuan) for yuan and ($) for dollars.
+
+### Structured Answer Instruction ###
+{
+  "1. Define Input Variable(s)": {
+  "Instructions": "List all Input Variable(s) here. Use the following format:'variable name in full (unit)':'variable name'. Here is a real example: 'Olivia's initial money (unit:$)': 'OIM'."
+  },
+  "2. Input Variable(s) Assignment": {
+  "Instructions": "List all Input Variable(s) Assignments here."
+  },
+  "3. Define Intermediate Variable(s)": {
+  "Instructions": "List all Intermediate Variable(s) here. Use the same format as before."
+  },
+  "4. Define Target Variable(s)": {
+  "Instructions": "List all Target Variable(s) here. Use the same format as before."
+  },
+  "5. List the formula(s)/equation(s)": {
+  "Instructions": "Extract all formulas/equations from and list here. Don't make any modification or change."
+  }
+}
+
+### Example ###
+Sample Question:
+Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+
+Structured Answer:
+{
+  "1. Define Input Variable(s)": {
+    "Olivia's initial money (unit:$)": "OIM",
+    "Cost of each bagel (unit:$)": "CB",
+    "Number of bagels" (unit:count): "NB"
+  },
+  "2. Input Variable(s) Assignment": {
+    "OIM": 23,
+    "CB": 3,
+    "NB": 5
+  },
+  "3. Define Intermediate Variable(s)": {
+    "Total cost (unit:$)": "TC"
+  },
+  "4. Define Target Variable(s)": {
+    "Remaining money (unit:$)": "RM"
+  },
+  "5. List the formula(s)/equation(s)": {
+    "eq1": "TC = NB * CB",
+    "eq2": "RM = 0IM - TC"
+  }
+}
+
+### INPUT DATA ###
+
+```
+Target Variable(s): ROE
+Input Variable(s):
+
+1. Sales Revenue (SR): 8,000,000 yuan (financial interpretation: the total amount of money a company receives from selling its goods or services during a specific period; unit: yuan)
+2. Net Profit (NP): 8% of SR (financial interpretation: the amount of money a company has left after paying all its expenses and taxes; unit: yuan)
+3. Current Assets (CA): 2,000,000 yuan (financial interpretation: the value of all a company's assets that are expected to be converted into cash within one year; unit: yuan)
+4. Fixed Assets (FA): 6,000,000 yuan (financial interpretation: the value of all a company's assets that are expected to be used for more than one year; unit: yuan)
+5. Net Working Capital (NWC): 1,000,000 yuan (financial interpretation: the difference between a company's current assets and its current liabilities; unit: yuan)
+6. Long-Term Liabilities (LTL): 3,000,000 yuan (financial interpretation: the amount of money a company owes to its creditors that is due to be repaid within more than one year; unit: yuan)<|im_end|>
+
+
+For each variable in Input Variable(s):
+
+1. Sales Revenue (SR):
+   - Formula/Equation: None
+
+2. Net Profit (NP):
+   - Formula/Equation: NP = SR * Net Profit Margin (NPM)
+   - Intermediate Variable: Net Profit Margin (NPM)
+
+3. Current Assets (CA):
+   - Formula/Equation: None
+
+4. Fixed Assets (FA):
+   - Formula/Equation: None
+
+5. Net Working Capital (NWC):
+   - Formula/Equation: NWC = CA - Current Liabilities (CL)
+   - Intermediate Variable: Current Liabilities (CL)
+
+6. Long-Term Liabilities (LTL):
+   - Formula/Equation: None
+
+For each variable in Target Variable(s):
+
+1. Return on Equity (ROE):
+   - Formula/Equation: ROE = NP / Shareholders' Equity (SE)
+   - Intermediate Variable: Shareholders' Equity (SE)
+
+For each variable in Intermediate Variables:
+
+1. Net Profit Margin (NPM):
+   - Formula/Equation: NPM = NP / SR
+
+2. Current Liabilities (CL):
+   - Formula/Equation: CL = Total Liabilities (TL) - LTL
+   - Intermediate Variable: Total Liabilities (TL)
+
+3. Shareholders' Equity (SE):
+   - Formula/Equation: SE = Total Assets (TA) - TL
+   - Intermediate Variable: Total Assets (TA)
+
+For each variable in all Intermediate Variables:
+
+1. Net Profit Margin (NPM):
+   - Formula/Equation: NPM = NP / SR
+
+2. Current Liabilities (CL):
+   - Formula/Equation: CL = TL - LTL
+   - Intermediate Variable: Total Liabilities (TL)
+
+3. Shareholders' Equity (SE):
+   - Formula/Equation: SE = TA - TL
+   - Intermediate Variable: Total Assets (TA)
+
+4. Total Liabilities (TL):
+   - Formula/Equation: TL = LTL + CL
+
+5. Total Assets (TA):
+   - Formula/Equation: TA = CA + FA + SE
+
+Set A:
+
+Input Variables:
+- Sales Revenue (SR)
+- Net Profit (NP)
+- Current Assets (CA)
+- Fixed Assets (FA)
+- Net Working Capital (NWC)
+- Long-Term Liabilities (LTL)
+
+Target Variables:
+- Return on Equity (ROE)
+
+Intermediate Variables:
+- Net Profit Margin (NPM)
+- Current Liabilities (CL)
+- Total Liabilities (TL)
+- Total Assets (TA)
+
+Possible two-element combinations:
+
+1. (SR, NP)
+   - Formula/Equation: NP = SR * NPM
+   - Intermediate Variable: Net Profit Margin (NPM)
+
+2. (SR, CA)
+   - Formula/Equation: CA = NWC + CL
+   - Intermediate Variable: Current Liabilities (CL)
+
+3. (SR, FA)
+   - Formula/Equation: FA = Total Assets (TA) - Current Assets (CA) - Shareholders' Equity (SE)
+
+4. (SR, NWC)
+   - Formula/Equation: NWC = CA - CL
+   - Intermediate Variable: Current Liabilities (CL)
+
+5. (SR, LTL)
+   - Formula/Equation: LTL = Total Liabilities (TL) - CL
+   - Intermediate Variable: Current Liabilities (CL)
+
+6. (SR, TL)
+   - Formula/Equation: TL = LTL + CL
+   - Intermediate Variable: Current Liabilities (CL)
+
+7. (SR, TA)
+   - Formula/Equation: TA = CA + FA + SE
+
+8. (NP, NPM)
+   - Formula/Equation: NPM = NP / SR
+
+9. (NP, CL)
+   - Formula/Equation: CL = TL - LTL
+   - Intermediate Variable: Total Liabilities (TL)
+
+10. (NP, TL)
+   - Formula/Equation: TL = LTL + CL
+   - Intermediate Variable: Current Liabilities (CL)
+
+11. (NP, TA)
+   - Formula/Equation: TA = CA + FA + SE
+
+12. (CA, CL)
+   - Formula/Equation: CL = TL - LTL
+   - Intermediate Variable: Total Liabilities (TL)
+
+13. (CA, TL)
+   - Formula/Equation: TL = LTL + CL
+   - Intermediate Variable: Current Liabilities (CL)
+
+14. (CA, TA)
+   - Formula/Equation: TA = CA + FA + SE
+
+15. (FA, CL)
+   - Formula/Equation: CL = TL - LTL
+   - Intermediate Variable: Total Liabilities (TL)
+
+16. (FA, TL)
+   - Formula/Equation: TL = LTL + CL
+   - Intermediate Variable: Current Liabilities (CL)
+
+17. (FA, TA)
+   - Formula/Equation: TA = CA + FA + SE
+
+18. (NWC, CL)
+   - Formula/Equation: CL = TL - LTL
+   - Intermediate Variable: Total Liabilities (TL)
+
+19. (NWC, TL)
+   - Formula/Equation: TL = LTL + CL
+   - Intermediate Variable: Current Liabilities (CL)
+
+20. (NWC, TA)
+   - Formula/Equation: TA = CA + FA + SE
+
+21. (LTL, CL)
+   - Formula/Equation: CL = TL - LTL
+   - Intermediate Variable: Total Liabilities (TL)
+
+22. (LTL, TL)
+   - Formula/Equation: TL = LTL + CL
+   - Intermediate Variable: Current Liabilities (CL)
+
+23. (LTL, TA)
+   - Formula/Equation: TA = CA + FA + SE
+
+24. (TL, TA)
+   - Formula/Equation: TA = CA + FA + SE
+
+25. (ROE, NPM)
+   - Formula/Equation: ROE = NP / SE
+   - Intermediate Variable: Shareholders' Equity (SE)
+
+26. (ROE, CL)
+   - Formula/Equation: CL = TL - LTL
+   - Intermediate Variable: Total Liabilities (TL)
+
+27. (ROE, TL)
+   - Formula/Equation: TL = LTL + CL
+   - Intermediate Variable: Current Liabilities (CL)
+
+28. (ROE, TA)
+   - Formula/Equation: TA = CA + FA + SE
+
+29. (SE, NPM)
+   - Formula/Equation: ROE = NP / SE
+
+30. (SE, CL)
+   - Formula/Equation: CL = TL - LTL
+   - Intermediate Variable: Total Liabilities (TL)
+
+31. (SE, TL)
+   - Formula/Equation: TL = LTL + CL
+   - Intermediate Variable: Current Liabilities (CL)
+
+32. (SE, TA)
+   - Formula/Equation: TA = CA + FA + SE
+```
+
+Note:
+The content within the three backticks is crucial. Please extract the contents, ensuring no variables or formulas/equations are missed. In line with the context of the question, list the formulas using abbreviations under '5. List the formula(s)/equation(s)'. Please strictly enumerate following the format "eq1": "T = N * B", "eq2": "R = 0 - T". Just list the original formulas/equations, and do not derive any formulas/equations.
+Your answer must strictly conform to the JSON structure outlined in the template. Offer a clear, methodical, and accurate representation of the calculation process, following the question's parameters closely. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

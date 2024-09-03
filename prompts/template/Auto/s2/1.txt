@@ -1,0 +1,7 @@
+###1
+Below is a question about financial calculation.
+Question: {Question}
+
+Identify all numerical values and units in the problem, such as "three month", "three-year", etc. And convert "1 million" or "one million" into 1,000,000, etc. However, do not include numerical values that require derivation and calculation. In the following, we will assign variable names to these numerical values and units. Please remember these variables as "Input Variable(s)" as a whole, later we will refer to these "Input Variable(s)".
+
+Note: If the problem contains a ratio relationship, such as "A being B of C", where B is a ratio (in numerical form), and A and C are variables, then B should be defined as "A_margin".

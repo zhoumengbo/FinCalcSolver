@@ -1,0 +1,17 @@
+### INPUT DATA ###
+The following is information about the target variables that have been defined delimited by three backticks:
+```
+{
+  "Target Variable(s)": [
+    {
+      "Variable Name": "New_stock_price",
+      "Unit": "USD",
+      "General Financial Interpretation for Variable": "New_stock_price represents the value of one share of common stock after the exercise of all warrants.",
+      "Interpretation Specific to our Question for Variable": "In the context of the specific question, New_stock_price represents the new stock price that will result from the exercise of all warrants by warrant holders, leading to the issuance of new shares."
+    }
+  ]
+}
+```
+
+### INSTRUCTION ###
+In order to solve for "New_stock_price", which formula or equation should I use？

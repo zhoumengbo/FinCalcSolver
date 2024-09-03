@@ -1,0 +1,357 @@
+### INSTRUCTION ###
+Your task is to extract key information from the part delimited by three backticks. The output format should be consistent with the Structured Answer Instructions and Example provided.
+First, I will outline the structured answer instructions and format. This will establish a clear guideline for formulating structured answers. Following these foundational instructions, I will present a sample question and demonstrate its structured solution, applying the outlined instructions for clarity and precision. Please adhere to these instructions. Ensure that each variable name is unique across all sections to avoid confusion. Distinctly name input variables, intermediate variables, and target variables, especially if they represent different concepts or stages in the calculation. Ensure to append the unit of measurement to each variable description. Ensure to distinguish between currency units when appending them to variable descriptions, for example, use (yuan) for yuan and ($) for dollars.
+
+### Structured Answer Instruction ###
+{
+  "1. Define Input Variable(s)": {
+  "Instructions": "List all Input Variable(s) here. Use the following format:'variable name in full (unit)':'variable name'. Here is a real example: 'Olivia's initial money (unit:$)': 'OIM'."
+  },
+  "2. Input Variable(s) Assignment": {
+  "Instructions": "List all Input Variable(s) Assignments here."
+  },
+  "3. Define Intermediate Variable(s)": {
+  "Instructions": "List all Intermediate Variable(s) here. Use the same format as before."
+  },
+  "4. Define Target Variable(s)": {
+  "Instructions": "List all Target Variable(s) here. Use the same format as before."
+  },
+  "5. List the formula(s)/equation(s)": {
+  "Instructions": "Extract all formulas/equations from and list here. Don't make any modification or change."
+  }
+}
+
+### Example ###
+Sample Question:
+Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+
+Structured Answer:
+{
+  "1. Define Input Variable(s)": {
+    "Olivia's initial money (unit:$)": "OIM",
+    "Cost of each bagel (unit:$)": "CB",
+    "Number of bagels" (unit:count): "NB"
+  },
+  "2. Input Variable(s) Assignment": {
+    "OIM": 23,
+    "CB": 3,
+    "NB": 5
+  },
+  "3. Define Intermediate Variable(s)": {
+    "Total cost (unit:$)": "TC"
+  },
+  "4. Define Target Variable(s)": {
+    "Remaining money (unit:$)": "RM"
+  },
+  "5. List the formula(s)/equation(s)": {
+    "eq1": "TC = NB * CB",
+    "eq2": "RM = 0IM - TC"
+  }
+}
+
+### INPUT DATA ###
+
+```
+Target Variable(s):
+- Less Interest (L)
+
+Input Variable(s):
+- Initial Deposit (ID) = $100,000
+- Three-year rate in August 2022 (A) = 0.0315
+- Three-year rate in October 2022 (O) = 0.03
+- Three-year rate in January 2023 (J) = 0.0285
+- Term of deposit (T) = 3 years
+
+Financial Interpretation:
+- ID: The initial amount of money Mr. Wang deposits in the bank.
+- A: The simple annual interest rate for a three-year term deposit in August 2022.
+- O: The simple annual interest rate for a three-year term deposit in October 2022.
+- J: The simple annual interest rate for a three-year term deposit in January 2023.
+- T: The duration of the fixed-term deposit.
+
+Unit:
+- ID: USD
+- A, O, J: Percentage
+- T: Years
+
+Structured Format:
+- ID: $100,000
+- A: 0.0315 (3.15%)
+- O: 0.03 (3%)
+- J: 0.0285 (2.85%)
+- T: 3 years
+
+Input Variable(s):
+- Initial Deposit (ID) = $100,000
+- Three-year rate in August 2022 (A) = 0.0315
+- Three-year rate in October 2022 (O) = 0.03
+- Three-year rate in January 2023 (J) = 0.0285
+- Term of deposit (T) = 3 years
+
+Formulas/Equations Involving Input Variable(s):
+1. Simple Interest Formula:
+   - SI = P * R * T
+   - Where SI is the Simple Interest, P is the Principal Amount (Initial Deposit), R is the Rate of Interest, and T is the Time Period (in years).
+
+Target Variable(s):
+- Less Interest (L)
+
+Formulas/Equations Involving Target Variable(s):
+1. Simple Interest Formula:
+   - SI = P * R * T
+   - Where SI is the Simple Interest, P is the Principal Amount (Initial Deposit), R is the Rate of Interest, and T is the Time Period (in years).
+
+Intermediate Variable(s):
+- Simple Interest in August 2022 (SIA)
+- Simple Interest in October 2022 (SIO)
+- Simple Interest in January 2023 (SIJ)
+
+Formulas/Equations Involving Intermediate Variable(s):
+1. Simple Interest Formula:
+   - SIA = ID * A * T
+   - SIO = ID * O * T
+   - SIJ = ID * J * T
+
+Note: The formulas/equations listed above are not substituted with numerical values. They are used to guide the calculation process.
+
+Intermediate Variable(s):
+- Simple Interest in August 2022 (SIA)
+- Simple Interest in October 2022 (SIO)
+- Simple Interest in January 2023 (SIJ)
+
+Formulas/Equations Involving Intermediate Variable(s):
+1. Simple Interest Formula:
+   - SIA = ID * A * T
+   - SIO = ID * O * T
+   - SIJ = ID * J * T
+
+Note: The formulas/equations listed above are not substituted with numerical values. They are used to guide the calculation process.
+
+Intermediate Variable(s):
+- Simple Interest in August 2022 (SIA)
+- Simple Interest in October 2022 (SIO)
+- Simple Interest in January 2023 (SIJ)
+
+Formulas/Equations Involving Intermediate Variable(s):
+1. Simple Interest Formula:
+   - SIA = ID * A * T
+   - SIO = ID * O * T
+   - SIJ = ID * J * T
+
+Note: The formulas/equations listed above are not substituted with numerical values. They are used to guide the calculation process.
+
+Set A:
+- Initial Deposit (ID)
+- Three-year rate in August 2022 (A)
+- Three-year rate in October 2022 (O)
+- Three-year rate in January 2023 (J)
+- Term of deposit (T)
+- Simple Interest in August 2022 (SIA)
+- Simple Interest in October 2022 (SIO)
+- Simple Interest in January 2023 (SIJ)
+- Less Interest (L)
+
+Two-element combinations from Set A:
+1. (ID, A)
+2. (ID, O)
+3. (ID, J)
+4. (ID, T)
+5. (ID, SIA)
+6. (ID, SIO)
+7. (ID, SIJ)
+8. (ID, L)
+9. (A, O)
+10. (A, J)
+11. (A, T)
+12. (A, SIA)
+13. (A, SIO)
+14. (A, SIJ)
+15. (A, L)
+16. (O, J)
+17. (O, T)
+18. (O, SIA)
+19. (O, SIO)
+20. (O, SIJ)
+21. (O, L)
+22. (J, T)
+23. (J, SIA)
+24. (J, SIO)
+25. (J, SIJ)
+26. (J, L)
+27. (T, SIA)
+28. (T, SIO)
+29. (T, SIJ)
+30. (T, L)
+31. (SIA, SIO)
+32. (SIA, SIJ)
+33. (SIA, L)
+34. (SIO, SIJ)
+35. (SIO, L)
+36. (SIJ, L)
+
+Two-element combinations from Set A:
+1. (ID, A)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+
+2. (ID, O)
+- Simple Interest Formula:
+  - SIO = ID * O * T
+
+3. (ID, J)
+- Simple Interest Formula:
+  - SIJ = ID * J * T
+
+4. (ID, T)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+  - SIO = ID * O * T
+  - SIJ = ID * J * T
+
+5. (ID, SIA)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+
+6. (ID, SIO)
+- Simple Interest Formula:
+  - SIO = ID * O * T
+
+7. (ID, SIJ)
+- Simple Interest Formula:
+  - SIJ = ID * J * T
+
+8. (ID, L)
+- Less Interest Formula:
+  - L = SIA - SIJ
+
+9. (A, O)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+  - SIO = ID * O * T
+
+10. (A, J)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+  - SIJ = ID * J * T
+
+11. (A, T)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+  - SIO = ID * O * T
+  - SIJ = ID * J * T
+
+12. (A, SIA)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+
+13. (A, SIO)
+- Simple Interest Formula:
+  - SIO = ID * O * T
+
+14. (A, SIJ)
+- Simple Interest Formula:
+  - SIJ = ID * J * T
+
+15. (A, L)
+- Less Interest Formula:
+  - L = SIA - SIJ
+
+16. (O, J)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+  - SIO = ID * O * T
+  - SIJ = ID * J * T
+
+17. (O, T)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+  - SIO = ID * O * T
+  - SIJ = ID * J * T
+
+18. (O, SIA)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+
+19. (O, SIO)
+- Simple Interest Formula:
+  - SIO = ID * O * T
+
+20. (O, SIJ)
+- Simple Interest Formula:
+  - SIJ = ID * J * T
+
+21. (O, L)
+- Less Interest Formula:
+  - L = SIA - SIJ
+
+22. (J, T)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+  - SIO = ID * O * T
+  - SIJ = ID * J * T
+
+23. (J, SIA)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+
+24. (J, SIO)
+- Simple Interest Formula:
+  - SIO = ID * O * T
+
+25. (J, SIJ)
+- Simple Interest Formula:
+  - SIJ = ID * J * T
+
+26. (J, L)
+- Less Interest Formula:
+  - L = SIA - SIJ
+
+27. (T, SIA)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+  - SIO = ID * O * T
+  - SIJ = ID * J * T
+
+28. (T, SIO)
+- Simple Interest Formula:
+  - SIO = ID * O * T
+
+29. (T, SIJ)
+- Simple Interest Formula:
+  - SIJ = ID * J * T
+
+30. (T, L)
+- Less Interest Formula:
+  - L = SIA - SIJ
+
+31. (SIA, SIO)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+  - SIO = ID * O * T
+
+32. (SIA, SIJ)
+- Simple Interest Formula:
+  - SIA = ID * A * T
+  - SIJ = ID * J * T
+
+33. (SIA, L)
+- Less Interest Formula:
+  - L = SIA - SIJ
+
+34. (SIO, SIJ)
+- Simple Interest Formula:
+  - SIO = ID * O * T
+  - SIJ = ID * J * T
+
+35. (SIO, L)
+- Less Interest Formula:
+  - L = SIA - SIJ
+
+36. (SIJ, L)
+- Less Interest Formula:
+  - L = SIA - SIJ
+```
+
+Note:
+The content within the three backticks is crucial. Please extract the contents, ensuring no variables or formulas/equations are missed. In line with the context of the question, list the formulas using abbreviations under '5. List the formula(s)/equation(s)'. Please strictly enumerate following the format "eq1": "T = N * B", "eq2": "R = 0 - T". Just list the original formulas/equations, and do not derive any formulas/equations.
+Your answer must strictly conform to the JSON structure outlined in the template. Offer a clear, methodical, and accurate representation of the calculation process, following the question's parameters closely. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

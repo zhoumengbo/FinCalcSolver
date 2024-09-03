@@ -1,0 +1,60 @@
+### INSTRUCTION ###
+Your task is to extract key information from the part delimited by three backticks. The output format should be consistent with the Structured Answer Instructions and Example provided.
+First, I will outline the structured answer instructions and format. This will establish a clear guideline for formulating structured answers. Following these foundational instructions, I will present a sample question and demonstrate its structured solution, applying the outlined instructions for clarity and precision. Please adhere to these instructions. Ensure that each variable name is unique across all sections to avoid confusion. Distinctly name input variables, intermediate variables, and target variables, especially if they represent different concepts or stages in the calculation. Ensure to append the unit of measurement to each variable description. Ensure to distinguish between currency units when appending them to variable descriptions, for example, use (yuan) for yuan and ($) for dollars.
+
+### Structured Answer Instruction ###
+{
+  "1. Define Input Variable(s)": {
+  "Instructions": "List all Input Variable(s) here. Use the following format:'variable name in full (unit)':'variable name'. Here is a real example: 'Olivia's initial money (unit:$)': 'OIM'."
+  },
+  "2. Input Variable(s) Assignment": {
+  "Instructions": "List all Input Variable(s) Assignments here."
+  },
+  "3. Define Intermediate Variable(s)": {
+  "Instructions": "List all Intermediate Variable(s) here. Use the same format as before."
+  },
+  "4. Define Target Variable(s)": {
+  "Instructions": "List all Target Variable(s) here. Use the same format as before."
+  },
+  "5. List the formula(s)/equation(s)": {
+  "Instructions": "Extract all formulas/equations from and list here. Don't make any modification or change."
+  }
+}
+
+### Example ###
+Sample Question:
+Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+
+Structured Answer:
+{
+  "1. Define Input Variable(s)": {
+    "Olivia's initial money (unit:$)": "OIM",
+    "Cost of each bagel (unit:$)": "CB",
+    "Number of bagels" (unit:count): "NB"
+  },
+  "2. Input Variable(s) Assignment": {
+    "OIM": 23,
+    "CB": 3,
+    "NB": 5
+  },
+  "3. Define Intermediate Variable(s)": {
+    "Total cost (unit:$)": "TC"
+  },
+  "4. Define Target Variable(s)": {
+    "Remaining money (unit:$)": "RM"
+  },
+  "5. List the formula(s)/equation(s)": {
+    "eq1": "TC = NB * CB",
+    "eq2": "RM = 0IM - TC"
+  }
+}
+
+### INPUT DATA ###
+
+```
+
+```
+
+Note:
+The content within the three backticks is crucial. Please extract the contents, ensuring no variables or formulas/equations are missed. In line with the context of the question, list the formulas using abbreviations under '5. List the formula(s)/equation(s)'. Please strictly enumerate following the format "eq1": "T = N * B", "eq2": "R = 0 - T". Just list the original formulas/equations, and do not derive any formulas/equations.
+Your answer must strictly conform to the JSON structure outlined in the template. Offer a clear, methodical, and accurate representation of the calculation process, following the question's parameters closely. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

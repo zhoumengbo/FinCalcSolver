@@ -1,0 +1,8 @@
+###3
+For each Input Variable identified above, perform the following tasks:
+1. In accordance with the context of the question and following financial industry conventions, for this numerical value and unit, create a new variable and define its variable name based on the financial terminology, ensuring that each variable name accurately reflects the financial concept it represents. Use underscores to connect words within each variable name. For example, if the financial term is 'Interest Rate', then the variable name should be 'Interest_rate'.
+2. Assign the numerical value(note:only numbers, no formulas or equations or other variables) to this variable.
+3. Provide a general financial interpretation for the variable(s) according to the general Finance domain or Finance industry common practice. Let's call it 'General Financial Interpretation'.
+4. Based on the context of the specific question, provide a specific interpretation for the variable(s) in the context of our specific question. Let's call it 'Specific Interpretation'.
+5. Extract the unit of the numerical value.
+6. Present the variable names, units, numerical values, in structured format in list form.

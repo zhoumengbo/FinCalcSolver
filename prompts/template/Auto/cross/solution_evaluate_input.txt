@@ -1,0 +1,14 @@
+### INPUT DATA ###
+Below is a question about financial calculation.
+Question: {Question}
+
+I have already defined all the Variable(s) inside the three backticks and provided you with some solutions inside @@@.
+
+```
+{variable}
+```
+
+@@@
+{solution}
+@@@
+

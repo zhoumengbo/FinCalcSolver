@@ -1,0 +1,507 @@
+### INSTRUCTION ###
+Your task is to extract key information from the part delimited by three backticks. The output format should be consistent with the Structured Answer Instructions and Example provided.
+First, I will outline the structured answer instructions and format. This will establish a clear guideline for formulating structured answers. Following these foundational instructions, I will present a sample question and demonstrate its structured solution, applying the outlined instructions for clarity and precision. Please adhere to these instructions. Ensure that each variable name is unique across all sections to avoid confusion. Distinctly name input variables, intermediate variables, and target variables, especially if they represent different concepts or stages in the calculation. Ensure to append the unit of measurement to each variable description. Ensure to distinguish between currency units when appending them to variable descriptions, for example, use (yuan) for yuan and ($) for dollars.
+
+### Structured Answer Instruction ###
+{
+  "1. Define Input Variable(s)": {
+  "Instructions": "List all Input Variable(s) here. Use the following format:'variable name in full (unit)':'variable name'. Here is a real example: 'Olivia's initial money (unit:$)': 'OIM'."
+  },
+  "2. Input Variable(s) Assignment": {
+  "Instructions": "List all Input Variable(s) Assignments here."
+  },
+  "3. Define Intermediate Variable(s)": {
+  "Instructions": "List all Intermediate Variable(s) here. Use the same format as before."
+  },
+  "4. Define Target Variable(s)": {
+  "Instructions": "List all Target Variable(s) here. Use the same format as before."
+  },
+  "5. List the formula(s)/equation(s)": {
+  "Instructions": "Extract all formulas/equations from and list here. Don't make any modification or change."
+  }
+}
+
+### Example ###
+Sample Question:
+Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+
+Structured Answer:
+{
+  "1. Define Input Variable(s)": {
+    "Olivia's initial money (unit:$)": "OIM",
+    "Cost of each bagel (unit:$)": "CB",
+    "Number of bagels" (unit:count): "NB"
+  },
+  "2. Input Variable(s) Assignment": {
+    "OIM": 23,
+    "CB": 3,
+    "NB": 5
+  },
+  "3. Define Intermediate Variable(s)": {
+    "Total cost (unit:$)": "TC"
+  },
+  "4. Define Target Variable(s)": {
+    "Remaining money (unit:$)": "RM"
+  },
+  "5. List the formula(s)/equation(s)": {
+    "eq1": "TC = NB * CB",
+    "eq2": "RM = 0IM - TC"
+  }
+}
+
+### INPUT DATA ###
+
+```
+Target Variable(s):
+- present_value
+
+Variable Names:
+- face_value
+- annual_coupon_rate
+- annual_discount_rate
+- maturity_year
+- compounding_basis
+- accrued_interests
+- lump_sum_payment
+
+Input Variable(s):
+- face_value: 1000 yuan
+- annual_coupon_rate: 0.12
+- annual_discount_rate: 0.1
+- maturity_year: 5 years
+
+Variable Names:
+- face_value
+- annual_coupon_rate
+- annual_discount_rate
+- maturity_year
+
+Financial Interpretation:
+- face_value: The initial principal amount of the bond, which is the amount that the investor will receive at maturity.
+- annual_coupon_rate: The annual interest rate paid by the bond, expressed as a decimal.
+- annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond, expressed as a decimal.
+- maturity_year: The number of years until the bond matures.
+
+Units:
+- face_value: yuan
+- annual_coupon_rate: decimal
+- annual_discount_rate: decimal
+- maturity_year: years
+
+Structured Format:
+- face_value: 1000 yuan
+- annual_coupon_rate: 0.12
+- annual_discount_rate: 0.1
+- maturity_year: 5 years
+
+Input Variable(s):
+- face_value: 1000 yuan
+- annual_coupon_rate: 0.12
+- annual_discount_rate: 0.1
+- maturity_year: 5 years
+
+Variable Names:
+- face_value
+- annual_coupon_rate
+- annual_discount_rate
+- maturity_year
+
+Financial Interpretation:
+- face_value: The initial principal amount of the bond, which is the amount that the investor will receive at maturity.
+- annual_coupon_rate: The annual interest rate paid by the bond, expressed as a decimal.
+- annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond, expressed as a decimal.
+- maturity_year: The number of years until the bond matures.
+
+Units:
+- face_value: yuan
+- annual_coupon_rate: decimal
+- annual_discount_rate: decimal
+- maturity_year: years
+
+Structured Format:
+- face_value: 1000 yuan
+- annual_coupon_rate: 0.12
+- annual_discount_rate: 0.1
+- maturity_year: 5 years
+
+
+Target Variable(s):
+- present_value
+
+Intermediate Variable(s):
+- compounding_basis
+- accrued_interests
+- lump_sum_payment
+
+Formulas/Equations:
+1. Compounding Formula:
+   Compounding_basis = Face_value * (1 + Annual_coupon_rate)^Maturity_year
+   Where:
+   - Compounding_basis: The compounding basis for each year
+   - Face_value: The initial principal amount of the bond
+   - Annual_coupon_rate: The annual interest rate paid by the bond
+   - Maturity_year: The number of years until the bond matures
+
+2. Accrued Interests Formula:
+   Accrued_interests = Compounding_basis * (1 + Annual_discount_rate)^(-Maturity_year)
+   Where:
+   - Accrued_interests: The accrued interests at maturity
+   - Compounding_basis: The compounding basis for each year
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+3. Lump-sum Payment Formula:
+   Lump_sum_payment = Face_value + Accrued_interests
+   Where:
+   - Lump_sum_payment: The total amount paid out at maturity
+   - Face_value: The initial principal amount of the bond
+   - Accrued_interests: The accrued interests at maturity
+
+4. Present Value Formula:
+   Present_value = Lump_sum_payment / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Lump_sum_payment: The total amount paid out at maturity
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+Intermediate Variable(s):
+- compounding_basis
+- accrued_interests
+- lump_sum_payment
+
+Formulas/Equations:
+1. Compounding Formula:
+   Compounding_basis = Face_value * (1 + Annual_coupon_rate)^Maturity_year
+   Where:
+   - Compounding_basis: The compounding basis for each year
+   - Face_value: The initial principal amount of the bond
+   - Annual_coupon_rate: The annual interest rate paid by the bond
+   - Maturity_year: The number of years until the bond matures
+
+2. Accrued Interests Formula:
+   Accrued_interests = Compounding_basis * (1 + Annual_discount_rate)^(-Maturity_year)
+   Where:
+   - Accrued_interests: The accrued interests at maturity
+   - Compounding_basis: The compounding basis for each year
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+3. Lump-sum Payment Formula:
+   Lump_sum_payment = Face_value + Accrued_interests
+   Where:
+   - Lump_sum_payment: The total amount paid out at maturity
+   - Face_value: The initial principal amount of the bond
+   - Accrued_interests: The accrued interests at maturity
+
+4. Present Value Formula:
+   Present_value = Lump_sum_payment / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Lump_sum_payment: The total amount paid out at maturity
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+Intermediate Variable(s):
+- compounding_basis
+- accrued_interests
+- lump_sum_payment
+
+Formulas/Equations:
+1. Compounding Formula:
+   Compounding_basis = Face_value * (1 + Annual_coupon_rate)^Maturity_year
+   Where:
+   - Compounding_basis: The compounding basis for each year
+   - Face_value: The initial principal amount of the bond
+   - Annual_coupon_rate: The annual interest rate paid by the bond
+   - Maturity_year: The number of years until the bond matures
+
+2. Accrued Interests Formula:
+   Accrued_interests = Compounding_basis * (1 + Annual_discount_rate)^(-Maturity_year)
+   Where:
+   - Accrued_interests: The accrued interests at maturity
+   - Compounding_basis: The compounding basis for each year
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+3. Lump-sum Payment Formula:
+   Lump_sum_payment = Face_value + Accrued_interests
+   Where:
+   - Lump_sum_payment: The total amount paid out at maturity
+   - Face_value: The initial principal amount of the bond
+   - Accrued_interests: The accrued interests at maturity
+
+4. Present Value Formula:
+   Present_value = Lump_sum_payment / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Lump_sum_payment: The total amount paid out at maturity
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+Set A:
+- face_value
+- annual_coupon_rate
+- annual_discount_rate
+- maturity_year
+- compounding_basis
+- accrued_interests
+- lump_sum_payment
+- present_value
+
+Two-element combinations:
+1. (face_value, annual_coupon_rate)
+2. (face_value, annual_discount_rate)
+3. (face_value, maturity_year)
+4. (face_value, compounding_basis)
+5. (face_value, accrued_interests)
+6. (face_value, lump_sum_payment)
+7. (face_value, present_value)
+8. (annual_coupon_rate, annual_discount_rate)
+9. (annual_coupon_rate, maturity_year)
+10. (annual_coupon_rate, compounding_basis)
+11. (annual_coupon_rate, accrued_interests)
+12. (annual_coupon_rate, lump_sum_payment)
+13. (annual_coupon_rate, present_value)
+14. (annual_discount_rate, maturity_year)
+15. (annual_discount_rate, compounding_basis)
+16. (annual_discount_rate, accrued_interests)
+17. (annual_discount_rate, lump_sum_payment)
+18. (annual_discount_rate, present_value)
+19. (maturity_year, compounding_basis)
+20. (maturity_year, accrued_interests)
+21. (maturity_year, lump_sum_payment)
+22. (maturity_year, present_value)
+23. (compounding_basis, accrued_interests)
+24. (compounding_basis, lump_sum_payment)
+25. (compounding_basis, present_value)
+26. (accrued_interests, lump_sum_payment)
+27. (accrued_interests, present_value)
+28. (lump_sum_payment, present_value)
+
+Formulas/Equations:
+1. (face_value, annual_coupon_rate):
+   Compounding_basis = Face_value * (1 + Annual_coupon_rate)^Maturity_year
+   Where:
+   - Compounding_basis: The compounding basis for each year
+   - Face_value: The initial principal amount of the bond
+   - Annual_coupon_rate: The annual interest rate paid by the bond
+   - Maturity_year: The number of years until the bond matures
+
+2. (face_value, annual_discount_rate):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+3. (face_value, maturity_year):
+   Compounding_basis = Face_value * (1 + Annual_coupon_rate)^Maturity_year
+   Where:
+   - Compounding_basis: The compounding basis for each year
+   - Face_value: The initial principal amount of the bond
+   - Annual_coupon_rate: The annual interest rate paid by the bond
+   - Maturity_year: The number of years until the bond matures
+
+4. (face_value, compounding_basis):
+   Accrued_interests = Compounding_basis * (1 + Annual_discount_rate)^(-Maturity_year)
+   Where:
+   - Accrued_interests: The accrued interests at maturity
+   - Compounding_basis: The compounding basis for each year
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+5. (face_value, accrued_interests):
+   Lump_sum_payment = Face_value + Accrued_interests
+   Where:
+   - Lump_sum_payment: The total amount paid out at maturity
+   - Face_value: The initial principal amount of the bond
+   - Accrued_interests: The accrued interests at maturity
+
+6. (face_value, lump_sum_payment):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+7. (face_value, present_value):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+8. (annual_coupon_rate, annual_discount_rate):
+   Compounding_basis = Face_value * (1 + Annual_coupon_rate)^Maturity_year
+   Where:
+   - Compounding_basis: The compounding basis for each year
+   - Face_value: The initial principal amount of the bond
+   - Annual_coupon_rate: The annual interest rate paid by the bond
+   - Maturity_year: The number of years until the bond matures
+
+9. (annual_coupon_rate, maturity_year):
+   Compounding_basis = Face_value * (1 + Annual_coupon_rate)^Maturity_year
+   Where:
+   - Compounding_basis: The compounding basis for each year
+   - Face_value: The initial principal amount of the bond
+   - Annual_coupon_rate: The annual interest rate paid by the bond
+   - Maturity_year: The number of years until the bond matures
+
+10. (annual_coupon_rate, compounding_basis):
+   Accrued_interests = Compounding_basis * (1 + Annual_discount_rate)^(-Maturity_year)
+   Where:
+   - Accrued_interests: The accrued interests at maturity
+   - Compounding_basis: The compounding basis for each year
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+11. (annual_coupon_rate, accrued_interests):
+   Lump_sum_payment = Face_value + Accrued_interests
+   Where:
+   - Lump_sum_payment: The total amount paid out at maturity
+   - Face_value: The initial principal amount of the bond
+   - Accrued_interests: The accrued interests at maturity
+
+12. (annual_coupon_rate, lump_sum_payment):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+13. (annual_coupon_rate, present_value):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+14. (annual_discount_rate, maturity_year):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+15. (annual_discount_rate, compounding_basis):
+   Accrued_interests = Compounding_basis * (1 + Annual_discount_rate)^(-Maturity_year)
+   Where:
+   - Accrued_interests: The accrued interests at maturity
+   - Compounding_basis: The compounding basis for each year
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+16. (annual_discount_rate, accrued_interests):
+   Lump_sum_payment = Face_value + Accrued_interests
+   Where:
+   - Lump_sum_payment: The total amount paid out at maturity
+   - Face_value: The initial principal amount of the bond
+   - Accrued_interests: The accrued interests at maturity
+
+17. (annual_discount_rate, lump_sum_payment):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+18. (annual_discount_rate, present_value):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+19. (maturity_year, compounding_basis):
+   Compounding_basis = Face_value * (1 + Annual_coupon_rate)^Maturity_year
+   Where:
+   - Compounding_basis: The compounding basis for each year
+   - Face_value: The initial principal amount of the bond
+   - Annual_coupon_rate: The annual interest rate paid by the bond
+   - Maturity_year: The number of years until the bond matures
+
+20. (maturity_year, accrued_interests):
+   Accrued_interests = Compounding_basis * (1 + Annual_discount_rate)^(-Maturity_year)
+   Where:
+   - Accrued_interests: The accrued interests at maturity
+   - Compounding_basis: The compounding basis for each year
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+21. (maturity_year, lump_sum_payment):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+22. (maturity_year, present_value):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+23. (compounding_basis, accrued_interests):
+   Accrued_interests = Compounding_basis * (1 + Annual_discount_rate)^(-Maturity_year)
+   Where:
+   - Accrued_interests: The accrued interests at maturity
+   - Compounding_basis: The compounding basis for each year
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+24. (compounding_basis, lump_sum_payment):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+25. (compounding_basis, present_value):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+26. (accrued_interests, lump_sum_payment):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+27. (accrued_interests, present_value):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+
+28. (lump_sum_payment, present_value):
+   Present_value = Face_value / (1 + Annual_discount_rate)^Maturity_year
+   Where:
+   - Present_value: The present value of the bond
+   - Face_value: The initial principal amount of the bond
+   - Annual_discount_rate: The annual interest rate used to discount the future cash flows of the bond
+   - Maturity_year: The number of years until the bond matures
+```
+
+Note:
+The content within the three backticks is crucial. Please extract the contents, ensuring no variables or formulas/equations are missed. In line with the context of the question, list the formulas using abbreviations under '5. List the formula(s)/equation(s)'. Please strictly enumerate following the format "eq1": "T = N * B", "eq2": "R = 0 - T". Just list the original formulas/equations, and do not derive any formulas/equations.
+Your answer must strictly conform to the JSON structure outlined in the template. Offer a clear, methodical, and accurate representation of the calculation process, following the question's parameters closely. Explicitly avoid using any specific numerical values for the derivation and calculation. There must be no redundant information other than the output in JSON format.

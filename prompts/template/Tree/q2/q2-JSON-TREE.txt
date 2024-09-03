@@ -1,0 +1,55 @@
+### INSTRUCTION ###
+Your task is to solve a financial calculation problem. I have provided you with all the neccessary information in the JSON format delimited by three backticks, which includes a list of all potentially applicable formulas/equations. Now, I need you to follow my instructions step by step in answering my questions.
+
+
+### JSON SOLUTION ###
+```
+{
+  "1. Define Input Variable(s)": {
+    "Face Value (FV)": "FV",
+    "Annual Coupon Rate (ACR)": "ACR",
+    "Annual Discount Rate (ADR)": "ADR",
+    "Number of Years (NY)": "NY"
+  },
+  "2. Input Variable(s) Assignment": {
+    "FV": 1000,
+    "ACR": 0.12,
+    "ADR": 0.1,
+    "NY": 5
+  },
+  "3. Define Intermediate Variable(s)": {
+    "Compounding Basis (CB)": "CB",
+    "Accrued Interests (AI)": "AI",
+    "Present Value (PV)": "PV"
+  },
+  "4. Define Target Variable(s)": {
+    "Present Value (PV)": "PV"
+  },
+  "5. List the formula(s)/equation(s)": {
+    "eq1": "Formula: PV = CB - AI",
+    "eq2": "Formula: PV = CB - AI",
+    "eq3": "1. Formula: PV = CB - AI",
+    "eq4": "Formula: PV = CB - AI",
+    "eq5": "1. Formula: PV = CB - AI",
+    "eq6": "1. Future Value (FV) of an investment with compound interest: FV = PV * (1 + r)^n, where PV is the present value, r is the annual interest rate, and n is the number of years.",
+    "eq7": "2. Present Value (PV) of an investment with compound interest: PV = FV / (1 + r)^n, where FV is the future value, r is the annual interest rate, and n is the number of years.",
+    "eq8": "3. Present Value of an Annuity (PVA) with compound interest: PVA = PMT * [(1 + r)^n - 1] / r, where PMT is the periodic payment, r is the annual interest rate, and n is the number of years.",
+    "eq9": "5. Present Value of a Lump-Sum Payment (PVL) with discounting: PVL = FV / (1 + r)^n, where FV is the future value, r is the annual discount rate, and n is the number of years.",
+    "eq10": "6. Future Value of a Lump-Sum Payment (FVL) with compounding: FVL = PV * (1 + r)^n, where PV is the present value, r is the annual interest rate, and n is the number of years.",
+    "eq11": "PV = FV / (1 + ADR)^n = 1610.56 / (1 + 0.1)^5 \u2248 1000 yuan"
+    "eq12": "CB = FV * (1 + ACR)^NY",
+    "eq13": "AI = CB * (1 + ADR)^NY - CB",
+    "eq14": "PV = CB - AI"
+  }
+}
+```
+
+### QUESTION ###
+Among the formulas/equations listed in JSON SOLUTION, extract all formulas/equations involving the Target Variable(s) and list them out. Note that you should only list the formulas/equations that involve Target Variable(s) and avoid listing other formulas/equations or engaging in any form of derivation. Now please output your answer in JSON format, with the format as follows: {"Eq1": "your answer 1", "Eq2": "your answer 2"}, etc. If you don't find any formula/equation, don't create arbitrary answers, just output "none". Please strictly output in JSON format, do not output irrelevant content.
+
+
+
+According to our specific question, what does "PV = FV / (1 + r)^n"  mean?
+What does "FV" mean here?
+What does "r" mean here?
+What does "n" mean here?

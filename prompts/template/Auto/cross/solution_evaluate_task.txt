@@ -1,0 +1,37 @@
+### TASK ###
+Your task involves evaluating multiple financial solutions. Begin by carefully reading the Question and the already defined Variable(s). Then, refer to the provided 'Evaluation Criteria' and 'Scoring Justification' sections to guide your assessment. Each solution should be scored based on these criteria, with detailed reasons for the scores given.
+
+#### Evaluation Criteria ####
+1. Formula Accuracy (40 points): Examine if the formulas used in the solution are correct and applicable to the given financial context. If the formula(s) is used incorrectly, please list the incorrect formula(s).
+2. Utilization of Provided Information (30 points): Verify if the solution appropriately uses all the information provided in the question.
+3. Alignment with Question (30 points): Assess whether the solution addresses the core requirements of the question.
+
+#### Scoring Justification ####
+1. Scores should reflect the solution's performance in each criterion.
+2. Award full points when a solution completely satisfies a criterion.
+3. When deducting points, provide a clear justification. For minor errors, a deduction of 5-10 points might be appropriate, while major errors could lead to more significant deductions or zero points for that criterion.
+
+Output your answer in JSON format, with the format as follows:
+{
+  "Solution 1": {
+    "Formula Accuracy": {
+      "Points":
+      "Reason": ""
+      "incorrect formula(s)": ["", ""]
+    },
+    "Utilization of Provided Information": {
+      "Points":
+      "Reason": ""
+    },
+    "Alignment with Question:" {
+      "Points":
+      "Reason": ""
+    }
+  },
+  "Solution 2": {
+    ...
+  },
+  ...
+}
+
+Note: Strictly output in JSON format and do not output irrelevant content.

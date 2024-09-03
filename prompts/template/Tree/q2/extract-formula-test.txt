@@ -1,0 +1,103 @@
+
+2. Read carefully its "Interpretation Specific to our Question for Variable" section, what's the meaning of this variable according to our specific question? Then apply the above-listed general formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-duplicating Intermediate Variables (note: Intermediate Variables should not duplicate with any of those Target Variables or Input Variables) according to Finance common practice. Based on the context of the specific question, provide a specific interpretation for the formulas/equations in the context of our specific question. Let's call it 'Interpretation Specific to our Question for Formulas'.
+
+Input Variable(s):
+
+a. Bond_term:
+- Interpretation Specific to our Question for Variable: The duration of the 5-year government bond
+- Interpretation Specific to our Question for Formulas:
+  - Bond_term = 5
+
+b. Face_value:
+- Interpretation Specific to our Question for Variable: The initial principal amount of the 1000 yuan bond
+- Interpretation Specific to our Question for Formulas:
+  - Future_value = Face_value * (1 + Interest_rate)^Time_to_maturity
+
+c. Coupon_rate:
+- Interpretation Specific to our Question for Variable: The annual interest rate of 0.12 paid on the bond
+- Interpretation Specific to our Question for Formulas:
+  - Coupon_payment = Face_value * Coupon_rate
+
+d. Discount_rate:
+- Interpretation Specific to our Question for Variable: The annual interest rate of 0.1 used to discount future cash flows
+- Interpretation Specific to our Question for Formulas:
+  - Present_value = Future_value / (1 + Discount_rate)^Time_to_maturity
+
+Target Variable(s):
+
+a. Present_Value:
+- Interpretation Specific to our Question for Variable: The present value of the 5-year government bond, considering the time value of money and the risk-free interest rate, given the face value, annual coupon rate, and annual discount rate.
+- Interpretation Specific to our Question for Formulas:
+  - Present_value = Face_value * (1 + Discount_rate)^(-Bond_term) + Coupon_payment * (1 + Discount_rate)^(-Bond_term) * (1 - (1 + Discount_rate)^(-Bond_term)) / Discount_rat<|im_end|>
+
+
+4. For each variable in the Intermediate Variables, list all formulas/equations in Finance which involve the-said variable (note: list all formulas/equations involving this variable). According to our specific question, apply the above-listed formulas/equations to our specific question(note: don't substitute numerical values into formulas/equations). Define necessary but non-overlapping Intermediate Variables (note: Intermediate Variables should not overlap with any of those Target Variables or Input Variables) according to Finance common practice.
+
+Intermediate Variable(s):
+
+a. Time_to_maturity:
+- General Financial Interpretation for Variable: The duration of the bond, in years
+- General Financial Interpretation for Formulas:
+  - Time_to_maturity = Bond_term
+
+b. Interest_rate:
+- General Financial Interpretation for Variable: The annual interest rate paid on the bond
+- General Financial Interpretation for Formulas:
+  - Coupon_payment = Face_value * Interest_rate
+
+c. Future_value:
+- General Financial Interpretation for Variable: The future value of an investment or financial instrument, considering the time value of money and the risk-free interest rate
+- General Financial Interpretation for Formulas:
+  - Future_value = Face_value * (1 + Interest_rate)^Time_to_maturity
+
+d. Coupon_payment:
+- General Financial Interpretation for Variable: The annual interest payment received by the bondholder
+- General Financial Interpretation for Formulas:
+  - Coupon_payment = Face_value * Coupon_rate
+
+e. Discount_rate:
+- General Financial Interpretation for Variable: The annual interest rate used to discount future cash flows
+- General Financial Interpretation for Formulas:
+  - Present_value = Future_value / (1 + Discount_rate)^Time_to_maturity
+
+
+
+ 1. For the combination (Present_Value, Coupon_rate), the formula/equation in Finance involving these two variables is:
+
+   Present Value = Face Value * (1 + Coupon Rate)^(Bond Term) / (1 + Discount Rate)^(Bond Term)
+
+   General Financial Interpretation: The present value of a financial instrument or investment, which represents the current worth of future cash flows, considering the time value of money and the risk-free interest rate.
+
+   Specific Interpretation: The present value of the 5-year government bond, considering the time value of money and the risk-free interest rate, given the face value, annual coupon rate, and annual discount rate.
+
+2. For the combination (Present_Value, Future_value), the formula/equation in Finance involving these two variables is:
+
+   Future Value = Face Value * (1 + Coupon Rate)^(Bond Term)
+
+   General Financial Interpretation: The future value of an investment or financial instrument, considering the time value of money and the risk-free interest rate.
+
+   Specific Interpretation: The future value of the bond, considering the time value of money and the risk-free interest rate.
+
+3. For the combination (Coupon_rate, Future_value), the formula/equation in Finance involving these two variables is:
+
+   Coupon Payment = Face Value * Coupon Rate
+
+   General Financial Interpretation: The annual interest payment received from a bond.
+
+   Specific Interpretation: The annual interest payment received from the bond.
+
+4. For the combination (Present_Value, Discount_rate), the formula/equation in Finance involving these two variables is:
+
+   Present Value = Face Value / (1 + Discount Rate)^(Bond Term)
+
+   General Financial Interpretation: The present value of a financial instrument or investment, which represents the current worth of future cash flows, considering the time value of money and the risk-free interest rate.
+
+   Specific Interpretation: The present value of the 5-year government bond, considering the time value of money and the risk-free interest rate, given the face value, annual coupon rate, and annual discount rate.
+
+5. For the combination (Interest_rate, Coupon_rate), the formula/equation in Finance involving these two variables is:
+
+   Coupon Payment = Face Value * Interest Rate
+
+   General Financial Interpretation: The annual interest payment received from a bond.
+
+   Specific Interpretation: The annual interest payment received from the bond.

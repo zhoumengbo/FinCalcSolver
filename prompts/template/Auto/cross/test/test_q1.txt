@@ -1,0 +1,30 @@
+### INPUT DATA ###
+Below is a question about financial calculation.
+Question: To stimulate economic growth, since 2022, the country has repeatedly lowered bank deposit interest rates. The three-year rate was 0.0315 in August 2022, reduced to 0.03 in October, and further to 0.0285 in January 2023. These rates are simple annual interest rates. In January 2023, if Mr. Wang has a deposit of $100,000 for a fixed term of three years (note that this is a fixed-term deposit for three years), how much less interest will he earn compared to a similar three-year term deposit that if he had started in August 2022? Please use simple interest in your calculations, and do not use exponential or continuous compounding.
+
+I have already defined all the Variable(s) inside the three backticks and provided you with some solutions inside @@@.
+
+```
+{"Target Variable(s)": [{"Variable Name": "Interest_difference", "Unit": "USD", "General Financial Interpretation for Variable": "The difference in interest earned between two similar three-year term deposits, with one starting in August 2022 and the other in January 2023.", "Interpretation Specific to our Question for Variable": "The amount by which Mr. Wang's interest earnings will be less if he starts his three-year term deposit in January 2023 compared to if he had started in August 2022, given the reduced interest rates in the latter period."}], "Input Variable(s)": [{"Variable Name": "Interest_rate_August_2022", "Numerical Value": 0.0315, "Unit": "Annual interest rate", "General Financial Interpretation for Variable": "The annual interest rate for a fixed-term deposit in August 2022.", "Interpretation Specific to our Question for Variable": "The interest rate for Mr. Wang's deposit in August 2022."}, {"Variable Name": "Interest_rate_October_2022", "Numerical Value": 0.03, "Unit": "Annual interest rate", "General Financial Interpretation for Variable": "The annual interest rate for a fixed-term deposit in October 2022.", "Interpretation Specific to our Question for Variable": "The interest rate for Mr. Wang's deposit in October 2022."}, {"Variable Name": "Interest_rate_January_2023", "Numerical Value": 0.0285, "Unit": "Annual interest rate", "General Financial Interpretation for Variable": "The annual interest rate for a fixed-term deposit in January 2023.", "Interpretation Specific to our Question for Variable": "The interest rate for Mr. Wang's deposit in January 2023."}, {"Variable Name": "Deposit_amount", "Numerical Value": 100000, "Unit": "USD", "General Financial Interpretation for Variable": "The principal amount of the fixed-term deposit.", "Interpretation Specific to our Question for Variable": "The amount Mr. Wang deposited in the fixed-term deposit."}, {"Variable Name": "Term_of_deposit", "Numerical Value": 3, "Unit": "Years", "General Financial Interpretation for Variable": "The duration of the fixed-term deposit in years.", "Interpretation Specific to our Question for Variable": "The length of time Mr. Wang's deposit will be held."}], "Intermediate Variable(s)": [{"Variable Name": "Interest_2022", "Unit": "USD", "General Financial Interpretation for Variable": "The interest earned on the deposit in August 2022, calculated using the simple interest formula.", "Interpretation Specific to our Question for Variable": "The interest earned on Mr. Wang's deposit in August 2022, given the interest rate of 0.0315 and a term of three years."}, {"Variable Name": "Interest_2023", "Unit": "USD", "General Financial Interpretation for Variable": "The interest earned on the deposit in January 2023, calculated using the simple interest formula.", "Interpretation Specific to our Question for Variable": "The interest earned on Mr. Wang's deposit in January 2023, given the interest rate of 0.0285 and a term of three years."}]}
+```
+
+@@@
+Solution 1:
+	Step: Calculate Interest_difference
+	Formula/equation: Interest_difference = Interest_2023 - Interest_2022
+
+	Step: Calculate Interest_2023
+	Formula/equation: Interest_2023 = Deposit_amount * Interest_rate_January_2023 * Term_of_deposit
+		Deposit_amount: 100000
+		Interest_rate_January_2023: 0.0285
+		Term_of_deposit: 3
+
+	Step: Calculate Interest_2022
+	Formula/equation: Interest_2022 = Deposit_amount * Interest_rate_August_2022 * Term_of_deposit
+		Deposit_amount: 100000
+		Interest_rate_August_2022: 0.0315
+		Term_of_deposit: 3
+@@@
+
+### INSTRUCTION ###
+Considering the Question and the already defined Variable(s), choose the solution that you think best fits the question and provide a reason for your choice. Now, please output your answer in JSON format, with the format as follows: {"Solution Number": "1", "Reason": ""}, etc. Please strictly output in JSON format and do not output irrelevant content.

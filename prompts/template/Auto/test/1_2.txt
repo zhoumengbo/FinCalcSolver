@@ -1,0 +1,6 @@
+### INPUT DATA ###
+Below is a question about financial calculation.
+Question: The capital structure of Ricketti Enterprises, Inc., consists of 15 million shares of common stock and 1 million warrants. Each warrant gives its owner the right to purchase 1 share of common stock for an exercise price of $19. The current stock price is $25, and each warrant is worth $7. All warrant holders choose to exercise their warrants today, this will lead to the issuance of new shares, what is the new stock price?
+
+### INSTRUCTION ###
+Let's solve the question step by step.
