@@ -7,7 +7,7 @@ from Create_tree_paths import *
 from utils.chat_utils import get_gpu_memory
 from utils.cross_models_utils import *
 from utils.create_json_utils import *
-from utils import dolphin_chat_utils, neural_chat_utils, openorca_chat_utils, openchat_chat_utils
+from utils import dolphin_chat_utils
 
 from utils.docx_utils import add_title, add_para, add_para_highlight
 from utils.intercept_error import convert_full_text
@@ -35,7 +35,7 @@ def main():
     os.makedirs(log_dir, exist_ok=True)
     logger = LoggerConfig(log_file='{0}/{1}.log'.format(log_dir, now_time)).logger
     logger.info(get_gpu_memory())
-    model1, tokenizer1 = openchat_chat_utils.load_model(model1_path, model_device1)
+    model1, tokenizer1 = dolphin_chat_utils.load_model(model1_path, model_device1)
 
     question = ("The capital structure of Ricketti Enterprises, Inc., consists of 15 million shares of common stock "
                 "and 1 million warrants. Each warrant gives its owner the right to purchase 1 share of common stock "
@@ -61,11 +61,11 @@ def create_json(model_name, question, model, tokenizer, tokenizer_device, logger
     # s1:提取目标变量，转化JSON
     extract_target_v_prompt = open(auto_dir + "s1/1.txt", 'r').read().format(
         Question=question.strip())
-    history, answer, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, answer, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                           extract_target_v_prompt, logger, tokenizer_device, False)
 
     target_v2json_prompt = open(auto_dir + "s1/2.txt", 'r').read()
-    history, target_v_json_str, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, target_v_json_str, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                                      target_v2json_prompt, logger, tokenizer_device,
                                                                      True)
     logger.info("\n##### s1 input_all #####:\n{0}".format(input_all))
@@ -78,19 +78,19 @@ def create_json(model_name, question, model, tokenizer, tokenizer_device, logger
 
     # s2:提取输入变量，转化JSON
     extract_target_v_prompt = open(auto_dir + "s2/1.txt", 'r').read().format(Question=question.strip())
-    history, answer, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, answer, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                           extract_target_v_prompt, logger, tokenizer_device, False)
 
     extract_target_v_prompt = open(auto_dir + "s2/2.txt", 'r').read()
-    history, answer, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, answer, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                           extract_target_v_prompt, logger, tokenizer_device, False)
 
     extract_target_v_prompt = open(auto_dir + "s2/3.txt", 'r').read()
-    history, answer, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, answer, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                           extract_target_v_prompt, logger, tokenizer_device, False)
 
     input_v2json_prompt = open(auto_dir + "s2/4.txt", 'r').read()
-    history, input_v_json_str, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, input_v_json_str, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                                     input_v2json_prompt, logger, tokenizer_device, True)
     logger.info("\n##### s2 input_all #####:\n{0}".format(input_all))
     logger.info('\n##### s2 Answer #####:\n{0}\n\n'.format(input_v_json_str))
@@ -104,32 +104,32 @@ def create_json(model_name, question, model, tokenizer, tokenizer_device, logger
     # 在获得目标变量和输入变量的JSON后，第一步，列出目标变量相关公式
     target_v_to_f_prompt = open(auto_dir + "s3/2/1.txt", 'r').read().format(
         Question=question.strip(), Target_json=target_v_json_str.strip(), Input_json=input_v_json_str.strip())
-    history, f3_1, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, f3_1, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                         target_v_to_f_prompt, logger, tokenizer_device, False)
     logger.info("\n##### s3-1 input_all #####:\n{0}".format(input_all))
     logger.info('\n##### s3-1 Answer #####:\n{0}\n\n'.format(f3_1))
 
     # 第二步，列出输入变量相关公式
     input_v_to_f_prompt = open(auto_dir + "s3/2/2.txt", 'r').read()
-    history, f3_2, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, f3_2, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                         input_v_to_f_prompt, logger, tokenizer_device, False)
     logger.info('\n##### s3-2 Answer #####:\n{0}\n\n'.format(f3_2))
 
     # 第三步，将公式带入实际问题，并定义中间变量
     f_to_q_prompt = open(auto_dir + "s3/2/3.txt", 'r').read()
-    history, f3_3, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, f3_3, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                         f_to_q_prompt, logger, tokenizer_device, False)
     logger.info('\n##### s3-3 Answer #####:\n{0}\n\n'.format(f3_3))
 
     # 第四步，列出中间变量的公式
     inter_v_to_f_prompt = open(auto_dir + "s3/2/4.txt", 'r').read()
-    history, f3_4, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, f3_4, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                         inter_v_to_f_prompt, logger, tokenizer_device, False)
     logger.info('\n##### s3-4 Answer #####:\n{0}\n\n'.format(f3_4))
 
     # 第五步，中间变量转化为JSON
     inter_v_to_json_prompt = open(auto_dir + "s3/2/5.txt", 'r').read()
-    history, inter_v_json_str, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, inter_v_json_str, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                                     inter_v_to_json_prompt, logger, tokenizer_device,
                                                                     True)
     logger.info('\n##### s3-5 Answer #####:\n{0}\n\n'.format(inter_v_json_str))
@@ -141,7 +141,7 @@ def create_json(model_name, question, model, tokenizer, tokenizer_device, logger
     # s4:提取相关公式并转化JSON
     S4_prompt = (open(auto_dir + "s4/one-shot.txt", 'r').read() + open(auto_dir + "s4/f_to_json.txt", 'r').read()
                  .format(f3_1=f3_1.strip(), f3_2=f3_2.strip(), f3_3=f3_3.strip(), f3_4=f3_4.strip()))
-    history, f_json_str, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+    history, f_json_str, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                               S4_prompt, logger, tokenizer_device, True)
     logger.info("\n##### s4 input_all #####:\n{0}".format(input_all))
     logger.info('\n##### s4 Answer #####:\n{0}\n\n'.format(f_json_str))
@@ -174,13 +174,13 @@ def create_json(model_name, question, model, tokenizer, tokenizer_device, logger
             logger.info("Variables are not compatible ！！！")
             s5_1_prompt = (open(auto_dir + "s5/1.txt", 'r').read()
                            .format(Question=question.strip(), v_dict=str(variable_dict), formula=formula))
-            history, answer, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+            history, answer, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                                   s5_1_prompt, logger, tokenizer_device, False)
             s5_2_prompt = (open(auto_dir + "s5/2.txt", 'r').read().format(formula=formula))
-            history, answer, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+            history, answer, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                                   s5_2_prompt, logger, tokenizer_device, False)
             s5_3_prompt = (open(auto_dir + "s5/3.txt", 'r').read())
-            history, f5, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+            history, f5, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                               s5_3_prompt, logger, tokenizer_device, True)
             logger.info("\n##### s5 input_all #####:\n{0}".format(input_all))
             add_para_highlight(log_doc, "\n##### Formula: {0} #####\n\n".format(formula))
@@ -218,21 +218,21 @@ def create_json(model_name, question, model, tokenizer, tokenizer_device, logger
         index = 1
         s6_1_prompt = (open(auto_dir + "s6/1.txt", 'r').read()
                        .format(Question=question.strip(), v_dict=str(variable_dict)))
-        history, answer, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+        history, answer, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                               s6_1_prompt, logger, tokenizer_device, False)
         for t_v in target_v:
             history = history[:1]
             s6_2_prompt = (open(auto_dir + "s6/2.txt", 'r').read().format(t_v=t_v))
-            history, answer, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+            history, answer, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                                   s6_2_prompt, logger, tokenizer_device, False)
             s6_3_prompt = (open(auto_dir + "s6/3.txt", 'r').read().format(t_v=t_v, i_v=i_v))
-            history, answer, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+            history, answer, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                                   s6_3_prompt, logger, tokenizer_device, False)
             s6_4_prompt = (open(auto_dir + "s6/4.txt", 'r').read().format(v_n=str(list(variable_dict.keys()))))
-            history, answer, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+            history, answer, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                                   s6_4_prompt, logger, tokenizer_device, False)
             s6_5_prompt = (open(auto_dir + "s6/5.txt", 'r').read())
-            history, f6, input_all = openchat_chat_utils.chat(history, system_m, model, tokenizer, model_name,
+            history, f6, input_all = dolphin_chat_utils.chat(history, system_m, model, tokenizer, model_name,
                                                               s6_5_prompt, logger, tokenizer_device, True)
             logger.info("##### s6_{0}_{1} input_all #####:\n{2}".format(t_v, i_v, input_all))
             logger.info("##### s6_{0}_{1} answer #####:\n{2}".format(t_v, i_v, f6))
